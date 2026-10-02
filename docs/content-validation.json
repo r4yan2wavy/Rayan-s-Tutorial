@@ -1,0 +1,15 @@
+{
+  "passages": 250,
+  "levels": [
+    50,
+    50,
+    50,
+    50,
+    50
+  ],
+  "readingQuestions": 1000,
+  "minimumWords": 142,
+  "nearDuplicateWarnings": [],
+  "validation": "Structural checks, exact evidence checks, choice checks, unique IDs, exact duplicates and five-word-shingle near duplicate checks.",
+  "limitations": "Original AI-assisted content has not been calibrated on student responses or reviewed by an independent human SHSAT educator. Difficulty labels are editorial. Passages are shorter than many official reading passages."
+}
