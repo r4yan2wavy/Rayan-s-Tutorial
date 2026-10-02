@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-02T20:16:23.283Z",
+  "checks": [
+    "Real email/password login",
+    "12,750 math generation and grading validations",
+    "Concurrent answer write preserves the winning answer",
+    "Practice scoring, explanations, mistake capture, and submission lock",
+    "Individual retries and repeated-evidence mastery",
+    "Adaptive diagnostic stopping, coverage, ability changes, and fresh retakes",
+    "Exact 100/50/50 mock, 180-minute deadline, passage locking, and refresh restoration",
+    "Idempotent concurrent submission with canonical results",
+    "User data isolation and protected administration",
+    "Logout invalidates the persistent session",
+    "Server-side expiration auto-submit and immutable canonical results",
+    "Protected admin activation, draft batch, approve/reject and safe methods",
+    "Atomic ELA imports, corrected retries, linked difficulty edits and mock rejection",
+    "TypeScript typecheck and production build",
+    "Desktop and mobile UI: answer feedback, notes, save/exit, refresh, review, mistake capture, mock interface",
+    "WebMCP progress, valid practice, and invalid input rejection",
+    "Hosted signup, database seed, persistence, submission, admin secret, and disposable account cleanup"
+  ],
+  "status": "passed",
+  "notes": "Local backend and deterministic engine verification. No production load test or independent security audit.",
+  "productionUrl": "https://shsat-atelier.resfet.chatgpt.site",
+  "verifiedAt": "2026-10-02T20:43:36.898Z"
+}

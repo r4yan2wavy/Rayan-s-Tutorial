@@ -47,3 +47,5 @@ next-env.d.ts
 /outputs/
 /work/
 *.tsbuildinfo
+# Private legacy data and user-ID mappings.
+/migration-input/

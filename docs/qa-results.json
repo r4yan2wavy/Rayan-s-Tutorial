@@ -1,26 +1,59 @@
 {
-  "date": "2026-10-02T20:16:23.283Z",
-  "checks": [
-    "Real email/password login",
-    "12,750 math generation and grading validations",
-    "Concurrent answer write preserves the winning answer",
-    "Practice scoring, explanations, mistake capture, and submission lock",
-    "Individual retries and repeated-evidence mastery",
-    "Adaptive diagnostic stopping, coverage, ability changes, and fresh retakes",
-    "Exact 100/50/50 mock, 180-minute deadline, passage locking, and refresh restoration",
-    "Idempotent concurrent submission with canonical results",
-    "User data isolation and protected administration",
-    "Logout invalidates the persistent session",
-    "Server-side expiration auto-submit and immutable canonical results",
-    "Protected admin activation, draft batch, approve/reject and safe methods",
-    "Atomic ELA imports, corrected retries, linked difficulty edits and mock rejection",
-    "TypeScript typecheck and production build",
-    "Desktop and mobile UI: answer feedback, notes, save/exit, refresh, review, mistake capture, mock interface",
-    "WebMCP progress, valid practice, and invalid input rejection",
-    "Hosted signup, database seed, persistence, submission, admin secret, and disposable account cleanup"
-  ],
-  "status": "passed",
-  "notes": "Local backend and deterministic engine verification. No production load test or independent security audit.",
-  "productionUrl": "https://shsat-atelier.resfet.chatgpt.site",
-  "verifiedAt": "2026-10-02T20:43:36.898Z"
+  "at": "2026-10-02T23:08:25.799Z",
+  "target": "Next.js 16.3.4 / Supabase Auth+Postgres / Vercel",
+  "status": "local-checks-passed; hosted-configuration-pending",
+  "localRuntime": "Node.js 24.19.0 (bundled); production target Node.js 22.x",
+  "checks": {
+    "typecheck": "passed",
+    "lint": "passed with 20 warnings in existing assessment/UI code",
+    "productionBuild": "passed",
+    "tests": {
+      "passed": 19,
+      "failed": 0,
+      "postgres": 15,
+      "assessment": 2,
+      "redirects": 2
+    },
+    "runtimeSmoke": [
+      "All ten protected pages redirect signed-out visitors to login with no-store responses",
+      "Protected data APIs deny signed-out requests",
+      "Cross-origin authentication submission is rejected",
+      "Unconfigured Google provider shows a readable setup message",
+      "Missing, cancelled, and invalid OAuth callback codes return to the trusted login URL"
+    ],
+    "browser": [
+      "Signup shows Name, Email, Password, Confirm password, and Google option",
+      "Google without configured Supabase shows friendly setup message",
+      "Signed-out dashboard redirects to login"
+    ]
+  },
+  "security": {
+    "fixed": [
+      "Server deadline enforced before pending answer saves and in atomic CAS",
+      "Email and Google login submissions share busy guards",
+      "Failed OAuth completion clears partial local session; retry error boundary added"
+    ],
+    "passed": [
+      "Profile trigger ignores admin metadata",
+      "Stable Auth UUID profile creation/backfill",
+      "Owner RLS and cross-account read/write denial",
+      "Browser cannot update role or read answer keys",
+      "Composite session ownership foreign keys",
+      "Atomic CAS answer saves and finalization",
+      "Verified identity precedes all server progress requests",
+      "Cross-origin POST rejected",
+      "Safe internal next and trusted production callback origin",
+      "No custom passwords/hashes/auth sessions in new app database",
+      "No filled env files tracked; secrets remain server-only"
+    ]
+  },
+  "pending": [
+    "Create/configure actual Supabase project and apply migration",
+    "Seed library against hosted Supabase",
+    "Map/import legacy progress into existing Supabase Auth UUIDs",
+    "Set Google provider credentials and correct callback URI",
+    "Import GitHub repo in Vercel, set secrets/public settings, and deploy",
+    "Real email signup/login, refresh/logout and new/returning/cancelled Google tests",
+    "Production and preview redirect/cookie tests on actual assigned Vercel domain"
+  ]
 }
