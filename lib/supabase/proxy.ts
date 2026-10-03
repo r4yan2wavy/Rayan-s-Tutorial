@@ -11,6 +11,10 @@ export async function updateSession(request:NextRequest){
   try{
     const supabase=createServerClient(config.url,config.key,{cookieOptions:{sameSite:'lax',secure:request.nextUrl.protocol==='https:'},cookies:{getAll(){return request.cookies.getAll()},setAll(values,headers){for(const {name,value}of values)request.cookies.set(name,value);response=NextResponse.next({request});for(const {name,value,options}of values)response.cookies.set(name,value,options);for(const [name,value]of Object.entries(headers??{}))response.headers.set(name,value)}}});
     const {data,error}=await supabase.auth.getClaims();const signedIn=!error&&!!data?.claims?.sub;
-    if(protectedPage&&!signedIn)return redirect('/login');if(signedIn&&['/login','/signup'].includes(request.nextUrl.pathname))return redirect(safeNext(request.nextUrl.searchParams.get('next')));if(protectedPage)response.headers.set('Cache-Control','private, no-store');return response;
+    if(protectedPage&&!signedIn)return redirect('/login');
+    // A verified JWT can outlive its server-side user/session. Login and signup
+    // pages use getUser() before redirecting, matching the protected layout and
+    // allowing a stale session to recover without a login/dashboard loop.
+    if(protectedPage)response.headers.set('Cache-Control','private, no-store');return response;
   }catch{return protectedPage?redirect('/login'):response}
 }
