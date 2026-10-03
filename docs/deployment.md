@@ -2,11 +2,13 @@
 
 The SHSAT platform now runs on Supabase Auth/Postgres and Vercel at **[https://rayan-s-tutorial.vercel.app](https://rayan-s-tutorial.vercel.app)**. It keeps the current design, question library, diagnostics, practice, timed mocks, review tools, and content studio.
 
-**Current deployment:** the native Supabase project is `dgusrjdqehsrsgwysklv`. The schema migration is applied, all 11 app tables have RLS enabled, and the seeded library contains **250 passages and 2,895 questions with zero orphaned question references**. The real database connection passed TLS verification with the project CA. Hosted verification used the Ready deployment from GitHub base commit `0c81fda9d6c39264ae341609a756f91e0acf5640`. The old Sites deployment and D1 database remain separate.
+**Current deployment:** the native Supabase project is `dgusrjdqehsrsgwysklv`. The schema migration is applied, all 11 app tables have RLS enabled, and the seeded library contains **250 passages and 2,895 questions with zero orphaned question references**. The real database connection passed TLS verification with the project CA. Vercel reports code commit `87e12d5ce461275342f76ffb5ed1fa8d8ab8c646` as **Ready**. The old Sites deployment and D1 database remain separate.
 
-The Google provider is enabled in Supabase, with its client ID and private secret stored only in Supabase provider configuration. **Confirm email** is off. Supabase's production Site URL and exact app callback are saved. The native integration has provisioned the public Supabase variables, including `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`; production `NEXT_PUBLIC_SITE_URL` and server-only `SUPABASE_DB_SSL_CA` are also configured.
+The Google provider is enabled in Supabase, with its client ID and private secret stored only in Supabase provider configuration. **Confirm email** is off. Supabase's production Site URL and exact app callback are saved. The native integration has provisioned the public Supabase variables, including `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`; production `NEXT_PUBLIC_SITE_URL` and the public CA certificate in server-only `SUPABASE_DB_SSL_CA` are configured. The CA uses Vercel's **Config** type. Google Audience now shows **In production** after the account owner approved and confirmed publication; only basic identity scopes are requested.
 
-**Live Google authentication passed:** first Google consent created the account and opened its dashboard; refresh retained the session. Logout returned to login, and opening the protected dashboard while signed out redirected to login. Returning Google sign-in through the **Create account** button opened the same account's fresh dashboard with zero practice progress. A read-only production database check confirmed one Google account, one Google identity and exactly one matching profile, with no practice records created by these checks. Actual Google cancellation, real new-account email/password authentication, and preview authentication remain untested. The public privacy page and footer link are included in this final update and pass the production build; no post-deployment visual verification of that privacy update is claimed.
+**Live Google authentication passed:** first Google consent created the account and opened its dashboard; refresh retained the session. Logout returned to login, and opening the protected dashboard while signed out redirected to login. Returning Google sign-in through the **Create account** button opened the same account's fresh dashboard with zero practice progress. After publication, dashboard refresh and `read_shsat_progress` both worked and preserved that baseline. A read-only production database check with strict CA verification confirmed one Auth user, one Google identity and exactly one matching profile; sessions, answers, results, mistakes and exposures all remain zero. Actual Google cancellation, real new-account email/password authentication, preview authentication and a saved-practice history round trip remain untested.
+
+The public **[privacy page](https://rayan-s-tutorial.vercel.app/privacy)** passed production accessibility-tree and screenshot review. Google Branding's homepage and privacy URLs were saved and persisted after reload. After Google Audience switched to **In production**, another real logout and **Continue with Google** sign-in with the approved same account reached the dashboard on the production URL with zero progress. The Google chooser visibly links the actual privacy URL. These checks confirm the saved URLs and functional published login; a separate branding/name-display verification is not claimed.
 
 Sections 6–10 are a setup and recovery reference for local development or another environment. The current production setup does **not** need to be repeated; in particular, do not replay its applied migration or recreate its provider credentials.
 
@@ -92,7 +94,7 @@ ADMIN_SETUP_TOKEN=YOUR-PRIVATE-RANDOM-ADMINISTRATOR-CODE
 | `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | That project’s publishable key | Production project’s publishable key | Config |
 | `NEXT_PUBLIC_SITE_URL` | `http://localhost:3000` | Actual `https://…vercel.app` production origin | Config |
 | `SUPABASE_DB_URL` | Private transaction-pooler URI | Production database URI | Secret |
-| `SUPABASE_DB_SSL_CA` | Optional downloaded project CA in PEM form | Same trusted project CA when required | Server-only Secret |
+| `SUPABASE_DB_SSL_CA` | Optional downloaded project CA in PEM form | Configured trusted project CA | Server-only Config |
 | `ADMIN_SETUP_TOKEN` | Optional private activation code | Optional private activation code | Secret |
 
 The browser needs the public Supabase URL and publishable key. **`SUPABASE_DB_URL` is server-only** and enables atomic assessment grading/finalization and related progress updates. On Vercel’s native Supabase integration, the same shared transaction-pooler URI is also available as `POSTGRES_URL`; the server adapter accepts that integration name automatically, while `SUPABASE_DB_URL` remains the explicit/manual override. These variables include a database credential; never prefix them with `NEXT_PUBLIC_`, place them in frontend code, or commit them. Runtime student transactions assume the restricted app role and RLS; setup/import commands are owner operations. No service-role key is used.
@@ -126,7 +128,7 @@ The production project, schema, TLS CA, seed and email/provider settings are alr
 
 The shared pooler supports serverless connections on the free Supabase plan. The adapter holds each verified-user transaction on one connection and avoids named prepared statements. [Database connection guidance](https://supabase.com/docs/guides/database/connecting-to-postgres), [prepared-statement settings](https://supabase.com/docs/guides/troubleshooting/disabling-prepared-statements-qL8lEL).
 
-If Node reports `SELF_SIGNED_CERT_IN_CHAIN` or another untrusted certificate-chain error, open your project's **Database Settings → SSL Configuration → Download certificate**. Save the downloaded trusted CA certificate privately as the server-only `SUPABASE_DB_SSL_CA` environment variable locally and in Vercel. Supply the full PEM contents, including `BEGIN CERTIFICATE` and `END CERTIFICATE` boundaries. Multiline PEM works; a single-line environment value may use literal `\n` for each newline. Do not supply a file path or a Google credential. Restart the local server and redeploy Vercel after changing the value.
+If Node reports `SELF_SIGNED_CERT_IN_CHAIN` or another untrusted certificate-chain error in another environment, open your project's **Database Settings → SSL Configuration → Download certificate**. Save the downloaded public trusted CA certificate as server-only `SUPABASE_DB_SSL_CA` locally and as Vercel **Config**. Supply the full PEM contents, including `BEGIN CERTIFICATE` and `END CERTIFICATE` boundaries. Multiline PEM works; a single-line environment value may use literal `\n` for each newline. Do not supply a file path or a Google credential. Restart the local server and redeploy Vercel after changing the value.
 
 Leaving `SUPABASE_DB_SSL_CA` empty uses Node's default trust store. When supplied, the driver uses that CA with `rejectUnauthorized: true` and retains the default hostname check. Malformed PEM configuration is rejected; there is no fallback that disables verification. The adapter removes URL SSL options so they cannot overwrite the explicit TLS configuration. [Supabase SSL certificate guidance](https://supabase.com/docs/guides/database/connecting-to-postgres#ssl), [node-postgres SSL configuration](https://node-postgres.com/features/ssl).
 
@@ -180,7 +182,7 @@ Verify the intended row afterward, then sign in again or refresh the account vie
 
 ## 8. Google OAuth configuration reference
 
-The existing Google provider is enabled in Supabase and its client ID/secret are saved there. Production authorization reaches Google's account chooser and basic email/profile consent screen. First consent and dashboard arrival, signed-in refresh, logout protection and returning Google sign-in have been verified live. Actual user cancellation remains untested. The instructions below describe the existing configuration and how to maintain it.
+The existing Google provider is enabled in Supabase and its client ID/secret are saved there. Production authorization reaches Google's account chooser and basic email/profile consent screen. First consent and dashboard arrival, signed-in refresh, logout protection and returning Google sign-in have been verified live. Google Audience shows **In production**, with the **Back to testing** control available after the owner-approved publishing confirmation. The homepage and privacy URL settings persisted after reload. Actual user cancellation remains untested. The instructions below describe how to maintain the configuration.
 
 The existing Web client is already created:
 
@@ -197,7 +199,7 @@ Use this existing client. The client ID is public; the secret is private and mus
 
 1. Open [Google Auth Platform](https://console.cloud.google.com/auth/overview?project=cosmic-slate-441822-h2) and select **cosmic-slate-441822-h2** in the project picker.
 2. Open **Branding**. Verify app name **Rayan's Tutorial**, your user support email and developer contact email; save.
-3. Open **Audience**. Use **External** for students outside your Workspace organization. While testing, use **Test users → Add users → Save** for your Google test accounts. When ready for intended students, use the audience’s publishing control and follow any requirements Google displays.
+3. Open **Audience**. The current app uses **External** and shows **In production**. For a separate test environment, use its appropriate audience and test-user settings; follow any requirements Google displays when publishing that environment.
 4. Open **Data Access → Add or remove scopes**. Select only `openid`, `https://www.googleapis.com/auth/userinfo.email`, and `https://www.googleapis.com/auth/userinfo.profile`. Save. No Gmail or Drive permission is needed. [Current Google consent interface](https://developers.google.com/workspace/guides/configure-oauth-consent).
 
 If starting with a new project instead, select/create it in Google Cloud, then use **Google Auth Platform → Branding → Get Started** for app information, audience, contact information and policy review. Create credentials through **Clients → Create client → Web application**. This project's existing client normally makes those creation steps unnecessary. [Google Web OAuth setup](https://developers.google.com/identity/protocols/oauth2/web-server).
@@ -217,7 +219,7 @@ Google only shows a new secret once. If the creation dialog is still open, copy 
 
 ## 9. Vercel deployment reference
 
-The repository is deployed to **https://rayan-s-tutorial.vercel.app**. Hosted checks used the Ready deployment at base commit `0c81fda9d6c39264ae341609a756f91e0acf5640`; the final update includes the public privacy route and footer link. The native Supabase integration has supplied its public settings and database connection. The steps below apply when recreating an environment or changing its configuration.
+The repository is deployed to **https://rayan-s-tutorial.vercel.app**. Code commit `87e12d5ce461275342f76ffb5ed1fa8d8ab8c646` is Ready, including the public privacy route and footer link. Post-publication privacy review, dashboard refresh and progress reading passed. The native Supabase integration has supplied its public settings and database connection. The steps below apply when recreating an environment or changing its configuration.
 
 1. Confirm the completed implementation is in [r4yan2wavy/Rayan-s-Tutorial](https://github.com/r4yan2wavy/Rayan-s-Tutorial) on the branch you will deploy.
 2. Sign into [Vercel](https://vercel.com/) with GitHub and choose its free Hobby plan.
@@ -234,7 +236,7 @@ Vercel assigns a domain based on your project name and availability. `https://ra
 
 Open **Project → Settings → Environment Variables**. For every variable select its type and scopes before saving:
 
-- **Production:** use production Supabase values and actual production `NEXT_PUBLIC_SITE_URL`. Store the database URI and optional admin token as **Secret**.
+- **Production:** use production Supabase values and actual production `NEXT_PUBLIC_SITE_URL`. Store the database URI and optional admin token as **Secret**; the public CA certificate uses server-only **Config**.
 - **Preview:** use a deliberately configured test Supabase project/database, or share the production project only if you intend preview activity to use its data. The public URL/key and database URI must all target the same project. Keep `NEXT_PUBLIC_SITE_URL` stable; preview auth uses Vercel’s generated deployment origin.
 - **Development:** use your local/test project's values and `NEXT_PUBLIC_SITE_URL=http://localhost:3000`.
 
@@ -288,6 +290,8 @@ Never put the Vercel `/auth/callback` URL in Google’s Supabase-provider redire
 
 **Hosted checks passed at the actual production URL:** all ten protected pages redirect signed-out visitors to `/login` with no-store responses; cross-origin login returns 403; native auth configuration is enabled and reports the exact production callback. An intentionally invalid reserved-example email login returns 401 after exercising the real database TLS/throttling path; that invalid attempt created no account. First Google consent then created an account and opened its dashboard. Refresh retained the session. Logout returned to login and the protected dashboard redirected while signed out. Returning Google sign-in through **Create account** opened the same account's fresh dashboard with zero practice progress.
 
+**Post-publication checks passed:** production `/privacy` was verified through its accessibility tree and screenshot. Google Branding's homepage and privacy URLs were saved and persisted on reload, and owner-approved Audience publication now shows **In production**. A subsequent real logout and **Continue with Google** sign-in completed again with the same approved account and opened the production dashboard with zero progress. Google's chooser visibly links the actual `/privacy` URL. Deployed dashboard refresh and `read_shsat_progress` worked without creating practice records. A strict-CA read-only Supabase check confirmed one Auth user, one Google identity, one matching profile, and zero sessions, answers, results, mistakes or question exposures.
+
 `docs/qa-legacy-sites.json` preserves the earlier Sites/D1 verification history. The separate live Google checks above establish the new hosted authentication flow; they do not verify actual user cancellation, valid email/password sign-in, preview authentication or a saved-practice history round trip.
 
 Before deploying code, run the repository’s checks:
@@ -314,6 +318,11 @@ Schema, seed, provider configuration and deployment are complete. The following 
 | Google again after logout | Same account/dashboard/progress | Passed through Create account; same fresh dashboard with zero practice progress |
 | Cancel Google authorization | Friendly retry/login state | Pending |
 | Production Google sign-in | Returns to actual Vercel domain, never localhost | Passed live; dashboard opened on production origin |
+| Published privacy page | Public content displays without sign-in | Passed production accessibility-tree and screenshot review |
+| Saved Google homepage/privacy URLs | Values persist after reload | Passed; separate branding/name-display review not claimed |
+| Google Audience publication | Publishing status In production | Passed after human approval and confirmation |
+| Google sign-in after Audience publication | Logout and Continue with Google return to production dashboard | Passed with same approved account and zero practice progress |
+| Deployed progress read | Same fresh account baseline | Passed dashboard refresh and read_shsat_progress; zero study records |
 | Student A requests Student B’s rows/session IDs | RLS/server denies access or returns no rows | Pending |
 | Open callback without valid code; replay a used code | Safe error redirect, no new session | Pending |
 | Approved preview OAuth | Returns to that preview | Pending |
@@ -340,11 +349,10 @@ The migration’s Auth/profile and self-deletion helper functions use explicit a
 
 ## 13. Remaining verification and optional migration
 
-The production Supabase project, migration, seed, TLS CA, native environment settings, email confirmation setting, Google provider and Vercel deployment are configured. Do not repeat that setup.
+The production Supabase project, migration, seed, TLS CA, native environment settings, email confirmation setting, Google provider, Vercel deployment and public privacy URL are configured. Google Audience is **In production**. No initial deployment/privacy setup action remains; do not repeat that setup or replay the migration.
 
 1. Test actual Google authorization cancellation and a saved-practice history round trip. First and returning Google authentication, refresh and logout protection have already passed.
 2. Test a real new email/password account, successful login, signed-in refresh and logout. No real new-account email test has been completed yet.
 3. Verify intentionally approved preview authentication and its return origin; preview authentication remains untested.
 4. Complete the remaining hosted progress, ownership, error and concurrency checks in section 11. Check hosted policies/advisors and safe logs. Local tests are not an independent security audit or load test.
-5. Confirm the public privacy URL after deploying this final update before using it in Google's branding settings; its production build passed, but post-deployment visual verification has not yet been performed.
-6. **Optional:** if existing students need historical Sites/D1 progress, privately export those records and import only after establishing a verified mapping to existing Supabase Auth UUIDs. No automatic legacy import has occurred.
+5. **Optional:** if existing students need historical Sites/D1 progress, privately export those records and import only after establishing a verified mapping to existing Supabase Auth UUIDs. No automatic legacy import has occurred.

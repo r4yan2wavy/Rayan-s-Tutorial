@@ -1,11 +1,11 @@
 {
-  "at": "2026-10-03T14:07:39Z",
+  "at": "2026-10-03T14:19:46.072Z",
   "target": "Next.js 16.3.4 / Supabase Auth+Postgres / Vercel",
-  "status": "live-configured; local-and-hosted-Google-authentication-checks-passed; email-preview-and-remaining-progress-checks-pending",
+  "status": "live-configured; Google-authentication-and-publication-checks-passed; email-preview-and-remaining-progress-checks-pending",
   "production": {
     "url": "https://rayan-s-tutorial.vercel.app",
     "supabaseProject": "dgusrjdqehsrsgwysklv",
-    "readyGithubCommit": "0c81fda9d6c39264ae341609a756f91e0acf5640",
+    "readyGithubCommit": "87e12d5ce461275342f76ffb5ed1fa8d8ab8c646",
     "migration": "supabase/migrations/202610020001_platform.sql applied",
     "rlsTables": 11,
     "seed": {
@@ -19,9 +19,20 @@
     "supabaseSiteUrl": "https://rayan-s-tutorial.vercel.app",
     "appCallback": "https://rayan-s-tutorial.vercel.app/auth/callback",
     "providerCallback": "https://dgusrjdqehsrsgwysklv.supabase.co/auth/v1/callback",
-    "environment": "Native public Supabase variables already provisioned, including NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY; production NEXT_PUBLIC_SITE_URL and server-only SUPABASE_DB_SSL_CA added",
-    "privacy": "Public route and homepage footer link included in final update; production build passed; post-deployment visual verification not yet performed",
-    "verificationDeploymentNote": "Hosted checks used this Ready base deployment; public privacy source is included in the final update, with no post-deployment visual verification yet claimed"
+    "environment": "Native public Supabase variables provisioned, including NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY; production NEXT_PUBLIC_SITE_URL configured; public CA certificate SUPABASE_DB_SSL_CA stored as server-only Vercel Config",
+    "privacy": "https://rayan-s-tutorial.vercel.app/privacy published and verified through production accessibility tree and screenshot",
+    "verificationDeploymentNote": "Vercel reports this code deployment Ready; post-publication privacy, dashboard refresh and progress reading passed",
+    "googleAudience": "In production after account-owner approval and confirmed publication; Back to testing control visible",
+    "googleScopes": [
+      "openid",
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ],
+    "googleBrandingUrls": {
+      "homepage": "https://rayan-s-tutorial.vercel.app",
+      "privacy": "https://rayan-s-tutorial.vercel.app/privacy",
+      "status": "Saved and persisted after reload; separate branding/name-display verification not claimed"
+    }
   },
   "localRuntime": "Node.js 24.19.0 (bundled); production target Node.js 22.x",
   "checks": {
@@ -58,8 +69,26 @@
       "Dashboard refresh retained the live Google session",
       "Logout returned to login; opening protected dashboard while signed out redirected to login",
       "Returning Google sign-in through Create account opened the same fresh account dashboard with zero practice progress",
-      "Read-only production database check confirmed one Google Auth account, one Google identity and exactly one matching profile; sessions, answers, results, mistakes and exposures remain zero"
-    ]
+      "Production /privacy accessibility tree and screenshot verified after publication",
+      "Google Branding homepage and privacy URL settings saved and persisted after reload; separate branding/name-display verification not claimed",
+      "Google Audience publication confirmed after human approval; status In production and Back to testing control visible",
+      "Final deployed dashboard refresh and read_shsat_progress worked; fresh-account baseline preserved",
+      "Strict-CA read-only Supabase check confirmed one Auth user, one Google identity and one matching profile; sessions, answers, results, mistakes and exposures all zero",
+      "After Google Audience changed to In production, real logout and Continue with Google using the approved same account completed again and opened production dashboard with zero practice progress",
+      "Google chooser visibly links the actual production /privacy URL"
+    ],
+    "productionDatabaseReadOnly": {
+      "strictCaVerified": true,
+      "authUsers": 1,
+      "googleIdentities": 1,
+      "profiles": 1,
+      "matchingProfiles": 1,
+      "sessions": 0,
+      "answers": 0,
+      "results": 0,
+      "mistakes": 0,
+      "exposures": 0
+    }
   },
   "security": {
     "fixed": [
@@ -88,7 +117,6 @@
     "Saved-practice history and progress round trip across logout and returning Google login",
     "Approved preview authentication and redirect/cookie verification",
     "Remaining hosted per-user progress, ownership, error and concurrency checks",
-    "Public privacy visual verification after deploying this final update, before Google branding use",
     "Optional legacy progress import only after owner-verified mapping to existing Supabase Auth UUIDs",
     "Independent production security audit and load test"
   ]
