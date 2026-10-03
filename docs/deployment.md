@@ -1,8 +1,14 @@
-# Rayan's Tutorial — Supabase and Vercel setup
+# Rayan's Tutorial — deployment status and setup reference
 
-This guide prepares the existing SHSAT platform for Supabase Auth/Postgres and a free Vercel `*.vercel.app` production domain. It keeps the current design, question library, diagnostics, practice, timed mocks, review tools, and content studio.
+The SHSAT platform now runs on Supabase Auth/Postgres and Vercel at **[https://rayan-s-tutorial.vercel.app](https://rayan-s-tutorial.vercel.app)**. It keeps the current design, question library, diagnostics, practice, timed mocks, review tools, and content studio.
 
-**MANUAL ACTION REQUIRED:** A Supabase project, provider configuration, private environment values, and a real Vercel deployment still need your account setup. Google/Vercel production login has not been tested against those accounts. The old Sites deployment and its D1 database remain separate and intact.
+**Current deployment:** the native Supabase project is `dgusrjdqehsrsgwysklv`. The schema migration is applied, all 11 app tables have RLS enabled, and the seeded library contains **250 passages and 2,895 questions with zero orphaned question references**. The real database connection passed TLS verification with the project CA. Hosted verification used the Ready deployment from GitHub base commit `0c81fda9d6c39264ae341609a756f91e0acf5640`. The old Sites deployment and D1 database remain separate.
+
+The Google provider is enabled in Supabase, with its client ID and private secret stored only in Supabase provider configuration. **Confirm email** is off. Supabase's production Site URL and exact app callback are saved. The native integration has provisioned the public Supabase variables, including `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`; production `NEXT_PUBLIC_SITE_URL` and server-only `SUPABASE_DB_SSL_CA` are also configured.
+
+**Live Google authentication passed:** first Google consent created the account and opened its dashboard; refresh retained the session. Logout returned to login, and opening the protected dashboard while signed out redirected to login. Returning Google sign-in through the **Create account** button opened the same account's fresh dashboard with zero practice progress. A read-only production database check confirmed one Google account, one Google identity and exactly one matching profile, with no practice records created by these checks. Actual Google cancellation, real new-account email/password authentication, and preview authentication remain untested. The public privacy page and footer link are included in this final update and pass the production build; no post-deployment visual verification of that privacy update is claimed.
+
+Sections 6–10 are a setup and recovery reference for local development or another environment. The current production setup does **not** need to be repeated; in particular, do not replay its applied migration or recreate its provider credentials.
 
 ## 1. What changed
 
@@ -29,8 +35,9 @@ The central new integration files are:
 - `db/statements.ts`: compatibility layer for the existing assessment database operations.
 - `supabase/migrations/202610020001_platform.sql`: Supabase schema, triggers, permissions and RLS.
 - `scripts/seed.ts` and `scripts/import-legacy.ts`: `pnpm db:seed` and `pnpm db:import-legacy` initialize content and import explicitly mapped historical data.
-- `tests/database.test.ts`, `tests/assessment.test.ts`, `tests/redirects.test.ts`: local database, assessment, deadline, and redirect checks.
+- `tests/database.test.ts`, `tests/assessment.test.ts`, `tests/redirects.test.ts`, and `tests/database-config.test.ts`: local database, assessment, deadline, redirect and TLS/configuration checks.
 - `app/error.tsx`: friendly retry state when sign-in/progress services are unavailable.
+- `app/privacy/page.tsx` and `app/privacy/privacy.css`: public privacy notice describing the implemented account, practice, authentication, service-provider and deletion behavior.
 - `vercel.json`: Vercel deployment configuration.
 - This deployment guide, also supplied separately as `rayans-tutorial-setup.md`.
 
@@ -46,7 +53,7 @@ Modified integration files include `eslint.config.mjs`, `lib/math.ts` (declarati
 
 ## 4. Database changes
 
-Run **`supabase/migrations/202610020001_platform.sql` once in a new intended Supabase project**. It creates `profiles` linked to `auth.users.id`, plus `passages`, `questions`, `test_sessions`, `answers`, `question_exposure`, `results`, `mistakes`, `mock_tests`, `content_batches`, and `rate_limits`.
+**Applied in production:** `supabase/migrations/202610020001_platform.sql` creates `profiles` linked to `auth.users.id`, plus `passages`, `questions`, `test_sessions`, `answers`, `question_exposure`, `results`, `mistakes`, `mock_tests`, `content_batches`, and `rate_limits`. All 11 tables have RLS enabled. Run this migration once only when preparing a new intended Supabase project; do not replay it on the configured production project.
 
 Profiles hold email, display name, avatar, protected student/admin role and timestamps. Auth triggers initialize profiles and synchronize display information without overwriting established progress. Repeated login ensures the same row exists rather than generating another profile.
 
@@ -56,7 +63,7 @@ The old D1 database is not automatically copied. Historical progress needs an ex
 
 ## 5. Authentication flow
 
-**Email signup:** the existing form validates name, email, password length and matching confirmation, calls Supabase Auth, ensures a profile and opens the dashboard after a session is received. Disable **Confirm email** as described below so the account is immediately usable.
+**Email signup:** the existing form validates name, email, password length and matching confirmation, calls Supabase Auth, ensures a profile and opens the dashboard after a session is received. Production **Confirm email** is already off. A real new-account signup has not yet been verified.
 
 **Email login:** Supabase verifies credentials, writes session cookies and opens the dashboard. Invalid credentials show a safe message such as “Incorrect email or password.” App code does not store or hash these passwords.
 
@@ -64,9 +71,9 @@ The old D1 database is not automatically copied. Historical progress needs an ex
 
 **Refresh and protection:** browser/server clients use Supabase cookies. Next.js 16 `proxy.ts` refreshes tokens and carries refreshed cookies and cache headers into the response. Protected API operations independently verify the user. Login/signup can redirect an already signed-in student to their dashboard. Logout signs out and returns to a public page; protected pages become unavailable. [Current Supabase SSR approach](https://supabase.com/docs/guides/auth/server-side/creating-a-client).
 
-## 6. Environment variables needed
+## 6. Environment configuration reference
 
-Copy `.env.example` to a private `.env.local` in the repository folder. Fill your own values:
+Production variables are already provisioned through the native Supabase integration, with production `NEXT_PUBLIC_SITE_URL` and `SUPABASE_DB_SSL_CA` added. For a separate local environment, copy `.env.example` to a private `.env.local` in the repository folder and fill the intended project's values:
 
 ```dotenv
 NEXT_PUBLIC_SUPABASE_URL=https://YOUR-PROJECT-REF.supabase.co
@@ -92,7 +99,9 @@ The browser needs the public Supabase URL and publishable key. **`SUPABASE_DB_UR
 
 The Google client secret belongs directly in Supabase’s Google provider settings. It does not belong in Vercel or any source file. `.env` and `.env.local` are ignored; `.env.example` has placeholders only.
 
-## 7. Supabase setup steps you must perform
+## 7. Supabase setup reference for another environment
+
+The production project, schema, TLS CA, seed and email/provider settings are already configured. The steps below are retained for local setup and recovery; they are not a request to recreate the live project.
 
 ### Create the project and copy API configuration
 
@@ -158,7 +167,7 @@ Verify the intended row afterward, then sign in again or refresh the account vie
 
 ### Preserve existing students’ historical progress
 
-**MANUAL ACTION REQUIRED:** Export old Sites/D1 records privately before a migration. The old deployment continues to use its own database until you deliberately change it.
+**Optional legacy migration:** export old Sites/D1 records privately only if historical student progress needs to move. The old deployment continues to use its own database. No legacy progress has been imported; a verified mapping to existing Supabase Auth UUIDs is required first.
 
 1. Export app records, excluding custom password hashes, salts and session tokens.
 2. Have each existing student establish a Supabase Auth account. The new Auth UUID may differ from their old UUID.
@@ -169,7 +178,9 @@ Verify the intended row afterward, then sign in again or refresh the account vie
 
 `pnpm db:seed` initializes question-bank content; it does not import students. Review the import’s output before moving existing students to the Vercel link.
 
-## 8. Google OAuth setup steps you must perform
+## 8. Google OAuth configuration reference
+
+The existing Google provider is enabled in Supabase and its client ID/secret are saved there. Production authorization reaches Google's account chooser and basic email/profile consent screen. First consent and dashboard arrival, signed-in refresh, logout protection and returning Google sign-in have been verified live. Actual user cancellation remains untested. The instructions below describe the existing configuration and how to maintain it.
 
 The existing Web client is already created:
 
@@ -204,14 +215,16 @@ Google’s Authorized redirect URI is the **Supabase callback**, while the websi
 
 Google only shows a new secret once. If the creation dialog is still open, copy it directly into Supabase. If it was not securely saved, open the client’s secret controls, create a replacement, and update Supabase before retiring a previously used secret. Do not paste secrets into chat, source or GitHub. [Google OAuth secret management](https://support.google.com/cloud/answer/15549257).
 
-## 9. Vercel setup and deployment steps you must perform
+## 9. Vercel deployment reference
+
+The repository is deployed to **https://rayan-s-tutorial.vercel.app**. Hosted checks used the Ready deployment at base commit `0c81fda9d6c39264ae341609a756f91e0acf5640`; the final update includes the public privacy route and footer link. The native Supabase integration has supplied its public settings and database connection. The steps below apply when recreating an environment or changing its configuration.
 
 1. Confirm the completed implementation is in [r4yan2wavy/Rayan-s-Tutorial](https://github.com/r4yan2wavy/Rayan-s-Tutorial) on the branch you will deploy.
 2. Sign into [Vercel](https://vercel.com/) with GitHub and choose its free Hobby plan.
 3. Click **Add New → Project**.
 4. Under **Import Git Repository**, select **r4yan2wavy/Rayan-s-Tutorial → Import**. If missing, use **Adjust GitHub App Permissions** to allow Vercel access to this repository.
 5. Choose a project name. Use **Framework Preset: Next.js** and the repository root as **Root Directory**. Use pnpm from the committed lockfile, build command `pnpm build`, and the default Next.js output directory. Select **Node.js 22.x** if a runtime setting is offered; it matches `package.json`.
-6. Add the four required environment values from section 6. Also add **ENABLE_EXPERIMENTAL_COREPACK=1** for Production/Preview so Vercel uses the committed `packageManager` value `pnpm@11.19.0`. Leave the install-command override unset for automatic detection. [Vercel package manager configuration](https://vercel.com/docs/package-managers). Choose the intended `https://…vercel.app` origin for your selected project name initially; do not test authentication until you verify the actual assigned domain below. Add `ADMIN_SETUP_TOKEN` only if you want the administrator activation flow.
+6. Ensure the environment values from section 6 are supplied, using the native Supabase integration values where already provisioned. For a new environment, also add **ENABLE_EXPERIMENTAL_COREPACK=1** for Production/Preview so Vercel uses the committed `packageManager` value `pnpm@11.19.0`. Leave the install-command override unset for automatic detection. [Vercel package manager configuration](https://vercel.com/docs/package-managers). Verify its assigned production domain before testing authentication. Add `ADMIN_SETUP_TOKEN` only if you want the administrator activation flow.
 7. Click **Deploy**. Wait for a successful/Ready deployment; inspect build logs if it fails.
 8. Open **Settings → Domains** and copy the actual production `*.vercel.app` domain.
 
@@ -233,9 +246,15 @@ Confirm **Settings → Git** shows the intended repository and production branch
 
 ## 10. Exact redirect URLs and origins
 
-After Vercel assigns the real domain, use that exact production origin in all four places: **Vercel Domains**, **production `NEXT_PUBLIC_SITE_URL`**, **Supabase Site URL**, and **Google Authorized JavaScript origins**. Correct any temporary value and redeploy Vercel.
+The current production origin is **https://rayan-s-tutorial.vercel.app**. Its `NEXT_PUBLIC_SITE_URL`, Supabase Site URL and exact Supabase app callback are saved. When changing domains or creating another environment, reconcile that environment's origin across **Vercel Domains**, **production `NEXT_PUBLIC_SITE_URL`**, **Supabase Site URL**, and **Google Authorized JavaScript origins**, then redeploy after environment changes.
 
-Open **Supabase → Authentication → URL Configuration**, set **Site URL** to `https://ACTUAL-VERCEL-DOMAIN`, then add these **Redirect URLs** and save:
+Current production Site URL: `https://rayan-s-tutorial.vercel.app`. The exact app callback saved in Supabase is:
+
+```text
+https://rayan-s-tutorial.vercel.app/auth/callback
+```
+
+The Google provider callback is `https://dgusrjdqehsrsgwysklv.supabase.co/auth/v1/callback`. For another environment, open **Supabase → Authentication → URL Configuration**, set its **Site URL**, then add its own exact **Redirect URLs**:
 
 ```text
 http://localhost:3000/**
@@ -254,20 +273,22 @@ Do not allow every Vercel project or every website. Preview origins come from Ve
 
 | Dashboard setting | Value |
 |---|---|
-| Supabase Site URL | Actual Vercel production origin |
-| Supabase production app callback | Actual production origin + `/auth/callback` |
+| Supabase Site URL | `https://rayan-s-tutorial.vercel.app` |
+| Supabase production app callback | `https://rayan-s-tutorial.vercel.app/auth/callback` |
 | Supabase local app redirect | `http://localhost:3000/**` |
 | Supabase preview redirects | Your account/team-specific pattern above |
 | Google JavaScript origins | Actual Vercel origin and `http://localhost:3000` |
-| Google Authorized redirect URI | **Exact callback copied from Supabase’s Google provider** |
+| Google Authorized redirect URI | `https://dgusrjdqehsrsgwysklv.supabase.co/auth/v1/callback` |
 
 Never put the Vercel `/auth/callback` URL in Google’s Supabase-provider redirect field. Never use localhost as the production site URL. The app accepts only approved internal `next` destinations; external URLs, protocol-relative redirects and malformed paths are rejected.
 
 ## 11. Testing results and checklist
 
-**Local checks passed:** TypeScript, production build, lint (0 errors; 20 warnings in the existing assessment/UI code), and all 19 automated tests: 15 PostgreSQL/RLS/transaction checks, 2 assessment checks, and 2 redirect checks. The production server also passed signed-out route/API protection, cross-origin request rejection, and missing/cancelled/invalid OAuth callback checks. Browser review confirmed the signup fields, Google option/setup error, and login redirect. See `docs/qa-results.json`. Checks ran with the bundled Node.js 24.19.0; Vercel targets Node.js 22.x.
+**Local checks passed:** TypeScript, the production build including `/privacy`, lint (0 errors; 20 warnings in the existing assessment/UI code), and all **26 automated tests**: 15 PostgreSQL/RLS/transaction checks, 2 assessment checks, 2 redirect checks and 7 database/TLS configuration checks. The local production server also passed signed-out route/API protection, cross-origin request rejection, and missing/cancelled/invalid OAuth callback checks. Browser review confirmed the signup fields, Google option/setup error, and login redirect. See `docs/qa-results.json`. Checks ran with the bundled Node.js 24.19.0; Vercel targets Node.js 22.x.
 
-`docs/qa-legacy-sites.json` preserves the earlier Sites/D1 verification history. Neither that history nor these local tests proves the new hosted Supabase/Vercel Google flow works; real account tests remain pending.
+**Hosted checks passed at the actual production URL:** all ten protected pages redirect signed-out visitors to `/login` with no-store responses; cross-origin login returns 403; native auth configuration is enabled and reports the exact production callback. An intentionally invalid reserved-example email login returns 401 after exercising the real database TLS/throttling path; that invalid attempt created no account. First Google consent then created an account and opened its dashboard. Refresh retained the session. Logout returned to login and the protected dashboard redirected while signed out. Returning Google sign-in through **Create account** opened the same account's fresh dashboard with zero practice progress.
+
+`docs/qa-legacy-sites.json` preserves the earlier Sites/D1 verification history. The separate live Google checks above establish the new hosted authentication flow; they do not verify actual user cancellation, valid email/password sign-in, preview authentication or a saved-practice history round trip.
 
 Before deploying code, run the repository’s checks:
 
@@ -278,20 +299,21 @@ pnpm test
 pnpm build
 ```
 
-After applying the schema, seeding, completing Google configuration and deploying, complete all these tests locally and on the real production origin:
+Schema, seed, provider configuration and deployment are complete. The following table separates confirmed hosted behavior from remaining full-account verification:
 
 | Test | Expected outcome | Real Supabase/Vercel status |
 |---|---|---|
-| New email/password signup | Immediate session, one profile, dashboard | Pending manual setup |
+| New email/password signup | Immediate session, one profile, dashboard | Pending real new-account test |
 | Duplicate email, weak password, mismatched confirmation | Safe readable error; no repeated submission | Pending |
-| Logout | Signed out; protected pages/data unavailable | Pending |
-| Email/password login | Dashboard; invalid credentials get generic error | Pending |
-| Refresh while signed in, including `/dashboard` | Same signed-in account | Pending |
-| Open protected page while signed out | Login redirect | Pending |
-| Google as a new user | Google → Supabase → app callback → profile/dashboard | Pending |
-| Google again after logout | Same Auth UUID/profile/progress | Pending |
+| Logout | Signed out; protected pages/data unavailable | Live Google session returned to login; protected dashboard redirected |
+| Email/password login | Dashboard; invalid credentials get generic error | Invalid reserved-example login returned 401; valid login pending |
+| Refresh while signed in, including `/dashboard` | Same signed-in account | Passed for live Google account |
+| Open protected page while signed out | Login redirect | Passed on all ten production protected pages with no-store |
+| Google authorization start | Actual Google account chooser and basic email/profile consent | Passed; first consent completed |
+| Google as a new user | Google → Supabase → app callback → profile/dashboard | Passed live; account created and dashboard opened |
+| Google again after logout | Same account/dashboard/progress | Passed through Create account; same fresh dashboard with zero practice progress |
 | Cancel Google authorization | Friendly retry/login state | Pending |
-| Production Google sign-in | Returns to actual Vercel domain, never localhost | Pending |
+| Production Google sign-in | Returns to actual Vercel domain, never localhost | Passed live; dashboard opened on production origin |
 | Student A requests Student B’s rows/session IDs | RLS/server denies access or returns no rows | Pending |
 | Open callback without valid code; replay a used code | Safe error redirect, no new session | Pending |
 | Approved preview OAuth | Returns to that preview | Pending |
@@ -300,7 +322,7 @@ After applying the schema, seeding, completing Google configuration and deployin
 | Concurrent/expired attempt finalization | One authoritative result, no duplicate grading | Pending |
 | Network failure / missing configuration | Readable retry/configuration message, no blank page | Pending |
 
-The local database/schema tests can establish policy and transaction behavior in a test database. A configured hosted project is still needed to verify real Supabase email signup, cookie refresh and Google OAuth. Production verification needs the actual Vercel URL, not an example domain.
+The local database/schema tests establish policy and transaction behavior in a test database. The hosted project is configured, signed-out/request checks pass, and live first/returning Google login, refresh and logout protection pass. Real new-account email signup and valid email/password login, actual Google cancellation, preview authentication, and saved-practice persistence across login remain untested.
 
 ## 12. Security review
 
@@ -316,17 +338,13 @@ Verify the following before sharing the production link:
 
 The migration’s Auth/profile and self-deletion helper functions use explicit authorization, qualified object names and restricted execution grants. They require review together with the actual hosted permissions. A code review/local test is not an independent security audit or production load test. Open the hosted project’s **Security Advisor** and **Performance Advisor** after applying the migration and resolve relevant findings without relaxing ownership policies. [Supabase Advisors](https://supabase.com/docs/guides/observability/advisors).
 
-## 13. Anything still requiring manual action
+## 13. Remaining verification and optional migration
 
-**MANUAL ACTION REQUIRED:**
+The production Supabase project, migration, seed, TLS CA, native environment settings, email confirmation setting, Google provider and Vercel deployment are configured. Do not repeat that setup.
 
-1. Create/choose the free Supabase project; copy the public URL/key and private transaction-pooler URI.
-2. Apply `supabase/migrations/202610020001_platform.sql`; run `pnpm db:seed` with private local configuration.
-3. Disable **Email → Confirm email** and keep new signups enabled.
-4. Add Supabase’s exact callback to the existing Google Web client; enter its ID/secret into Supabase and enable Google.
-5. Import the updated GitHub repository into Vercel, add the four required values and optional admin token, and deploy.
-6. Copy the actual free production domain and reconcile it across Vercel, Supabase URL Configuration, Google origins and `NEXT_PUBLIC_SITE_URL`; redeploy after variable changes.
-7. Complete the pending real-account and production tests. Check hosted policies/advisors and safe logs.
-8. If existing students need their historical progress, privately export D1 records and complete a verified UUID-mapped import before directing them to the new site.
-
-These account settings and deployment checks are not claimed complete until you perform them or connect the corresponding accounts for authorized access. The provided code and documentation prepare the project; they do not create an unseen Supabase/Vercel account configuration.
+1. Test actual Google authorization cancellation and a saved-practice history round trip. First and returning Google authentication, refresh and logout protection have already passed.
+2. Test a real new email/password account, successful login, signed-in refresh and logout. No real new-account email test has been completed yet.
+3. Verify intentionally approved preview authentication and its return origin; preview authentication remains untested.
+4. Complete the remaining hosted progress, ownership, error and concurrency checks in section 11. Check hosted policies/advisors and safe logs. Local tests are not an independent security audit or load test.
+5. Confirm the public privacy URL after deploying this final update before using it in Google's branding settings; its production build passed, but post-deployment visual verification has not yet been performed.
+6. **Optional:** if existing students need historical Sites/D1 progress, privately export those records and import only after establishing a verified mapping to existing Supabase Auth UUIDs. No automatic legacy import has occurred.

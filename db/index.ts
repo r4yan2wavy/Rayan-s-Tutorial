@@ -11,7 +11,6 @@ function connection(){
     // pooler as POSTGRES_URL. Keep SUPABASE_DB_URL as the explicit/manual
     // override used by local setup and other deployment providers.
     const url=configuredDatabaseUrl(process.env);
-    for(const name of ['sslmode','sslcert','sslkey','sslrootcert'])url.searchParams.delete(name);
     pool=new Pool({connectionString:url.toString(),ssl:configuredDatabaseSsl(process.env),max:2,idleTimeoutMillis:20000,connectionTimeoutMillis:10000,statement_timeout:30000});
     pool.on('error',()=>console.error('Database connection interrupted.'));
   }

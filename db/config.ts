@@ -7,6 +7,8 @@ export function configuredDatabaseUrl(env:DatabaseEnvironment){
   let url:URL;
   try{url=new URL(value)}catch{throw new Error('Invalid database configuration.')}
   if(!['postgres:','postgresql:'].includes(url.protocol)||!url.hostname)throw new Error('Invalid database configuration.');
+  // node-postgres URL SSL fields override its explicit, verified TLS options.
+  for(const name of ['ssl','sslmode','sslcert','sslkey','sslrootcert'])url.searchParams.delete(name);
   return url;
 }
 
