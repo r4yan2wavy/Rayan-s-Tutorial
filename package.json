@@ -13,6 +13,7 @@
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test tests/*.test.ts",
     "db:seed": "node --conditions=react-server --import tsx scripts/seed.ts",
+    "db:seed-editing": "node --conditions=react-server --import tsx scripts/seed-editing.ts",
     "db:import-legacy": "node --conditions=react-server --import tsx scripts/import-legacy.ts"
   },
   "dependencies": {

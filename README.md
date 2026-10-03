@@ -2,7 +2,9 @@
 
 The existing SHSAT practice platform, prepared for Next.js 16, Supabase Auth/PostgreSQL, and free Vercel hosting. Its current design, adaptive diagnostic, practice, timed mocks, explanations, mistake bank, progress, and content studio are preserved.
 
-Start with [the complete setup guide](docs/deployment.md). Production Google login requires the Supabase provider and dashboard configuration described there; it has not yet been tested on your hosted accounts.
+The live site is [rayan-s-tutorial.vercel.app](https://rayan-s-tutorial.vercel.app). Google signup/login is configured and tested in production. Start with [the complete setup guide](docs/deployment.md) for setup and recovery details.
+
+The diagnostic contains exactly **100 questions: 50 ELA and 50 Math**. ELA includes 40 reading questions in complete passage sets and 10 revising/editing questions. There are 50 original passages at each of five levels. Reading level changes between passage sets; Math generates validated questions and changes difficulty after answers. Progress saves throughout, and all 100 answers are required before completion. Active older diagnostics upgrade while preserving saved work; completed older results remain intact.
 
 ## Local development
 
@@ -26,3 +28,7 @@ pnpm build
 ```
 
 Tests exercise PostgreSQL policies, atomic saves, profile creation, safe redirects, and assessment generation locally. Real Google/account/production checks remain in the deployment guide. Historical Sites/D1 records can be imported with an explicit trusted UUID mapping; old passwords and auth sessions are never imported.
+
+For an already seeded database, run `pnpm db:seed-editing` before deploying this diagnostic update. It adds the 200 versioned revising/editing questions without rewriting existing answers or question records.
+
+See [diagnostic behavior and verification](docs/diagnostic-update.md) for the section breakdown, saved-session handling, and content limits.

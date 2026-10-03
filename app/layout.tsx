@@ -4,7 +4,7 @@ import "./studio.css";
 
 export const metadata: Metadata = {
   title: "Rayan's Tutorial — Your practice studio",
-  description: "Adaptive SHSAT diagnostics, original practice, 100-question simulations, and breakthrough explanations.",
+  description: "100-question SHSAT diagnostics with 50 ELA and 50 Math, original practice, simulations, and breakthrough explanations.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
