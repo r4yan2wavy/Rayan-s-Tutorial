@@ -73,6 +73,8 @@ NEXT_PUBLIC_SUPABASE_URL=https://YOUR-PROJECT-REF.supabase.co
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=YOUR-SUPABASE-PUBLISHABLE-KEY
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 SUPABASE_DB_URL=YOUR-PRIVATE-TRANSACTION-POOLER-URI
+# Optional server-only project CA, if Node reports an untrusted certificate chain:
+SUPABASE_DB_SSL_CA=
 # Optional, only for the existing administrator activation flow:
 ADMIN_SETUP_TOKEN=YOUR-PRIVATE-RANDOM-ADMINISTRATOR-CODE
 ```
@@ -83,9 +85,10 @@ ADMIN_SETUP_TOKEN=YOUR-PRIVATE-RANDOM-ADMINISTRATOR-CODE
 | `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | That project’s publishable key | Production project’s publishable key | Config |
 | `NEXT_PUBLIC_SITE_URL` | `http://localhost:3000` | Actual `https://…vercel.app` production origin | Config |
 | `SUPABASE_DB_URL` | Private transaction-pooler URI | Production database URI | Secret |
+| `SUPABASE_DB_SSL_CA` | Optional downloaded project CA in PEM form | Same trusted project CA when required | Server-only Secret |
 | `ADMIN_SETUP_TOKEN` | Optional private activation code | Optional private activation code | Secret |
 
-The browser needs the public Supabase URL and publishable key. **`SUPABASE_DB_URL` is server-only** and enables atomic assessment grading/finalization and related progress updates. It includes a database credential; never prefix it with `NEXT_PUBLIC_`, place it in frontend code, or commit it. Runtime student transactions assume the restricted app role and RLS; setup/import commands are owner operations. No service-role key is used.
+The browser needs the public Supabase URL and publishable key. **`SUPABASE_DB_URL` is server-only** and enables atomic assessment grading/finalization and related progress updates. On Vercel’s native Supabase integration, the same shared transaction-pooler URI is also available as `POSTGRES_URL`; the server adapter accepts that integration name automatically, while `SUPABASE_DB_URL` remains the explicit/manual override. These variables include a database credential; never prefix them with `NEXT_PUBLIC_`, place them in frontend code, or commit them. Runtime student transactions assume the restricted app role and RLS; setup/import commands are owner operations. No service-role key is used.
 
 The Google client secret belongs directly in Supabase’s Google provider settings. It does not belong in Vercel or any source file. `.env` and `.env.local` are ignored; `.env.example` has placeholders only.
 
@@ -110,9 +113,13 @@ The Google client secret belongs directly in Supabase’s Google provider settin
 1. Click **Connect → Transaction pooler**.
 2. Copy the full URI Supabase shows. Replace `[YOUR-PASSWORD]` with the saved database password; percent-encode reserved characters such as `#`, `?`, `&`, and spaces.
 3. Keep the exact host, username and port from the dialog. The shared transaction pooler normally uses port `6543`; its host cannot be inferred reliably from your region.
-4. Save that URI privately as `SUPABASE_DB_URL` locally and as a Vercel **Secret**.
+4. Save that URI privately as `SUPABASE_DB_URL` locally and as a Vercel **Secret**. If the project is connected through Vercel’s native Supabase integration, its `POSTGRES_URL` transaction-pooler value is accepted automatically, so no duplicate secret is needed.
 
 The shared pooler supports serverless connections on the free Supabase plan. The adapter holds each verified-user transaction on one connection and avoids named prepared statements. [Database connection guidance](https://supabase.com/docs/guides/database/connecting-to-postgres), [prepared-statement settings](https://supabase.com/docs/guides/troubleshooting/disabling-prepared-statements-qL8lEL).
+
+If Node reports `SELF_SIGNED_CERT_IN_CHAIN` or another untrusted certificate-chain error, open your project's **Database Settings → SSL Configuration → Download certificate**. Save the downloaded trusted CA certificate privately as the server-only `SUPABASE_DB_SSL_CA` environment variable locally and in Vercel. Supply the full PEM contents, including `BEGIN CERTIFICATE` and `END CERTIFICATE` boundaries. Multiline PEM works; a single-line environment value may use literal `\n` for each newline. Do not supply a file path or a Google credential. Restart the local server and redeploy Vercel after changing the value.
+
+Leaving `SUPABASE_DB_SSL_CA` empty uses Node's default trust store. When supplied, the driver uses that CA with `rejectUnauthorized: true` and retains the default hostname check. Malformed PEM configuration is rejected; there is no fallback that disables verification. The adapter removes URL SSL options so they cannot overwrite the explicit TLS configuration. [Supabase SSL certificate guidance](https://supabase.com/docs/guides/database/connecting-to-postgres#ssl), [node-postgres SSL configuration](https://node-postgres.com/features/ssl).
 
 ### Disable mandatory email confirmation
 

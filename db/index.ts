@@ -2,16 +2,17 @@ import 'server-only';
 import {AsyncLocalStorage} from 'node:async_hooks';
 import {Pool} from 'pg';
 import {ApplicationDatabase,type Transaction} from './statements';
+import {configuredDatabaseSsl,configuredDatabaseUrl} from './config';
 const context=new AsyncLocalStorage<{userId:string|null;setup?:boolean}>();
 let pool:Pool|undefined;
 function connection(){
   if(!pool){
-    const value=process.env.SUPABASE_DB_URL;
-    if(!value)throw Object.assign(new Error('The progress database is not configured.'),{status:503});
-    const url=new URL(value);
-    if(!['postgres:','postgresql:'].includes(url.protocol))throw new Error('Invalid database configuration.');
+    // The native Vercel Supabase integration exposes its shared transaction
+    // pooler as POSTGRES_URL. Keep SUPABASE_DB_URL as the explicit/manual
+    // override used by local setup and other deployment providers.
+    const url=configuredDatabaseUrl(process.env);
     for(const name of ['sslmode','sslcert','sslkey','sslrootcert'])url.searchParams.delete(name);
-    pool=new Pool({connectionString:url.toString(),ssl:{rejectUnauthorized:true},max:2,idleTimeoutMillis:20000,connectionTimeoutMillis:10000,statement_timeout:30000});
+    pool=new Pool({connectionString:url.toString(),ssl:configuredDatabaseSsl(process.env),max:2,idleTimeoutMillis:20000,connectionTimeoutMillis:10000,statement_timeout:30000});
     pool.on('error',()=>console.error('Database connection interrupted.'));
   }
   return pool;

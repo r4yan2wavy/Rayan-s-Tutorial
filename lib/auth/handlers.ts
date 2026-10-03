@@ -4,12 +4,13 @@ import {publicSupabaseConfig} from '@/lib/supabase/config';
 import {configuredOrigin} from './redirects';
 import {currentAuthUser,ensureProfile} from './user';
 import {database,withDatabaseUser} from '@/db';
+import {configuredDatabaseSsl,configuredDatabaseUrl} from '@/db/config';
 function fail(message:string,status=400):never{throw Object.assign(new Error(message),{status})}
 function json(data:unknown,status=200){return Response.json(data,{status,headers:{'Cache-Control':'private, no-store','Pragma':'no-cache','Expires':'0','X-Content-Type-Options':'nosniff'}})}
 export async function authResponse(request:Request,route:string,body:Record<string,unknown>){
   if(route==='auth/config'){
     if(request.method!=='GET')fail('Method not allowed.',405);
-    try{return json({enabled:!!publicSupabaseConfig()&&!!process.env.SUPABASE_DB_URL,callbackUrl:configuredOrigin(process.env)+'/auth/callback'})}catch{return json({enabled:false})}
+    try{configuredDatabaseUrl(process.env);configuredDatabaseSsl(process.env);return json({enabled:!!publicSupabaseConfig(),callbackUrl:configuredOrigin(process.env)+'/auth/callback'})}catch{return json({enabled:false})}
   }
   if(route==='auth/me'){if(request.method!=='GET')fail('Method not allowed.',405);const user=await currentAuthUser();return json({user:user?await ensureProfile(user):null})}
   if(request.method!=='POST')fail('Method not allowed.',405);
