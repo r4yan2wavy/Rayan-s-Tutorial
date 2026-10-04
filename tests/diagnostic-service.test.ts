@@ -5,6 +5,7 @@ import {PGlite} from '@electric-sql/pglite';
 import {ApplicationDatabase,type Transaction} from '../db/statements';
 import {serviceRuntime} from './helpers/service-runtime';
 import type {Question} from '../lib/assessment';
+import {legacyBeadQuestion} from './helpers/math-fixtures';
 
 type TestSessionView={
   session:{id:string;version:number;total:number;expires:number|null;cursor:number;answered:number;answers:Record<string,unknown>;tools:Record<string,{notes?:string}>;questionMap:{subject:string}[];diagnostic:{order:string}};
@@ -110,10 +111,37 @@ test('passage selection stays at the requested level, excludes session repeats, 
   assert.equal((await runtime.library.selectDiagnosticPassage(USER,1,[]))[0].passageId,first[0].passageId,'unseen must win over the oldest seen passage');
 });
 
+test('stored Math feedback and completed results improve without rewriting saved grading or question records',async()=>{
+  const legacy=structuredClone(legacyBeadQuestion),now=Date.now(),id='legacy-feedback-result';
+  runtime.setDatabase(adapter(true));
+  try{await runtime.library.putQuestions([legacy],'approved',true)}finally{runtime.setDatabase(adapter())}
+  const stored=await pg.query<{data:string}>('SELECT data FROM questions WHERE id=$1',[legacy.id]);
+  assert.ok(stored.rows.length);
+  const result={id,type:'practice',created:now,total:1,correct:0,incorrect:1,unanswered:0,accuracy:0,profile:{overall:2.5},items:[{...legacy,index:0,answer:2,status:'incorrect',seconds:12}]};
+  await pg.query("INSERT INTO test_sessions(id,user_id,type,status,created,updated,version,data) VALUES($1,$2,'practice','complete',$3,$3,4,$4)",[id,USER,now,JSON.stringify({ids:[legacy.id],max:1,cursor:0,lockedUntil:0})]);
+  await pg.query("INSERT INTO answers(session_id,question_id,user_id,answer,correct,seconds,updated) VALUES($1,$2,$3,'2',0,12,$4)",[id,legacy.id,USER,now]);
+  await pg.query('INSERT INTO results(session_id,user_id,created,data) VALUES($1,$2,$3,$4)',[id,USER,now,JSON.stringify(result)]);
+  const loaded:Question=await runtime.library.getQuestion(legacy.id),bulk:Question[] = await runtime.library.getQuestions([legacy.id]);
+  for(const item of [loaded,bulk[0]]){
+    assert.deepEqual(item.choices,legacy.choices);assert.equal(item.correct,1);assert.equal(item.text,legacy.text);
+    assert.match(item.explanation,/36[\s\S]*99[\s\S]*135/);assert.doesNotMatch(item.distractorReasons![2],/required sequence/i);
+  }
+  const view:{result:typeof result}=await runtime.service.viewSession(await runtime.service.ownSession(USER,id));
+  assert.equal(view.result.items[0].answer,2);assert.equal(view.result.items[0].status,'incorrect');assert.equal(view.result.items[0].seconds,12);
+  assert.deepEqual(view.result.items[0].choices,legacy.choices);assert.equal(view.result.items[0].correct,1);
+  assert.match(view.result.items[0].explanation,/36[\s\S]*99[\s\S]*135/);assert.doesNotMatch(view.result.items[0].distractorReasons![2],/required sequence/i);
+  assert.deepEqual(view.result.profile,result.profile);assert.equal(view.result.correct,0);assert.equal(view.result.accuracy,0);
+  const unchanged=await pg.query<{data:string}>('SELECT data FROM questions WHERE id=$1',[legacy.id]);assert.deepEqual(unchanged.rows,stored.rows);
+  const savedResult=await pg.query<{data:string}>('SELECT data FROM results WHERE session_id=$1',[id]);assert.deepEqual(JSON.parse(savedResult.rows[0].data),result);
+  const answer=await pg.query<{answer:string;correct:number;seconds:number}>('SELECT answer,correct,seconds FROM answers WHERE session_id=$1',[id]);assert.deepEqual(answer.rows,[{answer:'2',correct:0,seconds:12}]);
+  const next:Question=await runtime.library.selectQuestion(USER,'Math','Ratios',2,[]);
+  assert.equal(next.generationMethod,'procedural-v2');assert.match(next.id,/-v2$/);assert.notEqual(next.id,legacy.id);
+});
+
 test('exhausted global Math generation reuses only an exact-level approved variant unseen by this student',async context=>{
   const rows=await pg.query<{id:string}>("SELECT q.id FROM questions q WHERE q.subject='Math' AND q.skill='Probability' AND q.difficulty=1 AND q.status='approved' ORDER BY q.id");
   assert.ok(rows.rows.length>2);
-  const generated=rows.rows[0].id,seed=Number(/-(\d+)-[01]$/.exec(generated)?.[1]);
+  const generated=rows.rows[0].id,seed=Number(/-(\d+)-[01](?:-v2)?$/.exec(generated)?.[1]);
   assert.ok(Number.isSafeInteger(seed));
   const candidates=await pg.query<{id:string}>("SELECT q.id FROM questions q WHERE q.subject='Math' AND q.skill='Probability' AND q.difficulty=1 AND q.status='approved' AND q.id<>$1 AND NOT EXISTS(SELECT 1 FROM question_exposure e WHERE e.user_id=$2 AND e.question_id=q.id) ORDER BY q.id",[generated,USER]);
   assert.ok(candidates.rows.length>0);
@@ -132,7 +160,7 @@ test('exhausted global Math generation reuses only an exact-level approved varia
 
 test('exhausted Math generation cannot repeat exposed/session items or substitute another level and leaves saved progress intact',async context=>{
   const pool=await pg.query<{id:string}>("SELECT id FROM questions WHERE subject='Math' AND skill='Probability' AND difficulty=1 AND status='approved' ORDER BY id");
-  const generated=pool.rows[0].id,seed=Number(/-(\d+)-[01]$/.exec(generated)?.[1]);
+  const generated=pool.rows[0].id,seed=Number(/-(\d+)-[01](?:-v2)?$/.exec(generated)?.[1]);
   const sessionId='math-exhaustion-fixture',now=Date.now(),saved=JSON.stringify({ids:[generated],max:100,cursor:0,lockedUntil:0,tools:{[generated]:{notes:'Keep this saved work'}}});
   await pg.query("INSERT INTO test_sessions(id,user_id,type,status,created,updated,version,data) VALUES($1,$2,'diagnostic','active',$3,$3,7,$4)",[sessionId,USER,now,saved]);
   await pg.query('INSERT INTO answers(session_id,question_id,user_id,answer,correct,seconds,updated) VALUES($1,$2,$3,\'0\',0,12,$4)',[sessionId,generated,USER,now]);
