@@ -61,8 +61,12 @@ test('Math starts at its own level and responds to the current Math answers',()=
   const ela=fillDiagnostic().rows.slice(0,50);
   const first=diagnosticNext(ela);assert.equal(first.kind,'math');assert.equal(first.difficulty,2);
   const math=item('math-first','Math',first.skill!,first.difficulty);
-  assert.equal(diagnosticNext([...ela,evidence(math,1)]).difficulty,3);
-  assert.equal(diagnosticNext([...ela,evidence(math,0)]).difficulty,1);
+  assert.equal(diagnosticNext([...ela,evidence(math,1)]).difficulty,2);
+  assert.equal(diagnosticNext([...ela,evidence(math,0)]).difficulty,2);
+  const consistentCorrect=Array.from({length:3},(_,index)=>evidence({...math,id:'math-correct-'+index},1));
+  const consistentIncorrect=Array.from({length:3},(_,index)=>evidence({...math,id:'math-incorrect-'+index},0));
+  assert.equal(diagnosticNext([...ela,...consistentCorrect]).difficulty,3);
+  assert.equal(diagnosticNext([...ela,...consistentIncorrect]).difficulty,1);
   const hard=item('math-hard','Math','Ratios',5),easy=item('math-easy','Math','Ratios',1);
   assert.equal(diagnosticNext([...ela,evidence(hard,1)]).difficulty,5);
   assert.equal(diagnosticNext([...ela,evidence(easy,0)]).difficulty,1);
@@ -74,7 +78,7 @@ test('retake starting levels use prior evidence separately for ELA and Math',()=
   const prior:Evidence[]=[];
   for(let index=0;index<20;index++){prior.push({subject:'ELA',skill:'Inference',difficulty:1,correct:0},{subject:'Math',skill:'Ratios',difficulty:5,correct:1})}
   const levels=diagnosticStartingLevels(prior);
-  assert.equal(levels.ELA,1);assert.equal(levels.Math,5);
+  assert.equal(levels.ELA,2);assert.equal(levels.Math,3);
 });
 
 test('completion rejects a skewed section count, duplicates, and broken passage grouping',()=>{

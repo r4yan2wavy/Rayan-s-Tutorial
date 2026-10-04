@@ -1,0 +1,2374 @@
+{
+  "version": "ela-authored-v3.1",
+  "authorship": "Original practice passages and question plans authored for this platform. Factual sources are identified where applicable; no claim of independent human review or official SHSAT approval.",
+  "passages": [
+    {
+      "id": "bell-on-the-door",
+      "title": "The Bell on the Door",
+      "genre": "Realistic fiction",
+      "difficulty": 1,
+      "scenario": "repairing-a-neighborhood-shop",
+      "structure": "chronological-problem-and-response",
+      "content": "When the repair shop opened on Saturday, Eva noticed that its doorbell no longer rang. Her grandfather had used the little bell for years to hear customers arriving while he worked in the back room. Without it, he kept leaving his bench to check the empty doorway. Eva offered to help, but he handed her a box of receipts to sort instead. She stacked the papers quickly, hoping he would see that she could manage a more interesting job.\n\nAfter lunch, a customer stood quietly by the counter until Eva greeted him. Her grandfather came forward carrying a half-finished clock. He apologized and looked up at the silent bell. Eva asked whether she could examine it while he spoke with the customer. This time he nodded. The cord was not broken; it had slipped from a small metal hook. Eva climbed onto a steady stool, put the cord back, and pulled the door open. The bell gave one bright ring.\n\nHer grandfather returned to his bench, then paused. He placed a screwdriver beside the receipt box and showed Eva how to choose the right tip. She moved the tool away from the edge of the counter so it would not fall. Later, when the next customer arrived, her grandfather stayed at his bench long enough to finish a delicate adjustment. Eva answered the bell herself. She did not announce that she had proved anything. She simply asked the customer what needed repairing.",
+      "plans": [
+        {
+          "id": "main",
+          "target": "Main idea",
+          "prompt": "What is the main idea of the passage?",
+          "choices": [
+            "Eva earns greater responsibility by solving a practical problem.",
+            "Eva teaches her grandfather to repair clocks.",
+            "The shop stops serving customers because its bell breaks.",
+            "Eva decides that sorting receipts is the shop’s most important job."
+          ],
+          "reasons": [
+            "Her repair leads her grandfather to give her a tool and let her greet a customer.",
+            "The grandfather is already repairing a clock; Eva repairs the bell’s cord.",
+            "Customers continue to arrive and receive help.",
+            "Eva initially wants a task beyond sorting receipts."
+          ],
+          "evidence": "He placed a screwdriver beside the receipt box and showed Eva how to choose the right tip.",
+          "why": "The new tool and instruction show the increased trust Eva earns after repairing the bell.",
+          "method": "Connect the initial problem, Eva’s action, and the responsibility she receives afterward.",
+          "trap": "A detail about clocks is not the central event."
+        },
+        {
+          "id": "detail",
+          "target": "Explicit information",
+          "prompt": "Why had the doorbell stopped ringing?",
+          "choices": [
+            "Its cord had slipped from a metal hook.",
+            "A customer had removed its cord.",
+            "Its cord had broken in two.",
+            "Eva’s grandfather had taken the bell down."
+          ],
+          "reasons": [
+            "The passage directly identifies the slipped cord as the problem.",
+            "No customer removes the cord.",
+            "The passage explicitly says the cord was not broken.",
+            "The bell remains on the door."
+          ],
+          "evidence": "The cord was not broken; it had slipped from a small metal hook.",
+          "why": "This sentence gives the physical cause of the silent bell.",
+          "method": "Locate the sentence explaining the bell’s condition rather than guessing from its silence.",
+          "trap": "A silent object is not necessarily broken."
+        },
+        {
+          "id": "motivation",
+          "target": "Character motivation",
+          "prompt": "Why does Eva initially sort the receipts quickly?",
+          "choices": [
+            "She hopes to show that she is ready for a more interesting task.",
+            "She wants to leave the shop before customers arrive.",
+            "She believes the receipts will repair the bell.",
+            "She has promised a customer that she will finish a clock."
+          ],
+          "reasons": [
+            "The narrator states that she hopes her grandfather will recognize her ability.",
+            "Eva stays and asks to help with the bell.",
+            "She does not treat the receipts as a repair.",
+            "No such promise is described."
+          ],
+          "evidence": "She stacked the papers quickly, hoping he would see that she could manage a more interesting job.",
+          "why": "Her speed is meant to demonstrate readiness, not to end her workday.",
+          "method": "Look for what the character hopes to accomplish by performing the action.",
+          "trap": "Finishing a task quickly can serve a goal other than leaving."
+        },
+        {
+          "id": "sequence",
+          "target": "Sequence",
+          "prompt": "What happens immediately after Eva puts the cord back on its hook?",
+          "choices": [
+            "She opens the door and hears the bell ring.",
+            "Her grandfather gives her the receipt box.",
+            "The customer enters carrying a clock.",
+            "Her grandfather shows her how to select a screwdriver tip."
+          ],
+          "reasons": [
+            "Opening the door tests the repair directly after she replaces the cord.",
+            "The receipt task occurs before lunch.",
+            "No clock carried in by that customer is described.",
+            "The screwdriver instruction occurs later."
+          ],
+          "evidence": "Eva climbed onto a steady stool, put the cord back, and pulled the door open.",
+          "why": "The actions are narrated in order; opening the door is the next action after replacing the cord.",
+          "method": "Trace the action verbs around the event named in the question.",
+          "trap": "A later consequence is not the immediately following event."
+        },
+        {
+          "id": "setting",
+          "target": "Setting",
+          "prompt": "How does the shop’s layout contribute to the problem in the passage?",
+          "choices": [
+            "The back workroom makes it difficult for the grandfather to notice customers without the bell.",
+            "The counter is too high for any customer to speak to Eva.",
+            "The stool prevents the door from opening.",
+            "The grandfather’s bench is outside the shop."
+          ],
+          "reasons": [
+            "He relies on the bell to hear arrivals while working in the back.",
+            "The counter does not stop Eva from greeting the customer.",
+            "The stool is used safely during the repair.",
+            "The bench is in the back workroom."
+          ],
+          "evidence": "Her grandfather had used the little bell for years to hear customers arriving while he worked in the back room.",
+          "why": "The separated work area explains why a silent doorbell interrupts his work.",
+          "method": "Connect a physical feature of the setting to the difficulty it creates for a character.",
+          "trap": "Do not invent a physical obstacle merely because an object is mentioned."
+        },
+        {
+          "id": "target-inference",
+          "target": "Inference",
+          "prompt": "What does the grandfather’s later decision to give Eva a screwdriver most strongly suggest?",
+          "choices": [
+            "He is becoming more willing to trust her with practical work.",
+            "He no longer intends to repair any clocks.",
+            "He believes she caused the cord to slip off its hook.",
+            "He wants her to stop greeting customers."
+          ],
+          "reasons": [
+            "The tool and instruction follow her successful repair and contrast with the earlier receipt-sorting assignment.",
+            "He returns to his bench and later finishes a delicate adjustment, so he continues repairing clocks.",
+            "No evidence suggests Eva caused the original problem.",
+            "Eva later answers the bell and greets the next customer herself."
+          ],
+          "evidence": "He placed a screwdriver beside the receipt box and showed Eva how to choose the right tip.",
+          "why": "Giving a practical tool and guidance after her repair supports increased trust; the passage does not directly state his private thoughts.",
+          "method": "Connect the exact clue to its surrounding actions or argument; distinguish what is stated from the conclusion it supports.",
+          "trap": "A defensible inference follows from the text without adding an unsupported motive, guarantee, or universal claim."
+        }
+      ]
+    },
+    {
+      "id": "water-in-the-bag",
+      "title": "Water in the Bag",
+      "genre": "Science",
+      "difficulty": 1,
+      "scenario": "observing-transpiration",
+      "structure": "observation-mechanism-control",
+      "sources": [
+        "https://water.usgs.gov/edu/gallery/watercyclekids/transpiration-bag.html",
+        "https://www.usgs.gov/media/images/evapotranspiration-sum-plant-transpiration-and-evaporation"
+      ],
+      "content": "A dry, clear bag tied loosely around a leafy branch can reveal a process that is usually invisible. After the bag has been left in place for a time, tiny drops may appear on its inner surface. The branch has not become a raincloud. The drops are evidence that water moved from the plant into the air inside the bag and then returned to liquid form on the bag’s surface.\n\nA plant takes in water through its roots. Water moves through its tissues, and some of it leaves through tiny openings in the leaves as water vapor. That release is called transpiration. Water vapor is a gas and cannot be seen as separate drops. When it changes back into liquid water, the change is called condensation. The drops in the bag make the result of that change visible.\n\nThe demonstration is more useful when the observer asks where else the water might have come from. Rain already on a leaf could supply drops without showing water released by the plant. A bag placed around wet leaves would therefore be harder to interpret. Starting with dry leaves helps reduce that confusion. Comparing the leafy branch with an empty, equally dry bag also helps the observer decide whether the leaves made a difference.\n\nThe bag does not measure every part of the water cycle, and one observation cannot tell us how much water every plant releases. It offers a small window on one process. Its value lies in linking an unfamiliar explanation to an observation that a person can examine carefully.",
+      "plans": [
+        {
+          "id": "central",
+          "target": "Central idea",
+          "prompt": "Which statement best expresses the central idea?",
+          "choices": [
+            "A simple bag demonstration can make a plant’s release of water observable, but the result must be interpreted carefully.",
+            "Plants create rainclouds inside clear bags.",
+            "Every plant releases the same amount of water.",
+            "A bag measures every part of the water cycle."
+          ],
+          "reasons": [
+            "The passage explains both the observable process and the need to check alternative sources of water.",
+            "The first paragraph explicitly rejects this explanation.",
+            "The final paragraph limits what one observation can show.",
+            "The passage explicitly says the bag does not measure every part."
+          ],
+          "evidence": "Its value lies in linking an unfamiliar explanation to an observation that a person can examine carefully.",
+          "why": "The demonstration matters because it connects a process to inspectable evidence, with limits described in the preceding paragraphs.",
+          "method": "Include both the explained process and the cautions developed later in the passage.",
+          "trap": "A central idea should include the passage’s qualifications."
+        },
+        {
+          "id": "cause",
+          "target": "Cause and effect",
+          "prompt": "What causes water vapor to become visible as drops on the bag?",
+          "choices": [
+            "The vapor changes back into liquid water.",
+            "The roots turn into small clouds.",
+            "The leaves create a hole in the bag.",
+            "The bag measures the weight of the branch."
+          ],
+          "reasons": [
+            "The change from vapor to liquid is condensation, producing visible drops.",
+            "No roots or clouds form in the bag.",
+            "A hole does not explain the liquid drops.",
+            "No weighing is performed."
+          ],
+          "evidence": "When it changes back into liquid water, the change is called condensation.",
+          "why": "Condensation produces the visible liquid described in the demonstration.",
+          "method": "Distinguish the plant’s release of vapor from the later change that produces liquid drops.",
+          "trap": "Transpiration and condensation are different steps."
+        },
+        {
+          "id": "context",
+          "target": "Context clues",
+          "prompt": "In the last paragraph, what does “a small window on one process” mean?",
+          "choices": [
+            "A limited way to observe and understand one process.",
+            "A hole cut into the bag to let air escape.",
+            "A glass frame attached to the branch.",
+            "A complete explanation of every kind of weather."
+          ],
+          "reasons": [
+            "The paragraph contrasts a useful observation with the limits of what it can reveal.",
+            "The phrase describes understanding rather than a literal hole.",
+            "No frame is attached to the plant.",
+            "The paragraph expressly limits the demonstration to one process."
+          ],
+          "evidence": "The bag does not measure every part of the water cycle, and one observation cannot tell us how much water every plant releases.",
+          "why": "The stated limits make “window” a figurative opportunity to observe, rather than a complete view of the water cycle.",
+          "method": "Use the limiting sentences around the phrase to determine its figurative meaning.",
+          "trap": "A familiar word can be used figuratively rather than literally."
+        },
+        {
+          "id": "support",
+          "target": "Supporting details",
+          "prompt": "Which detail most directly supports the need to start with dry leaves?",
+          "choices": [
+            "Water already on a leaf could produce drops without showing water released by the plant.",
+            "The bag is clear.",
+            "A branch contains leaves.",
+            "Water vapor is a gas."
+          ],
+          "reasons": [
+            "This explains the competing source of drops that dry leaves help rule out.",
+            "Clarity helps observation but does not explain why the leaves must start dry.",
+            "The presence of leaves does not distinguish the two water sources.",
+            "The state of vapor does not by itself explain the dry-leaf control."
+          ],
+          "evidence": "Rain already on a leaf could supply drops without showing water released by the plant.",
+          "why": "Starting dry reduces the chance of mistaking existing surface water for water released by the plant.",
+          "method": "Identify which detail explains the specific control named in the question.",
+          "trap": "A relevant science fact is not always evidence for the specific claim."
+        },
+        {
+          "id": "main-synthesis",
+          "target": "Main idea",
+          "prompt": "What is the main idea of the passage?",
+          "choices": [
+            "An observable demonstration can help explain a plant process when competing explanations and limits are considered.",
+            "The bag proves that every plant releases water at the same rate.",
+            "The best observation is one made with wet leaves and no comparison.",
+            "A plant’s roots form the visible drops without releasing vapor."
+          ],
+          "reasons": [
+            "The passage develops the mechanism, the dry-leaf comparison, and the limits of one observation.",
+            "The ending explicitly rejects that conclusion from one observation.",
+            "Existing water makes the source of drops harder to interpret.",
+            "Water first moves into the air as vapor and later condenses."
+          ],
+          "evidence": "It offers a small window on one process.",
+          "why": "The useful observation is limited; understanding it requires the preceding mechanism and control explanations.",
+          "method": "Combine the process explanation with the caution developed in the later paragraphs.",
+          "trap": "A main idea should preserve an informational passage’s limits."
+        },
+        {
+          "id": "inference-control",
+          "target": "Inference",
+          "prompt": "Why would drops in an empty comparison bag make the leafy-bag result harder to interpret?",
+          "choices": [
+            "They would show that drops can appear in this setup without a leafy branch.",
+            "They would prove that the plant has no roots.",
+            "They would establish the exact rate of transpiration for every plant.",
+            "They would make liquid water impossible inside the leafy bag."
+          ],
+          "reasons": [
+            "An empty bag provides a comparison for whether the leaves made a difference.",
+            "The comparison does not test whether the plant has roots.",
+            "Neither bag measures a universal release rate.",
+            "Drops in one bag do not make drops in the other impossible."
+          ],
+          "evidence": "Comparing the leafy branch with an empty, equally dry bag also helps the observer decide whether the leaves made a difference.",
+          "why": "The text states the role of the comparison; the hypothetical result would weaken an explanation based only on the presence of leaves.",
+          "method": "Apply the stated purpose of a comparison to the possible observation named in the question.",
+          "trap": "An inference about a control should concern what the comparison can establish, not an unrelated plant fact."
+        }
+      ]
+    },
+    {
+      "id": "ledger-gap",
+      "title": "A Gap in the Ledger",
+      "genre": "History",
+      "difficulty": 2,
+      "scenario": "fictional-archive-investigation",
+      "structure": "conflicting-sources-and-qualified-conclusion",
+      "content": "The following is an original fictional account of a historical investigation.\n\nWhen a town museum prepared a display about a fair held many years earlier, its volunteers found a ledger listing nine exhibitors. The list seemed complete: each name had a number beside it, and the final entry was followed by a heavy line. A volunteer drafted a label stating that exactly nine exhibitors had taken part. Before printing it, the group searched the museum’s box of old newspaper clippings.\n\nOne photograph showed a row of stalls at the fair. Most of the readable signs matched names in the ledger, but two signs did not. The volunteers could have added two to nine and announced a new total. Instead, they examined what the photograph actually established. A sign might belong to a second stall run by an exhibitor already listed. It might identify a sponsor rather than an exhibitor. The image raised a question; it did not answer every question.\n\nThe group compared the date on the clipping with the fair’s date and searched for an exhibitor map. No map appeared. A later letter mentioned an additional stall, but it did not explain who operated it. The museum therefore changed the display label to say that the surviving ledger listed nine exhibitors and might omit others. The volunteers left space beside it for the photograph.\n\nThe new label was less definite than the first draft, but it was more faithful to the records. Visitors could see both the ledger and the reason to doubt its completeness. The display presented historical inquiry as a process of weighing sources, rather than a contest to produce the boldest number.",
+      "plans": [
+        {
+          "id": "key",
+          "target": "Key details",
+          "prompt": "Why are the two unmatched signs an important detail?",
+          "choices": [
+            "They cast doubt on the ledger’s completeness without proving an exact new total.",
+            "They prove that every ledger entry is false.",
+            "They establish that no fair took place.",
+            "They show that the museum volunteers wrote the ledger."
+          ],
+          "reasons": [
+            "The signs create a specific uncertainty about what the list includes.",
+            "Most signs match ledger entries; the entire record is not disproved.",
+            "The image is evidence of stalls at the fair.",
+            "The ledger is an older record found by the volunteers."
+          ],
+          "evidence": "The image raised a question; it did not answer every question.",
+          "why": "The unmatched signs support doubt, but several possible explanations prevent an exact total.",
+          "method": "Connect the unmatched signs to the alternatives considered in the same paragraph.",
+          "trap": "Evidence of an incomplete record does not automatically reveal the missing total."
+        },
+        {
+          "id": "conclusion",
+          "target": "Drawing conclusions",
+          "prompt": "Which conclusion is best supported by the investigation?",
+          "choices": [
+            "The surviving records do not establish exactly how many exhibitors attended.",
+            "There were exactly eleven exhibitors.",
+            "The fair had no sponsors.",
+            "The ledger was deliberately falsified."
+          ],
+          "reasons": [
+            "The volunteers preserve the known list while acknowledging unresolved omissions.",
+            "Two extra signs do not necessarily represent two extra exhibitors.",
+            "Sponsorship remains one possible explanation for a sign.",
+            "No motive or deliberate falsification is established."
+          ],
+          "evidence": "The museum therefore changed the display label to say that the surviving ledger listed nine exhibitors and might omit others.",
+          "why": "The label distinguishes what the ledger establishes from what the full attendance total might have been.",
+          "method": "Separate a documented count from the unknown complete count.",
+          "trap": "Do not assign a motive or exact total that the records do not establish."
+        },
+        {
+          "id": "purpose",
+          "target": "Author's purpose",
+          "prompt": "Why does the author describe the volunteers’ decision to revise the display label?",
+          "choices": [
+            "To illustrate how historical claims should reflect both evidence and its limits.",
+            "To argue that museums should never display photographs.",
+            "To show that less definite statements are always incorrect.",
+            "To teach visitors how to organize a fair."
+          ],
+          "reasons": [
+            "The revision makes the label more faithful to conflicting records.",
+            "The volunteers display the photograph as useful evidence.",
+            "The passage distinguishes certainty from accuracy rather than rejecting cautious statements.",
+            "The passage concerns interpreting records, not organizing an event."
+          ],
+          "evidence": "The new label was less definite than the first draft, but it was more faithful to the records.",
+          "why": "The author uses the revision to make a point about accurate, qualified historical interpretation.",
+          "method": "Identify the lesson the final comparison draws from the investigation.",
+          "trap": "The subject of a historical account is not necessarily the author’s instructional purpose."
+        },
+        {
+          "id": "sentence",
+          "target": "Sentence function",
+          "prompt": "What is the function of “A sign might belong to a second stall run by an exhibitor already listed”?",
+          "choices": [
+            "It gives an alternative explanation that limits the conclusion drawn from the photograph.",
+            "It proves which exhibitor owned the unmatched signs.",
+            "It introduces the museum’s final label as a direct quotation.",
+            "It explains how the volunteers repaired the ledger."
+          ],
+          "reasons": [
+            "The possible shared ownership shows why signs cannot simply be counted as separate exhibitors.",
+            "The sentence offers a possibility, not proof of ownership.",
+            "The final label is described in a later paragraph.",
+            "No physical repair of the ledger occurs."
+          ],
+          "evidence": "A sign might belong to a second stall run by an exhibitor already listed.",
+          "why": "The possibility is used to challenge the simple addition of two signs to nine listed names.",
+          "method": "Ask what claim the sentence prevents readers from making too quickly.",
+          "trap": "A hypothetical explanation is not a confirmed event."
+        },
+        {
+          "id": "events",
+          "target": "Development of events",
+          "prompt": "How does finding the photograph change the course of the volunteers’ work?",
+          "choices": [
+            "It turns a seemingly settled count into a question that requires further investigation.",
+            "It ends the investigation by establishing an exact total.",
+            "It causes the volunteers to abandon the display permanently.",
+            "It makes the letter unnecessary because the photograph names every exhibitor."
+          ],
+          "reasons": [
+            "After the image, the volunteers inspect possible interpretations and seek more records.",
+            "The image does not resolve whether the signs represent separate exhibitors.",
+            "The museum completes a revised display.",
+            "The image does not identify every operator, and the volunteers still examine the letter."
+          ],
+          "evidence": "Instead, they examined what the photograph actually established.",
+          "why": "The photograph changes the task from repeating the ledger’s number to testing what the sources support.",
+          "method": "Compare the volunteers’ plan before the discovery with their actions afterward.",
+          "trap": "New evidence can increase uncertainty instead of closing an investigation."
+        },
+        {
+          "id": "main-synthesis",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the main idea of the passage?",
+          "choices": [
+            "Historical inquiry requires matching a conclusion to what the surviving records actually establish.",
+            "A photograph supplies a more precise fair-participation total than the surviving ledger.",
+            "A historical display is most useful when it presents a confident number instead of unresolved questions.",
+            "A surviving record loses its value once another source calls its completeness into question."
+          ],
+          "reasons": [
+            "The revised label distinguishes the ledger’s known list from uncertainty about the fair’s complete participation.",
+            "The photograph raises doubt but its signs might identify sponsors or second stalls, so it does not establish a precise new total.",
+            "The display becomes more faithful by distinguishing what is known from what remains uncertain.",
+            "The ledger still establishes which names its surviving list includes; incomplete coverage does not make that information worthless."
+          ],
+          "evidence": "The museum therefore changed the display label to say that the surviving ledger listed nine exhibitors and might omit others.",
+          "why": "The revised label states the known list while retaining the uncertainty raised by other sources, showing why conclusions must match the evidence.",
+          "method": "Identify what the investigation teaches about the meaning and limits of its sources.",
+          "trap": "A record’s silence may reflect its purpose rather than prove that an event did not occur."
+        },
+        {
+          "id": "inference-sources",
+          "target": "Inference",
+          "prompt": "What can be inferred about why the students examine more than one kind of record?",
+          "choices": [
+            "Different records may preserve different aspects of the same event.",
+            "A later letter automatically supplies the correct total whenever older records disagree.",
+            "The volunteers need to choose one record and suppress conflicting evidence before displaying the fair’s history.",
+            "The heavy line beneath the ledger’s final entry is enough to dismiss the photograph’s unmatched signs."
+          ],
+          "reasons": [
+            "The ledger lists names, the photograph shows signs, and the letter mentions a stall, so their information is complementary.",
+            "The letter mentions another stall but does not explain its operator, so later date alone does not make it a complete answer.",
+            "The final display presents both the ledger and the photograph, making the uncertainty available to visitors.",
+            "The apparent ending of the list motivates the first confident draft, but the other evidence still raises a valid question."
+          ],
+          "evidence": "The museum therefore changed the display label to say that the surviving ledger listed nine exhibitors and might omit others.",
+          "why": "The volunteers compare a ledger, a photograph, and a letter because each preserves a different piece of evidence and none establishes the full total alone.",
+          "method": "Connect the information each source preserves to the question the students are trying to answer.",
+          "trap": "Complementary evidence is useful even when no single source is complete."
+        }
+      ]
+    },
+    {
+      "id": "train-map",
+      "title": "My First Route",
+      "genre": "Memoir",
+      "difficulty": 2,
+      "scenario": "original-fictional-memoir-of-independent-travel",
+      "structure": "past-experience-and-present-reflection",
+      "content": "I kept the folded transit map in my coat pocket long after I no longer needed it. On my first trip across the city alone, I had opened it at every stop. My aunt had drawn a small star beside the station where I needed to change trains. The map showed colored lines and neat dots; the station itself offered stairways, moving crowds, and announcements I could not quite hear. I missed my transfer because I was staring at the map instead of reading the sign above the platform.\n\nAt the next stop, I stepped aside and asked a station worker how to return. She did not grab the map from me. She asked me to find our current station, then to trace the line back one stop. As I did, the tangle of colors began to become a route. I rode back and made the transfer, arriving at my aunt’s apartment later than planned but without needing her to come for me.\n\nFor weeks afterward, I rehearsed the route in my mind before leaving home. Gradually, I stopped checking the map at familiar stops. I learned to look up from it, read the signs, and compare the real platform with the diagram. The map remained useful, but it stopped being a shield I held between myself and the station.\n\nYears later, I found it while sorting the pockets of that old coat. The star was nearly rubbed away. I could have thrown the map out; a newer one was easier to read. Instead, I slipped it into a drawer. It reminded me of the worker’s patience and of a morning when asking for help had become part of learning to travel independently.",
+      "plans": [
+        {
+          "id": "narrator",
+          "target": "Narrator",
+          "prompt": "Which statement best describes the narrator’s relationship to the events?",
+          "choices": [
+            "The narrator recalls a personal experience and reflects on it from a later time.",
+            "The narrator reports events that happened only to a stranger.",
+            "The narrator knows the private thoughts of every person in the station.",
+            "The narrator describes the first trip while it is still happening."
+          ],
+          "reasons": [
+            "First-person memories are followed by a scene years later.",
+            "The journey is repeatedly described as the narrator’s own.",
+            "The text reports actions and the narrator’s thoughts, not everyone’s thoughts.",
+            "The final paragraph establishes later reflection."
+          ],
+          "evidence": "Years later, I found it while sorting the pockets of that old coat.",
+          "why": "The narrator looks back across time rather than narrating solely from the moment of the first trip.",
+          "method": "Identify who uses “I” and look for time markers showing when the account is being remembered.",
+          "trap": "A first-person narrator does not automatically know other people’s private thoughts."
+        },
+        {
+          "id": "change",
+          "target": "Character development",
+          "prompt": "How does the narrator change during the experience?",
+          "choices": [
+            "The narrator learns to use the map together with observation and appropriate help.",
+            "The narrator stops using all transit information.",
+            "The narrator becomes certain that asking for help prevents independence.",
+            "The narrator decides never to travel alone again."
+          ],
+          "reasons": [
+            "The narrator later combines the diagram with signs and remembers help as part of learning.",
+            "The map remains useful, and the narrator learns to read signs.",
+            "The final reflection directly connects help with independent travel.",
+            "The narrator continues using the route."
+          ],
+          "evidence": "I learned to look up from it, read the signs, and compare the real platform with the diagram.",
+          "why": "The narrator develops a more active way of navigating instead of relying on the diagram alone.",
+          "method": "Compare the first trip’s mistake with the later strategy the narrator learns.",
+          "trap": "Independence can include knowing when and how to ask for help."
+        },
+        {
+          "id": "symbol",
+          "target": "Symbolism",
+          "prompt": "What does the saved map chiefly represent to the narrator?",
+          "choices": [
+            "A remembered step toward independence and the help that made it possible.",
+            "The only reliable transit information available in the present.",
+            "A promise never to change trains.",
+            "Proof that the narrator’s aunt caused the missed transfer."
+          ],
+          "reasons": [
+            "Its final value is connected to learning and the worker’s patience.",
+            "The narrator admits a newer map is easier to read.",
+            "The narrator successfully learns to make the transfer.",
+            "The passage does not blame the aunt."
+          ],
+          "evidence": "It reminded me of the worker’s patience and of a morning when asking for help had become part of learning to travel independently.",
+          "why": "The object carries the memory and meaning of a formative experience beyond its practical use.",
+          "method": "Distinguish why the object was first used from why it is kept years later.",
+          "trap": "A symbolic object can retain emotional meaning after its practical usefulness declines."
+        },
+        {
+          "id": "metaphor",
+          "target": "Metaphor",
+          "prompt": "What does the metaphor of the map as a “shield” suggest?",
+          "choices": [
+            "The narrator had used the map to avoid engaging directly with the confusing station.",
+            "The map physically protected the narrator from falling objects.",
+            "The map made the station workers hostile.",
+            "The narrator believed the paper could stop the train."
+          ],
+          "reasons": [
+            "The surrounding sentences contrast staring at the diagram with observing signs and the platform.",
+            "No physical danger or protective use is described.",
+            "The station worker is patient and helpful.",
+            "No such belief appears in the passage."
+          ],
+          "evidence": "The map remained useful, but it stopped being a shield I held between myself and the station.",
+          "why": "The shield metaphor characterizes the map as a way of avoiding the real surroundings, a habit the narrator overcomes.",
+          "method": "Connect the figurative comparison to the narrator’s changing behavior.",
+          "trap": "Do not read a figurative object as a literal physical tool."
+        },
+        {
+          "id": "perspective",
+          "target": "Perspective",
+          "prompt": "What perspective does the final paragraph add to the first journey?",
+          "choices": [
+            "The later narrator values the lesson and patient help more than the embarrassment of arriving late.",
+            "The later narrator considers the journey entirely useless.",
+            "The later narrator still believes the old map is the best current guide.",
+            "The later narrator cannot remember who helped with the route."
+          ],
+          "reasons": [
+            "The map is saved as a reminder of learning and patience.",
+            "The narrator gives the experience lasting significance.",
+            "A newer map is described as easier to read.",
+            "The worker’s help is explicitly remembered."
+          ],
+          "evidence": "Instead, I slipped it into a drawer.",
+          "why": "Choosing to keep the worn map after acknowledging a better one shows that its remembered meaning now matters most.",
+          "method": "Compare the immediate difficulty with what the older narrator chooses to remember and preserve.",
+          "trap": "A later perspective can change the significance of an earlier mistake."
+        },
+        {
+          "id": "main-synthesis",
+          "target": "Main idea",
+          "prompt": "What is the main idea of this account?",
+          "choices": [
+            "A worn map reminds the narrator that learning independence included looking closely and accepting help.",
+            "Following a transit map closely protects a traveler from needing to ask anyone for help.",
+            "A clearer replacement map removes the narrator’s reason to keep an older map.",
+            "Memorizing familiar routes makes signs in the real station unimportant."
+          ],
+          "reasons": [
+            "The narrator learns to combine the diagram with real signs, accepts the worker’s guidance, and later keeps the map for that memory.",
+            "The first missed transfer and the worker’s guidance show that the map alone does not produce independence.",
+            "The narrator keeps the worn map for its memory of patient help, not because it is the clearest current tool.",
+            "The narrator explicitly learns to read signs and compare the platform with the diagram."
+          ],
+          "evidence": "It reminded me of the worker’s patience and of a morning when asking for help had become part of learning to travel independently.",
+          "why": "The closing reflection joins the practical lesson in navigation with the narrator’s recognition that accepting guidance can support independence.",
+          "method": "Connect the narrator’s starting expectations with the final understanding of the journey.",
+          "trap": "A main idea about a memoir should include what the experience comes to mean."
+        },
+        {
+          "id": "inference-experience",
+          "target": "Inference",
+          "prompt": "Which conclusion about the narrator is most supported by the passage?",
+          "choices": [
+            "The narrator’s understanding grows through direct experience, not only through a diagram of the route.",
+            "The worker’s help replaces the narrator’s need to interpret the map actively.",
+            "Independent travel requires the narrator to discard the old map and avoid guidance.",
+            "Years later, the old map’s main value is its greater practical accuracy than the newer one."
+          ],
+          "reasons": [
+            "The narrator develops a perspective by combining the map with the actual journey.",
+            "The worker asks the narrator to find the station and trace a route rather than doing the interpretation for the narrator.",
+            "The account explicitly connects asking for help with learning independence, and the narrator retains the map.",
+            "The newer map is easier to read; the worn map’s retained value comes from the memory it carries."
+          ],
+          "evidence": "I learned to look up from it, read the signs, and compare the real platform with the diagram.",
+          "why": "The change in perspective connects concrete experience to an understanding not supplied by a diagram alone.",
+          "method": "Distinguish what the map supplies from what the narrator learns through the journey.",
+          "trap": "A supported inference should fit the whole development, not an extreme claim about every experience."
+        }
+      ]
+    },
+    {
+      "id": "quiet-hour",
+      "title": "What a Quiet Hour Changed",
+      "genre": "Journalism",
+      "difficulty": 2,
+      "scenario": "fictional-library-report",
+      "structure": "reported-result-and-unresolved-question",
+      "content": "The events and interviews in this original news-style passage are fictional.\n\nThe Brook Street Library recently tested a quiet study hour after school. For one hour, a meeting room that usually hosted conversation was reserved for silent work. On the first afternoon, every chair was occupied. By the third afternoon, staff had added a waiting list. The librarian described the response as encouraging but said the trial would continue for two more weeks before the room’s regular schedule changed.\n\nStudents who attended said the room helped them concentrate. One student explained that the main reading area became noisy when classes arrived together. Another said that having a predictable quiet hour made it easier to plan a visit. Staff recorded the number of occupied chairs each day, but they did not compare participants’ grades or measure how much work they completed. High attendance showed demand for seats; it did not prove an improvement in academic performance.\n\nA community chess group raised a different concern. Its members had previously used the meeting room at the same time. Moving their gathering to a smaller corner made conversation difficult, according to the group’s organizer. The librarian said a permanent schedule would need to account for both uses. A popular trial did not make the room unlimited.\n\nNext week, the library plans to ask visitors which hours they can attend and whether an alternative room would serve either group. For now, the waiting list and the chess group’s concerns remain side by side in the staff’s notes. The decision will depend on more than which activity filled the room first.",
+      "plans": [
+        {
+          "id": "implicit",
+          "target": "Implicit information",
+          "prompt": "What does the librarian’s decision to continue the trial suggest?",
+          "choices": [
+            "The librarian considers the early response useful but insufficient for a permanent decision.",
+            "The librarian believes the quiet hour has no users.",
+            "The librarian has already canceled every other room use.",
+            "The librarian knows that participants’ grades have improved."
+          ],
+          "reasons": [
+            "The librarian delays a schedule change while gathering further information.",
+            "Every chair was occupied and a waiting list was added.",
+            "Both uses remain under consideration.",
+            "The staff did not measure grades."
+          ],
+          "evidence": "The librarian described the response as encouraging but said the trial would continue for two more weeks before the room’s regular schedule changed.",
+          "why": "The combination of encouragement and delay implies a cautious decision based on additional evidence.",
+          "method": "Infer the attitude shown by both the positive description and the postponed decision.",
+          "trap": "An encouraging trial is not the same as a completed decision."
+        },
+        {
+          "id": "evidence",
+          "target": "Evidence",
+          "prompt": "Which finding is actually supported by the waiting list?",
+          "choices": [
+            "Demand for quiet-hour seats exceeded the available chairs.",
+            "Participants completed more schoolwork than all other library users.",
+            "Every neighborhood student preferred silent study.",
+            "The chess group no longer needed meeting space."
+          ],
+          "reasons": [
+            "A waiting list means more people wanted seats than could be seated.",
+            "Work completion was not measured.",
+            "The waiting list does not represent every student.",
+            "The chess group explicitly describes a continuing need."
+          ],
+          "evidence": "High attendance showed demand for seats; it did not prove an improvement in academic performance.",
+          "why": "Attendance supports a limited claim about demand, not a claim about grades or all users’ preferences.",
+          "method": "Match the measurement collected to the claim it can support.",
+          "trap": "A measure of attendance is not a measure of academic achievement."
+        },
+        {
+          "id": "paragraph",
+          "target": "Paragraph function",
+          "prompt": "What is the main function of the paragraph about the chess group?",
+          "choices": [
+            "It presents a competing use of the room that the library must consider.",
+            "It proves that chess players oppose all silent reading.",
+            "It explains how to play chess.",
+            "It shows that the library has unlimited meeting space."
+          ],
+          "reasons": [
+            "The group’s difficulty introduces an access trade-off in the scheduling decision.",
+            "The concern is about space and conversation, not opposition to reading.",
+            "No chess rules are given.",
+            "The paragraph expressly says popularity does not make the room unlimited."
+          ],
+          "evidence": "The librarian said a permanent schedule would need to account for both uses.",
+          "why": "The paragraph broadens the decision from the quiet hour’s popularity to competing needs for the same room.",
+          "method": "Ask what new consideration this paragraph contributes to the earlier report of demand.",
+          "trap": "A competing concern is not necessarily hostility toward another activity."
+        },
+        {
+          "id": "denotation",
+          "target": "Denotation",
+          "prompt": "What is the literal meaning of “predictable” in the phrase “a predictable quiet hour”?",
+          "choices": [
+            "An hour whose timing and conditions can be expected in advance.",
+            "An hour that has already ended.",
+            "An hour that lasts longer than sixty minutes.",
+            "An hour that nobody can attend."
+          ],
+          "reasons": [
+            "The student can plan a visit because the quiet time is expected.",
+            "Predictability does not mean the hour is over.",
+            "The word concerns expectation, not a changed unit of time.",
+            "Students do attend the hour."
+          ],
+          "evidence": "Another said that having a predictable quiet hour made it easier to plan a visit.",
+          "why": "The consequence of easier planning identifies the literal sense of predictable as expected in advance.",
+          "method": "Use the stated consequence to identify the ordinary meaning of the adjective.",
+          "trap": "A word’s literal meaning must fit what it describes in the sentence."
+        },
+        {
+          "id": "ideas",
+          "target": "Development of ideas",
+          "prompt": "How does the passage develop the idea of evaluating the quiet-hour trial?",
+          "choices": [
+            "It moves from early popularity to the limits of that evidence and the needs of another group.",
+            "It moves from a proven academic benefit to instructions for canceling chess.",
+            "It lists unrelated library activities without connecting them to a decision.",
+            "It argues that the first popular activity must always receive the room."
+          ],
+          "reasons": [
+            "Attendance is followed by a caution about grades and then the chess group’s access concern.",
+            "Academic benefit is not established and chess is not canceled.",
+            "The activities compete for the same room and influence the decision.",
+            "The ending rejects deciding only by which activity filled the room first."
+          ],
+          "evidence": "The decision will depend on more than which activity filled the room first.",
+          "why": "The passage gradually adds considerations that make the evaluation broader than early attendance alone.",
+          "method": "Track how each paragraph adds or limits a reason for making the scheduling decision.",
+          "trap": "A developed idea can become more qualified as additional evidence appears."
+        },
+        {
+          "id": "target-main-idea",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the main idea of the feature?",
+          "choices": [
+            "A popular quiet-hour trial still requires a decision that considers evidence limits and competing uses of the same room.",
+            "Strong early demand is enough to justify a permanent quiet-hour schedule before considering other room users.",
+            "The chess group objects because its members want the same silent conditions as the students.",
+            "The library can best evaluate this trial by the academic-performance improvements it has already measured."
+          ],
+          "reasons": [
+            "The feature combines demand for quiet seats, the limits of attendance data, and the chess group’s displaced gathering.",
+            "The librarian delays a permanent change and considers both uses; initial occupancy does not settle the schedule.",
+            "The chess group reports difficulty with conversation in the smaller corner, not a demand for silence.",
+            "Staff have not measured grades or completed work, so academic improvement is not an established outcome."
+          ],
+          "evidence": "The decision will depend on more than which activity filled the room first.",
+          "why": "The ending synthesizes both competing needs and the limited meaning of early attendance, rather than equating popularity with a final answer.",
+          "method": "Trace what the passage develops from the opening through its outcome or concluding interpretation.",
+          "trap": "A main idea accounts for the passage’s development and preserves its limits; one striking detail is not enough."
+        },
+        {
+          "id": "target-inference",
+          "target": "Inference",
+          "prompt": "What can be inferred from keeping the waiting list and chess group’s concerns together in the notes?",
+          "choices": [
+            "Staff intend to weigh more than one group’s needs before deciding on a schedule.",
+            "The chess group’s concern is retained only to justify a permanent change already decided on.",
+            "The waiting list gives the quiet-hour participants a claim that staff regard as overriding the chess group’s needs.",
+            "Staff regard an alternative room as a solution that has already been shown to work for both groups."
+          ],
+          "reasons": [
+            "Both kinds of information remain part of the decision, and the next step asks about hours and alternative rooms.",
+            "The regular schedule has not yet changed; the trial and information gathering continue.",
+            "The two concerns remain side by side, and the permanent schedule must account for both uses.",
+            "The next step asks whether an alternative would serve either group; its adequacy remains an open question."
+          ],
+          "evidence": "For now, the waiting list and the chess group’s concerns remain side by side in the staff’s notes.",
+          "why": "The juxtaposition preserves both perspectives as relevant evidence, supporting a multi-use evaluation rather than a decision based only on the first full room.",
+          "method": "Connect the exact clue to its surrounding actions or argument; distinguish what is stated from the conclusion it supports.",
+          "trap": "A defensible inference follows from the text without adding an unsupported motive, guarantee, or universal claim."
+        }
+      ]
+    },
+    {
+      "id": "unlocked-mystery",
+      "title": "The Perfect Alarm",
+      "genre": "Mystery",
+      "difficulty": 3,
+      "scenario": "library-window-investigation",
+      "structure": "apparent-explanation-and-reversal",
+      "content": "Mr. Vale called the new alarm perfect. It would record every opening of the library’s front door, he explained, so no one could enter unnoticed. Mara, who helped close the building each afternoon, asked whether the side window counted as a door. Mr. Vale smiled at what he took to be a joke and pointed again to the screen of neatly ordered times. Mara did not repeat the question.\n\nThe next morning, a small pot of basil had vanished from the reading-room sill. Nothing else seemed disturbed. Mr. Vale announced that the alarm log would identify the person who had taken it. Mara examined the sill instead. A crescent of damp soil lay beside a scuff on the paint, and the window’s latch rested open. Her friend Dev suggested searching the street immediately. Mara asked him to look for a smaller clue first: whether the soil continued onto the ledge outside. It did.\n\nThey went around the building and found the pot below the window, its rim chipped but the plant upright. Dev looked upward and noticed a pigeon landing on the outer ledge. The bird’s arrival did not prove exactly how the pot had fallen, but it made the open window worth considering. Mara carried the pot inside and showed Mr. Vale the unlatched frame.\n\nThe alarm had recorded no suspicious visit because the incident did not require anyone to use the front door. Mr. Vale read the log once more, as though another glance might widen what it measured. Then he shut the window and asked Mara to add the latch to the closing checklist. Her question had returned, this time without needing to be spoken. The perfect record had been complete only about the thing it recorded.",
+      "plans": [
+        {
+          "id": "inference",
+          "target": "Inference",
+          "prompt": "What can the reader reasonably infer about Mara’s original question?",
+          "choices": [
+            "She noticed a limitation in what the alarm could monitor.",
+            "She assumes the side window automatically triggers the alarm in the same way as the front door.",
+            "She asks the question mainly to embarrass Mr. Vale in front of the other workers.",
+            "She has decided that the log has no useful information before finding out what it measures."
+          ],
+          "reasons": [
+            "Her question distinguishes the unmonitored window from the monitored door.",
+            "Her question tests the difference between openings instead of assuming the window is included.",
+            "The text shows her practical question but supplies no evidence of an intention to embarrass him.",
+            "Recognizing a possible limitation is different from rejecting useful front-door records altogether."
+          ],
+          "evidence": "Mara, who helped close the building each afternoon, asked whether the side window counted as a door.",
+          "why": "Her attention to the window suggests she recognizes that recording door openings does not cover every possible event.",
+          "method": "Connect Mara’s question to the later discovery of the open latch, without adding knowledge she could not yet have.",
+          "trap": "A reasonable inference differs from an invented prediction."
+        },
+        {
+          "id": "traits",
+          "target": "Character traits",
+          "prompt": "Which trait does Mara most clearly demonstrate during the search?",
+          "choices": [
+            "Careful attention to what evidence can actually establish.",
+            "A desire to accuse the first person she meets.",
+            "Indifference to whether the plant is recovered.",
+            "Unquestioning trust in an impressive new device."
+          ],
+          "reasons": [
+            "She follows the soil and considers the window while limiting the conclusion about the bird.",
+            "Mara does not identify or accuse a person.",
+            "She searches and carries the pot back inside.",
+            "She questions the alarm’s coverage from the beginning."
+          ],
+          "evidence": "The bird’s arrival did not prove exactly how the pot had fallen, but it made the open window worth considering.",
+          "why": "The narration models the same caution Mara’s investigation shows: consider a clue without treating a possibility as proof.",
+          "method": "Identify a repeated pattern in the character’s actions rather than a single object she notices.",
+          "trap": "Finding a possible explanation does not justify claiming certainty."
+        },
+        {
+          "id": "plot",
+          "target": "Plot",
+          "prompt": "Which event most directly brings about a change in the closing routine?",
+          "choices": [
+            "Mara returns the pot and shows Mr.Vale the open window latch.",
+            "Mr.Vale first describes the alarm as perfect.",
+            "Dev proposes searching the street.",
+            "A list of times appears on the alarm screen."
+          ],
+          "reasons": [
+            "Showing the unlatched window leads Mr.Vale to add it to the checklist.",
+            "The first description does not change the routine.",
+            "Dev’s suggestion is followed by a different search strategy.",
+            "The log is already part of the original system."
+          ],
+          "evidence": "Then he shut the window and asked Mara to add the latch to the closing checklist.",
+          "why": "The displayed limitation of the alarm produces the concrete change that resolves the practical problem.",
+          "method": "Trace which discovery leads directly to the corrective action at the end.",
+          "trap": "An event that starts a story need not be the event that resolves its problem."
+        },
+        {
+          "id": "conflict",
+          "target": "Conflict",
+          "prompt": "What underlying conflict does the incident expose?",
+          "choices": [
+            "The difference between Mr.Vale’s confidence in the alarm and the limited range of events it records.",
+            "A competition between Mara and Dev to own the plant.",
+            "A disagreement about whether plants belong in libraries.",
+            "A battle between two library departments over their opening hours."
+          ],
+          "reasons": [
+            "The device’s perfect log fails to explain an incident outside its coverage.",
+            "Neither friend claims ownership of the pot.",
+            "No objection to plants is described.",
+            "No departmental scheduling dispute appears."
+          ],
+          "evidence": "The perfect record had been complete only about the thing it recorded.",
+          "why": "The ending states the tension between an accurate measurement and an overly broad belief about what it proves.",
+          "method": "Distinguish the immediate missing-pot problem from the mistaken assumption the incident challenges.",
+          "trap": "A conflict may concern competing understandings rather than a quarrel."
+        },
+        {
+          "id": "irony",
+          "target": "Irony",
+          "prompt": "Why is the title “The Perfect Alarm” ironic?",
+          "choices": [
+            "The alarm works as designed but cannot explain the very incident its owner expects it to solve.",
+            "The alarm secretly records conversations instead of door openings.",
+            "The alarm log correctly predicts every bird that will arrive.",
+            "Mara has deliberately broken the alarm before the incident."
+          ],
+          "reasons": [
+            "The owner’s broad expectation conflicts with the device’s narrow, functioning measurement.",
+            "No recording of conversations is described.",
+            "The log has no information about birds.",
+            "Mara does not damage the device."
+          ],
+          "evidence": "The alarm had recorded no suspicious visit because the incident did not require anyone to use the front door.",
+          "why": "The mismatch between the claim of perfection and the actual usefulness of the record creates situational irony.",
+          "method": "Compare what the title and owner lead readers to expect with what the incident reveals.",
+          "trap": "Irony is an expectation–outcome contrast, not merely any surprising detail."
+        },
+        {
+          "id": "relationship",
+          "target": "Character relationships",
+          "prompt": "How does the relationship between Mara and Mr.Vale change by the end?",
+          "choices": [
+            "He moves from dismissing her question to asking her to improve the procedure.",
+            "She stops helping at the library because he refuses to listen.",
+            "He gives her sole responsibility for designing an alarm.",
+            "She agrees that his first explanation covered every possible event."
+          ],
+          "reasons": [
+            "He initially treats the question as a joke, then accepts her evidence and asks for a checklist change.",
+            "She remains involved in the closing routine.",
+            "The request concerns a latch checklist, not designing an alarm.",
+            "The ending exposes the limitation of his first claim."
+          ],
+          "evidence": "Mr. Vale smiled at what he took to be a joke and pointed again to the screen of neatly ordered times.",
+          "why": "This early dismissal contrasts with his later request that Mara add the latch to the checklist, showing increased respect for her practical observation.",
+          "method": "Compare how one character responds to the other’s contribution at the beginning and at the end.",
+          "trap": "A change in respect need not be announced directly."
+        },
+        {
+          "id": "target-main-idea",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the main idea of the passage?",
+          "choices": [
+            "A careful investigation reveals that a precise door record cannot explain every incident in the library.",
+            "The alarm is valuable only if it replaces front-door monitoring with window monitoring.",
+            "Mara restores Mr. Vale’s confidence in the log by identifying a visitor responsible for the missing pot.",
+            "Investigating the incident matters mainly because the library needs a person to blame."
+          ],
+          "reasons": [
+            "Mara follows soil and the window latch to locate the pot, exposing the limited scope of the supposedly perfect alarm.",
+            "The lesson concerns the scope of a useful measurement, not abandoning door monitoring for a different narrow measurement.",
+            "No suspicious front-door visit is needed to explain the incident, and the exact cause remains unproved.",
+            "Mara follows physical clues carefully; the story does not establish a guilty person or make blame its solution."
+          ],
+          "evidence": "The perfect record had been complete only about the thing it recorded.",
+          "why": "The final qualification ties the investigation to the broader lesson about interpreting an accurate record within its scope.",
+          "method": "Trace what the passage develops from the opening through its outcome or concluding interpretation.",
+          "trap": "A main idea accounts for the passage’s development and preserves its limits; one striking detail is not enough."
+        }
+      ]
+    },
+    {
+      "id": "last-seat",
+      "title": "Room for the Box",
+      "genre": "Adventure",
+      "difficulty": 3,
+      "scenario": "ferry-trip-and-a-limited-seat",
+      "structure": "limited-resource-choice-and-resolution",
+      "content": "The ferry’s upper deck had one empty bench when Tomas and his sister June reached it. Tomas set their wooden box on the seat and leaned against the rail, relieved that they would not have to hold it for the whole crossing. Inside were the paper scenery pieces for their school play. A sharp bend would leave a white scar across the painted night sky, and they had already repaired it twice.\n\nA woman carrying a sleepy child came up the stairs and stopped beside the bench. Tomas looked from the child to the box. He imagined reaching school with crushed scenery and facing the classmates who had painted it. June picked the box up before he spoke. She balanced it on her knees and motioned for the woman to sit. Tomas wanted to tell her that she was risking everyone’s work. Instead, he took the opposite end of the box so it would not sag.\n\nHalfway across, a gust lifted one loose strip from the box. Tomas caught it against his coat. June shifted her grip, and together they slid the lid into place. The woman held her child with one arm and steadied the lid with her other hand. For the rest of the crossing, the box traveled with three pairs of hands around it.\n\nAt the landing, Tomas checked the painted sky. Its stars were uncreased. The woman thanked them, but June only asked whether she needed help with the stairs. Tomas carried the box below, turning sideways to leave room for the child. He had pictured kindness as something that would cost them the scenery. The crossing had shown him another possibility: protecting the work and making space for someone could be parts of the same task.",
+      "plans": [
+        {
+          "id": "theme",
+          "target": "Theme",
+          "prompt": "Which theme is most fully developed by the passage?",
+          "choices": [
+            "Cooperation can make room for kindness without abandoning responsibility.",
+            "Valuable work can be protected only by refusing to help others.",
+            "Younger siblings always make better decisions than older siblings.",
+            "A difficult journey always destroys carefully prepared work."
+          ],
+          "reasons": [
+            "The siblings and passenger cooperate to protect the scenery while sharing the bench.",
+            "The work arrives intact after they help the passenger.",
+            "The passage presents one sibling interaction, not a universal age rule.",
+            "The scenery survives the crossing."
+          ],
+          "evidence": "The crossing had shown him another possibility: protecting the work and making space for someone could be parts of the same task.",
+          "why": "The final reflection connects the practical result to a general insight about kindness and responsibility.",
+          "method": "Relate the characters’ decision and its outcome to a general idea that extends beyond the ferry.",
+          "trap": "A theme should not be a universal claim that the story’s details cannot support."
+        },
+        {
+          "id": "simile",
+          "target": "Simile",
+          "prompt": "Which sentence could replace the description of the scenery’s fragility with a simile that preserves the stated meaning?",
+          "choices": [
+            "The painted sky was as easy to crease as a thin sheet of paper.",
+            "The painted sky was as heavy as the ferry’s anchor.",
+            "The painted sky was like a lamp that made its own light.",
+            "The painted sky was as rigid as the steel rail."
+          ],
+          "reasons": [
+            "The comparison explicitly conveys the scenery’s vulnerability to bending.",
+            "The passage is concerned with fragility, not extreme weight.",
+            "Nothing suggests the scenery produces light.",
+            "Rigidity contradicts the stated risk of creasing."
+          ],
+          "evidence": "A sharp bend would leave a white scar across the painted night sky, and they had already repaired it twice.",
+          "why": "A simile comparing the scenery to easily creased paper preserves the physical vulnerability the sentence describes.",
+          "method": "Identify the quality being emphasized, then choose a comparison using “like” or “as” that expresses that quality.",
+          "trap": "A simile must fit the relevant quality, not merely share a word with the passage."
+        },
+        {
+          "id": "summary",
+          "target": "Summarizing",
+          "prompt": "Which summary best preserves the passage’s central sequence?",
+          "choices": [
+            "Tomas worries that sharing a bench will damage the scenery, but cooperation protects it and changes his view of helping.",
+            "June drops the box, the scenery is destroyed, and Tomas refuses to help the passenger.",
+            "A passenger paints a new sky for the siblings, who then leave their play behind.",
+            "Tomas rides the ferry alone and discovers that its benches need repair."
+          ],
+          "reasons": [
+            "This includes the concern, cooperative response, outcome, and changed understanding.",
+            "The scenery remains intact, and Tomas joins the effort.",
+            "No new scenery is painted and the play is not abandoned.",
+            "June and the passenger are central to the events."
+          ],
+          "evidence": "At the landing, Tomas checked the painted sky. Its stars were uncreased.",
+          "why": "The intact scenery is the outcome that allows Tomas to reconsider the supposed conflict between helping and protecting the work.",
+          "method": "Retain the initiating concern, decisive action, and important result while omitting incidental details.",
+          "trap": "A summary should preserve the story’s causal sequence, not collect colorful objects."
+        },
+        {
+          "id": "figurative",
+          "target": "Figurative language",
+          "prompt": "What does the phrase “a white scar across the painted night sky” emphasize?",
+          "choices": [
+            "A crease would leave a lasting, visible mark on the scenery.",
+            "A real storm is approaching the ferry.",
+            "The scenery can heal itself like a living body.",
+            "Tomas has injured his arm while painting."
+          ],
+          "reasons": [
+            "Calling the crease a scar emphasizes a visible mark that repairs may not fully conceal.",
+            "The phrase refers to painted paper, not actual weather.",
+            "The comparison does not give the paper a literal ability to heal.",
+            "No bodily injury is described."
+          ],
+          "evidence": "A sharp bend would leave a white scar across the painted night sky, and they had already repaired it twice.",
+          "why": "The figurative word “scar” gives the possible crease a sense of lasting damage.",
+          "method": "Translate the figurative description back into the actual object and identify the quality it highlights.",
+          "trap": "A metaphor transfers a quality; it does not turn the object into the thing compared."
+        },
+        {
+          "id": "point",
+          "target": "Point of view",
+          "prompt": "How does the passage’s point of view shape the reader’s understanding?",
+          "choices": [
+            "It reveals Tomas’s fears and later reflection while showing the other characters mainly through their actions.",
+            "It reveals every passenger’s private thoughts equally.",
+            "It presents only June’s first-person account.",
+            "It offers an impersonal report with no access to any character’s thoughts."
+          ],
+          "reasons": [
+            "The narration describes Tomas’s imagined failure and his changed understanding.",
+            "The passenger’s and June’s private thoughts are not reported.",
+            "The account uses third person and centers Tomas’s perspective.",
+            "The narration explicitly gives Tomas’s worries and reflection."
+          ],
+          "evidence": "He imagined reaching school with crushed scenery and facing the classmates who had painted it.",
+          "why": "Access to this private imagined outcome establishes the focus on Tomas’s interior perspective.",
+          "method": "Identify whose unspoken thoughts the narration presents and distinguish them from observable actions.",
+          "trap": "Third-person narration can remain limited to one character’s perspective."
+        },
+        {
+          "id": "target-main-idea",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the passage’s main idea?",
+          "choices": [
+            "Tomas discovers that helping another passenger can be compatible with protecting the scenery he is responsible for.",
+            "Tomas decides that scenery is safest only when it occupies a passenger’s seat.",
+            "June persuades Tomas that protecting the class’s work deserves less attention than the passengers’ comfort.",
+            "The crossing teaches Tomas that helping a passenger is worthwhile chiefly when that passenger returns a favor."
+          ],
+          "reasons": [
+            "The shared effort keeps the box intact while making space for the woman and child.",
+            "The box remains intact while being held cooperatively, so the outcome challenges the initial need to keep the seat for it.",
+            "June keeps protecting the scenery while making room; the final lesson joins rather than ranks the two responsibilities.",
+            "The woman helps with the lid, but the siblings offer the seat before any promised exchange or expectation of reward."
+          ],
+          "evidence": "protecting the work and making space for someone could be parts of the same task.",
+          "why": "Tomas’s final understanding connects the intact scenery and the assistance he gives, rather than treating responsibility and generosity as opposites.",
+          "method": "Trace what the passage develops from the opening through its outcome or concluding interpretation.",
+          "trap": "A main idea accounts for the passage’s development and preserves its limits; one striking detail is not enough."
+        },
+        {
+          "id": "target-inference",
+          "target": "Inference",
+          "prompt": "What can be inferred from Tomas taking the opposite end of the box after June lifts it?",
+          "choices": [
+            "Despite his concern, he cooperates with her choice to make room for the woman.",
+            "He accepts June’s plan because he is certain from the beginning that the scenery will stay intact.",
+            "He tries to make June protect the box alone while he concentrates on making room on the bench.",
+            "He takes the box in order to stop June from sharing the bench with the woman."
+          ],
+          "reasons": [
+            "His action supports the box even though he initially worries about June’s decision.",
+            "His imagined crushed scenery and concern about classmates show uncertainty, even though he cooperates.",
+            "Taking the opposite end shares the protective work instead of leaving it to June alone.",
+            "The action supports June’s decision and allows the woman to sit rather than preventing it."
+          ],
+          "evidence": "Instead, he took the opposite end of the box so it would not sag.",
+          "why": "The sentence directly states the practical action; his cooperation with June’s decision follows from the contrast with what he wanted to say.",
+          "method": "Connect the exact clue to its surrounding actions or argument; distinguish what is stated from the conclusion it supports.",
+          "trap": "A defensible inference follows from the text without adding an unsupported motive, guarantee, or universal claim."
+        }
+      ]
+    },
+    {
+      "id": "roof-at-dawn",
+      "title": "The Roof at Dawn",
+      "genre": "Poetry",
+      "difficulty": 3,
+      "scenario": "urban-dawn-poem",
+      "structure": "stanzas-moving-from-stillness-to-activity",
+      "content": "Before the buses wake,\nthe roof keeps last night’s rain\nin shallow cups of silver.\nA bent antenna points\nto somewhere past the clouds,\nthough nothing follows it.\n\nBelow, a shutter rattles up.\nThe bakery breathes warm air\nthrough a narrow open door.\nIts light lays one gold ribbon\nacross the empty sidewalk;\na pigeon steps around it.\n\nI used to think the morning\narrived in one great sweep,\na curtain pulled aside.\nBut here it comes in pieces:\na key, a wheel, a lifted lid,\na hand that sets out bread.\n\nThe puddles hold the sky\nuntil the first shoes stir them.\nTheir small bright maps dissolve.\nNo trumpet marks the moment.\nThe street becomes itself\nby people doing ordinary things.",
+      "plans": [
+        {
+          "id": "personification",
+          "target": "Personification",
+          "prompt": "How does “The bakery breathes warm air” use personification?",
+          "choices": [
+            "It describes the building’s release of warm air as a living creature’s breath.",
+            "It claims that bread is literally alive.",
+            "It compares the bakery to a metal tool.",
+            "It gives a detailed scientific account of human breathing."
+          ],
+          "reasons": [
+            "The nonhuman bakery is assigned the animate action of breathing.",
+            "The personification concerns the bakery and warm air, not living bread.",
+            "No tool comparison appears.",
+            "The line is a figurative description rather than a physiological explanation."
+          ],
+          "evidence": "The bakery breathes warm air",
+          "why": "The verb gives the awakening street a sense of life through an ordinary physical detail.",
+          "method": "Identify the nonhuman subject and the human or animal action attributed to it.",
+          "trap": "Personification is an assigned living action or quality, not every vivid description."
+        },
+        {
+          "id": "imagery",
+          "target": "Imagery",
+          "prompt": "What does the image of “one gold ribbon” across the sidewalk help the reader visualize?",
+          "choices": [
+            "A narrow band of warm light spreading from the bakery door.",
+            "A fabric ribbon that the pigeon carries away.",
+            "A painted line being added to the street.",
+            "The whole sky turning completely dark."
+          ],
+          "reasons": [
+            "The preceding reference to the bakery’s light identifies the ribbon as light.",
+            "The pigeon steps around the image; no fabric is carried.",
+            "No painting activity is described.",
+            "The image belongs to dawn’s growing light."
+          ],
+          "evidence": "Its light lays one gold ribbon\nacross the empty sidewalk;",
+          "why": "Color and shape turn the patch of light into a clear visual image.",
+          "method": "Read the image with its grammatical subject to identify what produces the imagined shape.",
+          "trap": "A concrete image can describe light without introducing a literal object."
+        },
+        {
+          "id": "mood",
+          "target": "Mood",
+          "prompt": "Which mood is created by the poem’s attention to quiet, ordinary actions?",
+          "choices": [
+            "Reflective calm.",
+            "Urgent terror.",
+            "Bitter hostility.",
+            "Triumphant celebration of a victory."
+          ],
+          "reasons": [
+            "Small details, patient observation, and the absence of a trumpet create a quiet contemplative feeling.",
+            "There is no threat or emergency.",
+            "The speaker shows no resentment toward the people described.",
+            "The ending emphasizes ordinary activity rather than a victory."
+          ],
+          "evidence": "No trumpet marks the moment.",
+          "why": "The rejection of a grand announcement supports the calm mood of gradual, ordinary awakening.",
+          "method": "Connect the pace, sensory details, and scale of the actions to the feeling they create for the reader.",
+          "trap": "Mood concerns the atmosphere created for the reader, not merely the time of day."
+        },
+        {
+          "id": "word-choice",
+          "target": "Word choice",
+          "prompt": "Why is “pieces” effective in “But here it comes in pieces”?",
+          "choices": [
+            "It emphasizes that morning becomes noticeable through many separate small actions.",
+            "It suggests that the speaker wants to break the street apart.",
+            "It proves that daylight arrives only on this roof.",
+            "It refers only to the pieces of bread inside the bakery."
+          ],
+          "reasons": [
+            "The following list of a key, wheel, lid, and hand develops the idea of many small contributions.",
+            "The poem observes activity without proposing destruction.",
+            "No exclusive claim about this roof is made.",
+            "Bread is one detail among several, not the whole referent."
+          ],
+          "evidence": "But here it comes in pieces:\na key, a wheel, a lifted lid,\na hand that sets out bread.",
+          "why": "The word counters the earlier expectation of a single dramatic arrival with an accumulation of ordinary details.",
+          "method": "Compare the word with the expectation stated in the preceding lines and the examples that follow.",
+          "trap": "A word’s effect depends on its contrast and examples, not only its dictionary meaning."
+        },
+        {
+          "id": "tone",
+          "target": "Tone",
+          "prompt": "Which description best captures the speaker’s tone toward the street’s morning activity?",
+          "choices": [
+            "Appreciative and observant.",
+            "Mocking and dismissive.",
+            "Accusatory and distrustful.",
+            "Confused about whether dawn exists."
+          ],
+          "reasons": [
+            "The speaker notices ordinary work carefully and finds meaning in its gradual contribution.",
+            "The details are valued, not mocked.",
+            "No wrongdoing is alleged.",
+            "The speaker revises an expectation about how dawn feels, not its existence."
+          ],
+          "evidence": "The street becomes itself\nby people doing ordinary things.",
+          "why": "The ending gives ordinary actions a constructive significance, revealing appreciation rather than dismissal.",
+          "method": "Ask how the speaker evaluates the subject, using the ending and selected details.",
+          "trap": "Tone is the speaker’s attitude; it is related to but distinct from the reader’s mood."
+        },
+        {
+          "id": "target-main-idea",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the poem’s central idea?",
+          "choices": [
+            "Morning becomes meaningful through the accumulation of ordinary human activities.",
+            "Morning loses its beauty as workers disturb the patterns left by the night’s rain.",
+            "Quiet natural details matter more to the street’s identity than the people who work there.",
+            "The street becomes itself through a single dramatic transformation at daybreak."
+          ],
+          "reasons": [
+            "The list of keys, wheels, lids, and bread builds to the claim that ordinary actions make the street itself.",
+            "The puddle images change, but the appreciative ending values the ordinary actions that animate the street.",
+            "The final lines give people’s ordinary activities a central role, not a lesser role than weather.",
+            "The speaker explicitly revises the expectation of one great sweep in favor of separate small beginnings."
+          ],
+          "evidence": "The street becomes itself\nby people doing ordinary things.",
+          "why": "The ending synthesizes the separate observations into an understanding of a place made active by daily work.",
+          "method": "Trace what the passage develops from the opening through its outcome or concluding interpretation.",
+          "trap": "A main idea accounts for the passage’s development and preserves its limits; one striking detail is not enough."
+        },
+        {
+          "id": "target-inference",
+          "target": "Inference",
+          "prompt": "What can be inferred about how the speaker’s understanding of morning has changed?",
+          "choices": [
+            "The speaker now notices many small beginnings rather than expecting one dramatic arrival.",
+            "The speaker withdraws from the street’s activity to value only the separate world of the roof.",
+            "The speaker is disappointed that ordinary actions fail to create the dramatic arrival once expected.",
+            "The speaker now explains the street’s morning mainly through changes in weather rather than work."
+          ],
+          "reasons": [
+            "The poem contrasts the former idea of one great sweep with a key, wheel, lid, and hand.",
+            "The poem looks from the roof to the bakery and street, joining the observations rather than rejecting the activity below.",
+            "The ending finds meaning in ordinary actions; it does not express disappointment in their scale.",
+            "Rain and reflected sky form images, but keys, wheels, lids, and bread develop the change in understanding."
+          ],
+          "evidence": "But here it comes in pieces:\na key, a wheel, a lifted lid,\na hand that sets out bread.",
+          "why": "The contrast with “I used to think” supports a shift in perspective toward gradual, ordinary contributions.",
+          "method": "Connect the exact clue to its surrounding actions or argument; distinguish what is stated from the conclusion it supports.",
+          "trap": "A defensible inference follows from the text without adding an unsupported motive, guarantee, or universal claim."
+        }
+      ]
+    },
+    {
+      "id": "johnson-check",
+      "title": "The Importance of a Second Calculation",
+      "genre": "Biography",
+      "difficulty": 3,
+      "scenario": "katherine-johnson-and-trajectory-checking",
+      "structure": "career-examples-and-interpretation",
+      "sources": [
+        "https://www.nasa.gov/centers-and-facilities/langley/katherine-johnson-biography/",
+        "https://science.nasa.gov/people/katherine-johnson/"
+      ],
+      "content": "Katherine Johnson’s work at the agency that became NASA joined mathematical skill to a practical question: how could a spacecraft reach a chosen destination? A trajectory calculation had to connect a path through space with the conditions of launch and landing. The problem was not solved merely by producing a page of numbers. Those numbers had to describe the mission’s intended course.\n\nIn 1960, Johnson and engineer Ted Skopinski coauthored a report on the equations for an orbital flight with a specified landing position. Johnson also performed trajectory analysis for Alan Shepard’s 1961 mission. These tasks placed her work directly within the decisions that shaped early American human spaceflight. They illustrate a connection between mathematical research and the operational needs of a mission.\n\nWhen NASA prepared for John Glenn’s orbital flight in 1962, electronic computers were already central to the calculations. Glenn nevertheless asked Johnson to check the computer’s trajectory figures. The request did not mean that all electronic computation was useless. It showed the value placed on an additional check by a mathematician whose judgment the astronaut trusted.\n\nA second calculation can serve a different purpose from the first. Rather than replacing every tool, it tests whether the result is dependable enough for the decision at hand. In Johnson’s case, mathematical expertise mattered alongside the growing speed of electronic machines. Her role challenges a simple story in which a newer technology immediately makes earlier skills irrelevant. The machines changed how work could be done; the need to understand and verify their output remained.",
+      "plans": [
+        {
+          "id": "individual",
+          "target": "Development of individuals",
+          "prompt": "How does the author develop Johnson’s role in the passage?",
+          "choices": [
+            "By connecting examples of her calculations to mission planning and trusted verification.",
+            "By listing only honors that she received after retirement.",
+            "By describing her as an opponent of every electronic computer.",
+            "By explaining that her work had no practical use."
+          ],
+          "reasons": [
+            "The report, Shepard analysis, and Glenn check all relate mathematical work to mission needs.",
+            "No retirement honors are listed.",
+            "The passage does not portray a blanket rejection of computers.",
+            "Her work is explicitly tied to spaceflight decisions."
+          ],
+          "evidence": "These tasks placed her work directly within the decisions that shaped early American human spaceflight.",
+          "why": "Specific examples show both the practical relevance of her research and the trust placed in her judgment.",
+          "method": "Identify what each career example reveals about the individual’s contribution.",
+          "trap": "A biography may develop a person through work and relationships rather than a list of honors."
+        },
+        {
+          "id": "best",
+          "target": "Best evidence",
+          "prompt": "Which sentence best supports the idea that Johnson’s expertise remained valuable after electronic computers were introduced?",
+          "choices": [
+            "Glenn nevertheless asked Johnson to check the computer’s trajectory figures.",
+            "A trajectory calculation had to connect a path through space with the conditions of launch and landing.",
+            "In 1960, Johnson and engineer Ted Skopinski coauthored a report.",
+            "The problem was not solved merely by producing a page of numbers."
+          ],
+          "reasons": [
+            "The sentence directly describes a request for her expertise despite the use of computers.",
+            "This explains the task but does not establish her later role alongside computers.",
+            "The report predates the described Glenn request and does not itself show the comparison.",
+            "This general statement does not identify her continuing role after computer adoption."
+          ],
+          "evidence": "Glenn nevertheless asked Johnson to check the computer’s trajectory figures.",
+          "why": "The request places her mathematical judgment beside the computer’s output, directly supporting the claim.",
+          "method": "Choose the quotation that most directly connects both parts of the claim: computers in use and Johnson still needed.",
+          "trap": "A true quotation is weaker evidence if it does not address the claim’s specific relationship."
+        },
+        {
+          "id": "vocab",
+          "target": "Vocabulary in context",
+          "prompt": "What does “operational” mean in “the operational needs of a mission”?",
+          "choices": [
+            "Concerned with carrying out the mission in practice.",
+            "Concerned only with awarding prizes.",
+            "Unrelated to the mission’s decisions.",
+            "Impossible to apply outside a classroom."
+          ],
+          "reasons": [
+            "The surrounding sentences connect calculations to planning and mission decisions.",
+            "No prize discussion supplies this meaning.",
+            "The tasks are directly tied to mission decisions.",
+            "The paragraph stresses practical application."
+          ],
+          "evidence": "They illustrate a connection between mathematical research and the operational needs of a mission.",
+          "why": "Research is contrasted with its practical use in executing a mission, giving operational its context-specific meaning.",
+          "method": "Use the contrast between mathematical research and practical mission decisions.",
+          "trap": "Choose the sense that fits this context rather than a vaguely related technical meaning."
+        },
+        {
+          "id": "textual",
+          "target": "Textual evidence",
+          "prompt": "Which quotation supports the author’s rejection of the claim that new technology immediately makes older skills irrelevant?",
+          "choices": [
+            "The machines changed how work could be done; the need to understand and verify their output remained.",
+            "A trajectory calculation had to connect a path through space with the conditions of launch and landing.",
+            "Johnson also performed trajectory analysis for Alan Shepard’s 1961 mission.",
+            "In 1960, Johnson and engineer Ted Skopinski coauthored a report."
+          ],
+          "reasons": [
+            "This explicitly states that verification skills remained necessary as machines changed the work.",
+            "This describes the calculation task without discussing the continued role of skills.",
+            "This identifies an earlier assignment rather than interpreting technological change.",
+            "This report detail does not itself establish the continued need after new technology."
+          ],
+          "evidence": "The machines changed how work could be done; the need to understand and verify their output remained.",
+          "why": "The contrast directly expresses continuity of the need for understanding alongside change in tools.",
+          "method": "Locate the sentence that addresses the author’s interpretive claim rather than only naming an event.",
+          "trap": "Evidence must support the particular claim, not merely concern the same person."
+        },
+        {
+          "id": "structure",
+          "target": "Text structure",
+          "prompt": "How is the passage organized?",
+          "choices": [
+            "It introduces a practical mathematical problem, presents career examples, and draws a broader conclusion about verification.",
+            "It gives step-by-step directions for launching a spacecraft.",
+            "It alternates two fictional narrators’ accounts of a flight.",
+            "It ranks computer brands from least to most accurate."
+          ],
+          "reasons": [
+            "The opening frames the task, the middle gives examples, and the ending interprets their significance.",
+            "No launch procedure or complete calculations are provided.",
+            "The text is a biographical explanation, not alternating fictional accounts.",
+            "No brands or comparative performance rankings appear."
+          ],
+          "evidence": "Her role challenges a simple story in which a newer technology immediately makes earlier skills irrelevant.",
+          "why": "This concluding interpretation follows the specific career examples and states their wider significance.",
+          "method": "Identify the job each section does: framing, illustrating, or interpreting.",
+          "trap": "Chronological dates can support an explanatory structure rather than form a complete life chronology."
+        },
+        {
+          "id": "target-main-idea",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the main idea of the passage?",
+          "choices": [
+            "Johnson’s work illustrates the continuing value of mathematical understanding and verification alongside new computing tools.",
+            "Independent checking shows that electronic calculations were too unreliable to have a practical role in spaceflight.",
+            "Johnson’s role moved away from mission decisions toward research with little operational relevance.",
+            "Faster computers made accepting numerical output more valuable than understanding how it related to a mission."
+          ],
+          "reasons": [
+            "The mission examples culminate in her requested check of computer figures and the need to understand their output.",
+            "Computers remain central and the author explicitly rejects calling all electronic computation useless.",
+            "The examples connect both mathematical research and verification to practical mission needs.",
+            "The conclusion preserves the need to understand and verify output alongside the tools’ speed."
+          ],
+          "evidence": "The machines changed how work could be done; the need to understand and verify their output remained.",
+          "why": "The concluding contrast links the career examples to the broader idea that faster tools do not eliminate the need for informed verification.",
+          "method": "Trace what the passage develops from the opening through its outcome or concluding interpretation.",
+          "trap": "A main idea accounts for the passage’s development and preserves its limits; one striking detail is not enough."
+        },
+        {
+          "id": "target-inference",
+          "target": "Inference",
+          "prompt": "What can reasonably be inferred about Glenn’s request that Johnson check the trajectory figures?",
+          "choices": [
+            "He valued an additional check by someone whose mathematical judgment he trusted.",
+            "Glenn wanted Johnson to perform a different task instead of checking the trajectory output.",
+            "Glenn valued Johnson’s judgment only before electronic computers were introduced.",
+            "Glenn had already proved that the computer’s figures were wrong before requesting the check."
+          ],
+          "reasons": [
+            "The text explicitly connects the request with trusted judgment and the usefulness of an additional check.",
+            "The request specifically concerns checking the computer’s trajectory figures, not replacing it with an unrelated task.",
+            "He requests her expertise while electronic computers are already central to the calculations.",
+            "An additional verification can test dependability without presupposing that an error has already been proved."
+          ],
+          "evidence": "It showed the value placed on an additional check by a mathematician whose judgment the astronaut trusted.",
+          "why": "The inference concerns the purpose of independent verification, while the surrounding qualification prevents interpreting it as blanket rejection of computers.",
+          "method": "Connect the exact clue to its surrounding actions or argument; distinguish what is stated from the conclusion it supports.",
+          "trap": "A defensible inference follows from the text without adding an unsupported motive, guarantee, or universal claim."
+        }
+      ]
+    },
+    {
+      "id": "bench-we-can-change",
+      "title": "A Bench We Can Change",
+      "genre": "Speech",
+      "difficulty": 4,
+      "scenario": "fictional-student-council-address",
+      "structure": "claim-counterclaim-qualified-proposal",
+      "content": "The following is an original fictional speech to a school council.\n\nMembers of the council, we should test a movable bench near the courtyard’s eastern wall before spending our full budget on a permanent seating area. Students have asked for somewhere to sit outside, and that request deserves a response. But a useful response must answer more than whether we can buy a bench. It must tell us whether the location serves the people who need it and whether it leaves enough room for other activities.\n\nSome members argue that a permanent bench would show that we take the request seriously. They worry that a trial will look like another postponement. That is a reasonable concern, especially for students who have waited through several meetings. A trial without a deadline could indeed become an excuse to do nothing. I propose something different: a four-week test, a public schedule for collecting comments, and a decision at the next council meeting.\n\nDuring the test, we should record how the bench is used at different times, not simply count seats filled on one sunny afternoon. We should ask the students who use mobility devices whether the route remains clear. We should also hear from the classes that use the courtyard for demonstrations. Their needs may not appear in a simple count of people sitting down.\n\nA trial will not reveal every possible future problem. It can, however, expose difficulties while we can still move the bench. If the location works, the observations will support a permanent plan. If it does not, a changeable design will let us respond without undoing an expensive installation. Testing is therefore a way to make our commitment more responsible, provided we also commit to an actual decision. Let us offer students a place to sit and give ourselves a way to learn where that place should be.",
+      "plans": [
+        {
+          "id": "claim",
+          "target": "Claims",
+          "prompt": "What is the speaker’s main claim?",
+          "choices": [
+            "A time-limited trial of movable seating is a responsible step toward a permanent plan.",
+            "The council should permanently refuse the request for outside seating.",
+            "Any temporary project should continue indefinitely without a decision.",
+            "A single afternoon’s seat count is enough to settle the location."
+          ],
+          "reasons": [
+            "The speech combines a movable test with a defined timeline and later decision.",
+            "The speaker says the students’ request deserves a response.",
+            "The proposed deadline specifically avoids indefinite postponement.",
+            "The speaker explicitly asks for observations at different times and from different users."
+          ],
+          "evidence": "Testing is therefore a way to make our commitment more responsible, provided we also commit to an actual decision.",
+          "why": "The qualification about a decision is part of the main claim, not an optional detail to discard.",
+          "method": "Identify the action proposed and the condition that distinguishes it from the counterclaim’s concern.",
+          "trap": "A claim may include a necessary qualification."
+        },
+        {
+          "id": "reasons",
+          "target": "Reasons",
+          "prompt": "Which reason supports using a movable bench during the trial?",
+          "choices": [
+            "A discovered problem can be addressed before an expensive permanent installation must be undone.",
+            "A movable bench guarantees that no future problem will ever occur.",
+            "A movable bench makes it unnecessary to listen to other courtyard users.",
+            "A movable bench proves that every council member agrees."
+          ],
+          "reasons": [
+            "The speaker links changeability to correcting difficulties at lower commitment.",
+            "The speech acknowledges that a trial cannot reveal every future problem.",
+            "The proposal includes hearing from different users.",
+            "No unanimous agreement is established."
+          ],
+          "evidence": "If it does not, a changeable design will let us respond without undoing an expensive installation.",
+          "why": "The ability to revise the location is the practical benefit used to support the trial.",
+          "method": "Separate a reason for the design from a stronger promise the speaker does not make.",
+          "trap": "A practical advantage is not a guarantee of perfect results."
+        },
+        {
+          "id": "counter",
+          "target": "Counterclaims",
+          "prompt": "How does the speaker respond to the concern that a trial is another postponement?",
+          "choices": [
+            "By acknowledging the concern and proposing a deadline and a scheduled decision.",
+            "By saying that the students have no reason to be impatient.",
+            "By denying that any previous meetings occurred.",
+            "By promising to make no decision until every future problem is known."
+          ],
+          "reasons": [
+            "The speaker calls the concern reasonable and distinguishes a bounded trial from delay.",
+            "Students’ waiting is explicitly recognized.",
+            "Several meetings are mentioned, not denied.",
+            "The speaker rejects unlimited delay and admits complete foresight is impossible."
+          ],
+          "evidence": "I propose something different: a four-week test, a public schedule for collecting comments, and a decision at the next council meeting.",
+          "why": "The concrete timeline answers the risk that temporary testing could become permanent inaction.",
+          "method": "Identify the opposing concern and the feature of the proposal that directly answers it.",
+          "trap": "Acknowledging a counterclaim does not mean abandoning the main claim."
+        },
+        {
+          "id": "evaluate",
+          "target": "Evaluating arguments",
+          "prompt": "Which additional information would most help evaluate whether the trial could answer the questions the speaker raises?",
+          "choices": [
+            "Whether the trial’s observation schedule includes both seating times and courtyard activities affected by the bench.",
+            "Whether the bench color is the speaker’s favorite color.",
+            "Whether the speech includes more sentences than the previous speech.",
+            "Whether all future weather conditions can be predicted perfectly."
+          ],
+          "reasons": [
+            "The proposal needs observations that cover the stated uses and access concerns.",
+            "A personal color preference does not test the argument’s reasoning.",
+            "Speech length does not establish whether the trial gathers relevant evidence.",
+            "Perfect prediction is impossible and exceeds the proposal’s stated purpose."
+          ],
+          "evidence": "Their needs may not appear in a simple count of people sitting down.",
+          "why": "An adequate evaluation asks whether the evidence plan captures the relevant effects beyond occupancy.",
+          "method": "Match proposed evidence to the questions the argument says must be answered.",
+          "trap": "Evaluate an argument by its relevant evidence and reasoning, not by superficial presentation."
+        },
+        {
+          "id": "diction",
+          "target": "Diction",
+          "prompt": "How do the words “test,” “record,” and “observations” contribute to the speech’s approach?",
+          "choices": [
+            "They present the proposal as a decision based on examination and evidence.",
+            "They characterize disagreement as a personal insult.",
+            "They suggest that the council should avoid making any plan.",
+            "They portray temporary seating as a magical solution."
+          ],
+          "reasons": [
+            "The repeated vocabulary emphasizes a structured process of learning before commitment.",
+            "The counterclaim is treated respectfully rather than as an insult.",
+            "The process includes a specific decision date.",
+            "The speech describes limits and practical measurements rather than magic."
+          ],
+          "evidence": "If the location works, the observations will support a permanent plan.",
+          "why": "The vocabulary frames evidence as the basis for a permanent decision, making the trial part of a responsible process.",
+          "method": "Look for a pattern in selected words and connect it to the speaker’s strategy.",
+          "trap": "Diction is the effect of deliberate word choices, not merely whether words are long."
+        },
+        {
+          "id": "target-main-idea",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the central idea of the speech?",
+          "choices": [
+            "A bounded, accessible trial can make a seating decision more responsible if it leads to an actual decision.",
+            "A temporary trial should be used to postpone the request indefinitely.",
+            "The courtyard needs no outside seating because students never requested it.",
+            "Counting occupied seats on one afternoon can establish every effect of the bench."
+          ],
+          "reasons": [
+            "The speech combines a time-limited test, varied observations, different users’ needs, and a scheduled decision.",
+            "The speaker explicitly rejects a trial used as an excuse for doing nothing.",
+            "Students have asked for somewhere to sit, and the speaker says the request deserves a response.",
+            "The speech calls for observations at different times and attention to needs not captured by seat counts."
+          ],
+          "evidence": "Testing is therefore a way to make our commitment more responsible, provided we also commit to an actual decision.",
+          "why": "The condition about a real decision distinguishes the proposal from the very postponement its critics fear.",
+          "method": "Trace what the passage develops from the opening through its outcome or concluding interpretation.",
+          "trap": "A main idea accounts for the passage’s development and preserves its limits; one striking detail is not enough."
+        },
+        {
+          "id": "target-inference",
+          "target": "Inference",
+          "prompt": "What can be inferred about the speaker’s attitude toward the members who fear another postponement?",
+          "choices": [
+            "The speaker takes their concern seriously and tries to distinguish a useful trial from indefinite delay.",
+            "The speaker believes their concern is so foolish that it needs no answer.",
+            "The speaker agrees that every trial must prevent a permanent decision.",
+            "The speaker thinks waiting students have never expressed interest in seating."
+          ],
+          "reasons": [
+            "The concern is called reasonable, and the speaker answers it with a defined timeline and decision.",
+            "The speech respectfully acknowledges why delayed action would be frustrating.",
+            "The proposed trial leads to a decision at the next council meeting.",
+            "The speech explicitly recognizes students who have waited through several meetings."
+          ],
+          "evidence": "That is a reasonable concern, especially for students who have waited through several meetings.",
+          "why": "The acknowledgment supports a respectful attitude, and the following concrete schedule shows an effort to answer the concern rather than dismiss it.",
+          "method": "Connect the exact clue to its surrounding actions or argument; distinguish what is stated from the conclusion it supports.",
+          "trap": "A defensible inference follows from the text without adding an unsupported motive, guarantee, or universal claim."
+        }
+      ]
+    },
+    {
+      "id": "seed-ship",
+      "title": "Instructions for the Next Crew",
+      "genre": "Science fiction",
+      "difficulty": 4,
+      "scenario": "fictional-orbital-greenhouse-log",
+      "structure": "log-entry-with-conflicting-priorities",
+      "content": "The following is an original work of science fiction; its invented technology is part of the story.\n\nLog for the next crew: the greenhouse screen will report that every tray is healthy. Do not mistake this sentence for an instruction to discard the screen. It measures water, light, and temperature more steadily than we can. But last week, when the vines filled the upper frame, it continued to report the same good numbers while the oldest leaves crowded the new ones out of the light. The screen measures light above each tray, not light reaching every leaf.\n\nAt first, Ren wanted to increase the lamps’ output. I wanted to remove the tallest vines. Both plans would have changed the whole tray to solve a problem affecting only part of it. We postponed either change long enough to trace the shadows through one full lamp cycle. That patient delay felt harder than pressing a bright, decisive button. By the end of the cycle, however, we could see where the adjustable supports had tilted inward.\n\nRen had been in charge of checking the supports when we arrived. I could have written that fact in this log as an accusation. Instead, I recorded the hinge’s gradual movement. A loose fitting could pass a quick inspection and shift later under the vines’ weight. Ren moved one support and watched the shadow thin. We changed the fitting, then recorded both the repair and the screen’s limitation.\n\nFuture crews will still use the numbers. They should also compare those numbers with the living arrangement beneath the sensor. A useful report can be accurate and incomplete at the same time. If this log sounds cautious, that is because we learned that the quickest-looking repair may begin by answering the wrong question. We leave you healthy trays and, more importantly, a reason to keep looking at them.",
+      "plans": [
+        {
+          "id": "multiple",
+          "target": "Multiple-meaning words",
+          "prompt": "Which meaning of “charge” is used in “in charge of checking the supports”?",
+          "choices": [
+            "Responsibility for a task.",
+            "A price paid for a service.",
+            "An electrical property stored in a device.",
+            "A rapid attack toward an opponent."
+          ],
+          "reasons": [
+            "The phrase names Ren’s assigned responsibility.",
+            "No payment is described.",
+            "The phrase refers to checking supports rather than electrical storage.",
+            "No attack takes place."
+          ],
+          "evidence": "Ren had been in charge of checking the supports when we arrived.",
+          "why": "The following task establishes the responsibility sense of the word in this phrase.",
+          "method": "Use the complete phrase and the action that follows it to select among the word’s meanings.",
+          "trap": "A science-fiction setting does not make every ambiguous word an electrical term."
+        },
+        {
+          "id": "connotation",
+          "target": "Connotation",
+          "prompt": "What connotation does “a bright, decisive button” create in its context?",
+          "choices": [
+            "The appealing appearance of an immediate, confident solution.",
+            "A confirmed guarantee that the button will fix the plants.",
+            "An accusation that every technological device is dishonest.",
+            "A description of a button that the crew cannot see."
+          ],
+          "reasons": [
+            "The phrase contrasts an attractive quick action with the harder choice to investigate.",
+            "The paragraph shows that pressing it could address the wrong cause.",
+            "The log explicitly values the screen’s measurements.",
+            "Bright suggests visibility rather than invisibility."
+          ],
+          "evidence": "That patient delay felt harder than pressing a bright, decisive button.",
+          "why": "The evaluative words make immediate action seem tempting, sharpening the contrast with careful inquiry.",
+          "method": "Distinguish the associations a word creates from what the text actually proves about the object.",
+          "trap": "A word’s positive connotation is not factual proof of effectiveness."
+        },
+        {
+          "id": "evidence",
+          "target": "Best evidence",
+          "prompt": "Which observation best supports the claim that the screen could be accurate but incomplete?",
+          "choices": [
+            "It reported light above a tray while some lower leaves remained shaded.",
+            "It measured temperature more steadily than the crew.",
+            "Ren had arrived with responsibility for checking supports.",
+            "The crew wrote a log for future readers."
+          ],
+          "reasons": [
+            "The measurement can be correct at its sensor without representing the light available to every leaf.",
+            "Steady temperature measurement shows usefulness but does not demonstrate the missing light information.",
+            "Responsibility does not establish the measurement’s limitation.",
+            "Writing a log does not itself show that the screen omitted information."
+          ],
+          "evidence": "The screen measures light above each tray, not light reaching every leaf.",
+          "why": "The difference between the measured location and the affected leaves directly explains the incompleteness.",
+          "method": "Find evidence that demonstrates both accuracy within a scope and a relevant fact outside that scope.",
+          "trap": "Useful evidence should establish the relationship in the claim, not merely its subject."
+        },
+        {
+          "id": "motivation",
+          "target": "Character motivation",
+          "prompt": "Why does the narrator record the hinge’s movement instead of presenting Ren’s earlier inspection as an accusation?",
+          "choices": [
+            "The narrator wants the log to explain the failure’s mechanism rather than assign unsupported blame.",
+            "The narrator knows that Ren intentionally damaged the plants.",
+            "The narrator wants future crews to ignore all support inspections.",
+            "The narrator believes no repair was necessary."
+          ],
+          "reasons": [
+            "The passage explains that the fitting could shift after a reasonable quick inspection.",
+            "Intentional damage is not established.",
+            "The log supplies information for more informed inspection.",
+            "The fitting is changed and the repair is recorded."
+          ],
+          "evidence": "A loose fitting could pass a quick inspection and shift later under the vines’ weight.",
+          "why": "This possible sequence makes responsibility for an earlier inspection insufficient to prove fault for a later shift.",
+          "method": "Connect the alternative explanation to the narrator’s decision about how to describe Ren’s role.",
+          "trap": "Being responsible for a task does not prove causing a later failure."
+        },
+        {
+          "id": "structure",
+          "target": "Text structure",
+          "prompt": "Why does the log begin by stating the screen’s healthy report before explaining the shaded leaves?",
+          "choices": [
+            "To establish a reassuring measurement that the later account qualifies.",
+            "To prove the greenhouse never had a problem.",
+            "To reveal that the story ends before any inspection occurs.",
+            "To instruct the next crew to discard all numerical records."
+          ],
+          "reasons": [
+            "The apparent reassurance becomes the starting point for explaining the measurement’s limitation.",
+            "The shaded leaves are a real problem within the story.",
+            "Inspection and repair are narrated afterward.",
+            "The opening specifically says not to discard the screen."
+          ],
+          "evidence": "But last week, when the vines filled the upper frame, it continued to report the same good numbers while the oldest leaves crowded the new ones out of the light.",
+          "why": "The contrast turns the initial report into a question about what the numbers cover.",
+          "method": "Identify the expectation established by the opening and how the next information changes it.",
+          "trap": "An opening statement may be qualified by the development rather than represent the final conclusion."
+        },
+        {
+          "id": "target-main-idea",
+          "target": "Main idea",
+          "prompt": "What is the main idea conveyed by the log for the next crew?",
+          "choices": [
+            "Useful numerical reports should be interpreted alongside observation of what their measurements actually cover.",
+            "The next crew should discard every screen because numbers can never be accurate.",
+            "The greenhouse problem can only be solved by removing every vine immediately.",
+            "A person who checked the supports earlier must be blamed for every later change."
+          ],
+          "reasons": [
+            "The log preserves the screen’s usefulness while explaining the unmeasured shadows and the need to inspect the living arrangement.",
+            "The log explicitly says not to discard the screen.",
+            "The crew first investigates and then changes a fitting rather than removing all vines.",
+            "The narrator explains that a fitting can pass an inspection and shift later."
+          ],
+          "evidence": "They should also compare those numbers with the living arrangement beneath the sensor.",
+          "why": "The practical advice follows a case in which accurate tray-level numbers missed a local problem, supporting interpretation rather than blind acceptance or rejection.",
+          "method": "Trace what the passage develops from the opening through its outcome or concluding interpretation.",
+          "trap": "A main idea accounts for the passage’s development and preserves its limits; one striking detail is not enough."
+        },
+        {
+          "id": "target-inference",
+          "target": "Inference",
+          "prompt": "What can be inferred about why the narrator records the hinge’s gradual movement instead of accusing Ren?",
+          "choices": [
+            "The narrator wants the log to explain the mechanism that future crews can check rather than assign unsupported blame.",
+            "The narrator has proved that Ren intentionally loosened the hinge.",
+            "The narrator believes that the fitting could not possibly move after an inspection.",
+            "The narrator plans to conceal both the repair and the screen’s limitation."
+          ],
+          "reasons": [
+            "The possible later shift means an earlier inspection does not prove fault; explaining movement gives useful information.",
+            "The passage supplies no evidence of intentional loosening.",
+            "The narrator explicitly describes how a fitting could shift later under weight.",
+            "Both the repair and the screen’s limitation are recorded in the log."
+          ],
+          "evidence": "A loose fitting could pass a quick inspection and shift later under the vines’ weight.",
+          "why": "The stated possibility prevents a justified conclusion of personal fault and supports a log focused on the observable mechanism and future inspection.",
+          "method": "Connect the exact clue to its surrounding actions or argument; distinguish what is stated from the conclusion it supports.",
+          "trap": "A defensible inference follows from the text without adding an unsupported motive, guarantee, or universal claim."
+        }
+      ]
+    },
+    {
+      "id": "two-ways-to-remember",
+      "title": "Two Ways to Remember a Square",
+      "genre": "Creative nonfiction",
+      "difficulty": 5,
+      "scenario": "paired-original-opinions-on-a-public-square",
+      "structure": "paired-perspectives-common-goal-different-methods",
+      "content": "The following paired passages present fictional writers’ arguments about the same public square.\n\nTextA: A Square Made Legible\n\nOur square has changed names twice, and its oldest pavement lies beneath the newer stone. A visitor can cross it every day without learning either fact. I favor small signs that explain those changes. A sign cannot contain the whole history, but it can turn an unnoticed feature into a question a person might pursue. The old curb exposed by a repair becomes more than an inconvenient ridge when a reader learns why it is there.\n\nCritics fear that signs will make the square feel like a museum. That danger depends partly on the kind of signs we choose. A commanding panel that tells visitors what to think would interrupt the place; a brief account with a source and an open question could invite attention. Legibility need not mean a final interpretation. It can give people a starting point while leaving them room to disagree.\n\nTextB: A Square Kept in Conversation\n\nI also want visitors to learn the square’s past. Yet I hesitate to place that work entirely in fixed signs. A permanent label acquires an authority that its small size rarely deserves. Which version of a contested event gets the wall, and which becomes a footnote? Even a label written with care can make one account look like the place’s settled voice.\n\nI would begin with recorded conversations from residents and rotating outdoor readings. These would not be complete either; some voices would still be missing, and organizing the events would take work. Their advantage is that they can make differences of memory audible. Rather than remove every sign, I would ask that any sign identify its limits and point visitors toward those continuing conversations. The square should be a place where history is encountered and questioned, not merely received.",
+      "plans": [
+        {
+          "id": "texts",
+          "target": "Comparing texts",
+          "prompt": "Which statement accurately compares the writers’ main proposals?",
+          "choices": [
+            "WriterA favors brief informative signs; writerB favors ongoing conversations while allowing signs that acknowledge their limits.",
+            "Both favor recorded conversations over signs, but they differ about whether readings should be outdoors.",
+            "A favors a settled interpretation on permanent signs, while B permits history only in spoken form.",
+            "A sees limited signs as useful, while B thinks signs cannot have a useful role under any conditions."
+          ],
+          "reasons": [
+            "This preserves A’s signs and B’s emphasis on conversations without overstating B’s position.",
+            "A’s main proposal is brief informative signs; A does not propose recorded conversations or debate the location of readings.",
+            "A explicitly leaves room to disagree, and B allows signs that identify limits and point toward conversations.",
+            "B qualifies rather than bans signs, allowing them a supporting role in ongoing inquiry."
+          ],
+          "evidence": "Rather than remove every sign, I would ask that any sign identify its limits and point visitors toward those continuing conversations.",
+          "why": "B’s qualified acceptance of signs distinguishes the actual contrast from a simple for-or-against-signs division.",
+          "method": "State each proposal with its qualifications before comparing them.",
+          "trap": "A comparison can be wrong by exaggerating one side’s position."
+        },
+        {
+          "id": "perspectives",
+          "target": "Comparing perspectives",
+          "prompt": "How do the writers’ perspectives on a brief historical label differ?",
+          "choices": [
+            "A emphasizes its ability to start inquiry; B emphasizes the authority it may acquire despite its limits.",
+            "A treats brevity as a guarantee of accuracy, while B treats more voices as a guarantee of completeness.",
+            "A worries that the past remains unnoticed, while B worries that readers will question accounts too often.",
+            "A sees labels as settled meanings, while B wants interpretive authority assigned to one resident."
+          ],
+          "reasons": [
+            "Their different concerns are opening inquiry versus unintentionally making an account seem settled.",
+            "Both acknowledge limits; neither brevity nor multiple voices is presented as a guarantee.",
+            "A does describe unnoticed features, but B values continuing questions rather than worrying that there are too many.",
+            "A rejects final interpretation and B wants audible differences, not a single controlling resident."
+          ],
+          "evidence": "A permanent label acquires an authority that its small size rarely deserves.",
+          "why": "This concern in B contrasts with A’s view that a sign can provide a starting point for inquiry.",
+          "method": "Compare the value or risk each writer foregrounds, not merely whether both mention signs.",
+          "trap": "Different emphases need not imply wholly incompatible goals."
+        },
+        {
+          "id": "themes",
+          "target": "Comparing themes",
+          "prompt": "Which broader theme is shared by both texts?",
+          "choices": [
+            "Public understanding of the past benefits from recognizing that accounts are partial and open to further inquiry.",
+            "Public history is most useful when one authoritative account removes the need for further questions.",
+            "Disagreement about memory distracts people from the practical use of public spaces.",
+            "A method for preserving memory should be abandoned whenever it cannot represent every voice."
+          ],
+          "reasons": [
+            "A rejects a final interpretation and B insists on identifying limits and continuing conversation.",
+            "A presents signs as starting points and B asks that history be questioned, so neither seeks to end inquiry.",
+            "Both treat attention and questioning as useful, rather than dismissing disagreement as a distraction.",
+            "Both retain qualified methods despite recognizing incompleteness."
+          ],
+          "evidence": "Legibility need not mean a final interpretation.",
+          "why": "A’s rejection of finality corresponds to B’s wish that history be encountered and questioned rather than merely received.",
+          "method": "Find a general insight supported in both texts despite their different proposed methods.",
+          "trap": "A shared theme can coexist with disagreement about how to act on it."
+        },
+        {
+          "id": "central-ideas",
+          "target": "Comparing central ideas",
+          "prompt": "Which statement identifies an important difference between the texts’ central ideas?",
+          "choices": [
+            "A argues that careful signs can reveal overlooked history; B argues that continuing voices can keep interpretations visibly unsettled.",
+            "A emphasizes an accessible entry point to history, while B is mainly concerned with correcting dates on signs.",
+            "A wants signs to replace conversations, while B wants conversations to replace every sign.",
+            "A sees disagreement as an obstacle to overcome, while B expects recorded voices to settle it permanently."
+          ],
+          "reasons": [
+            "The statement matches each text’s principal method and reason.",
+            "A’s description is supported, but B’s main concern is the authority and selection of accounts rather than date correction.",
+            "A does not call for replacing conversations, and B explicitly allows limited signs.",
+            "A leaves room to disagree; B makes differences audible rather than permanently resolving them."
+          ],
+          "evidence": "Their advantage is that they can make differences of memory audible.",
+          "why": "B identifies multiple voices as a practical way to preserve differences, contrasting with A’s initial informational access through signs.",
+          "method": "Compare the principal proposal and the reason that gives it significance in each text.",
+          "trap": "Do not replace a qualified central idea with an absolute slogan."
+        },
+        {
+          "id": "approaches",
+          "target": "Comparing authors' approaches",
+          "prompt": "How do the authors’ approaches to persuading readers differ?",
+          "choices": [
+            "A begins with overlooked physical features; B questions who gains authority when an account becomes fixed.",
+            "A cites historians’ authority to settle the issue, while B uses numerical estimates of support.",
+            "A uses the limits of labels to reject them, while B uses practical examples to accept signs alone.",
+            "A begins with an opposing argument, while B begins with a description of pavement repairs."
+          ],
+          "reasons": [
+            "A’s pavement example shows a missed opportunity, whereas B’s questions expose the selection problem of permanent labels.",
+            "A uses a concrete unnoticed feature and B uses questions about interpretive authority; neither provides the described authorities or numbers.",
+            "This reverses the writers’ proposals: A favors qualified signs and B emphasizes continuing conversation.",
+            "A opens with the square’s names and pavement, while B opens by sharing the goal and questioning fixed signs."
+          ],
+          "evidence": "Which version of a contested event gets the wall, and which becomes a footnote?",
+          "why": "B’s rhetorical questions focus attention on the power of selection, unlike A’s concrete opening about unnoticed features.",
+          "method": "Compare how each writer introduces the problem and what kind of concern that introduction emphasizes.",
+          "trap": "An author’s approach includes examples and framing, not only the proposed action."
+        },
+        {
+          "id": "function",
+          "target": "Sentence function",
+          "prompt": "What does B accomplish by admitting that “some voices would still be missing”?",
+          "choices": [
+            "B acknowledges a limit of the preferred approach instead of presenting it as complete.",
+            "B answers concerns about labels by denying that the proposed readings have limits.",
+            "B uses the concession as a reason to rely on labels instead of voices.",
+            "B narrows the readings’ purpose to establishing one final official account."
+          ],
+          "reasons": [
+            "The concession keeps B’s alternative from pretending to solve every representational problem.",
+            "The quoted admission explicitly recognizes limits of the preferred approach rather than denying them.",
+            "The next sentence preserves the advantage of multiple audible memories, so the concession does not reverse the proposal.",
+            "The argument favors continuing questions and differences of memory, not a final official account."
+          ],
+          "evidence": "These would not be complete either; some voices would still be missing, and organizing the events would take work.",
+          "why": "The sentence acknowledges limits and costs while preserving the claimed advantage of multiple audible memories.",
+          "method": "Ask whether the admission limits, contradicts, or cancels the claim; read the sentence that follows.",
+          "trap": "A concession need not abandon an argument."
+        },
+        {
+          "id": "target-main-idea",
+          "target": "Main idea",
+          "prompt": "Which concern is central to both texts despite their different proposals?",
+          "choices": [
+            "How a community can preserve overlooked histories while acknowledging that its accounts remain partial.",
+            "Which method can make one historical account authoritative enough to replace further questioning.",
+            "How brief public information can remove the work of organizing historical remembrance.",
+            "Whether information about the past should be excluded from the square to leave room for social activity."
+          ],
+          "reasons": [
+            "A proposes signs that reveal overlooked history, while B prefers continuing voices that keep interpretations open.",
+            "Both writers preserve questions and acknowledged limits rather than making a single account final.",
+            "A gives a starting point and B acknowledges organizational work; neither promises to eliminate that work.",
+            "Both want visitors to encounter the past in the square and differ about the means, rather than excluding historical information."
+          ],
+          "evidence": "These would not be complete either; some voices would still be missing, and organizing the events would take work.",
+          "why": "B’s qualification, read with A’s care about what signs can reveal, identifies a shared concern with meaningful but partial public memory.",
+          "method": "Trace what the passage develops from the opening through its outcome or concluding interpretation.",
+          "trap": "A main idea accounts for the passage’s development and preserves its limits; one striking detail is not enough."
+        },
+        {
+          "id": "target-inference",
+          "target": "Inference",
+          "prompt": "How would B most likely respond to a proposed sign that identifies its sources and directs visitors to recorded conversations about conflicting memories?",
+          "choices": [
+            "B would likely support its limited role as a connection to continuing inquiry, while resisting treating it as the square’s final account.",
+            "B would reject it simply because every written sign prevents residents from sharing memories.",
+            "B would support it only if it replaced outdoor readings and settled the conflicting accounts.",
+            "B would reject its references to conflicting memories because disagreement makes the square’s history unusable."
+          ],
+          "reasons": [
+            "B permits signs that identify limits and point toward continuing conversations; the proposed sign serves that qualified role.",
+            "B explicitly says not to remove every sign, so a categorical rejection is unsupported.",
+            "B values ongoing conversations and audible differences rather than their replacement by a settled account.",
+            "B presents differences of memory as an advantage, not a reason to make history unusable."
+          ],
+          "evidence": "Rather than remove every sign, I would ask that any sign identify its limits and point visitors toward those continuing conversations.",
+          "why": "The sentence directly states the conditions for a useful sign. Applying those conditions to the proposed source-aware, conversation-linked sign supports the predicted response without inventing a categorical ban.",
+          "method": "Connect the exact clue to its surrounding actions or argument; distinguish what is stated from the conclusion it supports.",
+          "trap": "A defensible inference follows from the text without adding an unsupported motive, guarantee, or universal claim."
+        }
+      ]
+    },
+    {
+      "id": "map-with-a-blank",
+      "title": "The Map with a Blank",
+      "genre": "Myth",
+      "difficulty": 5,
+      "scenario": "original-allegory-of-an-incomplete-map",
+      "structure": "repeated-demand-and-reframed-resolution",
+      "content": "In a city that kept its stories on copper sheets, the mapmaker was asked to finish a map of the forest. Every road had to reach an edge, every stream had to find a river, and no space was to remain unmarked. The council promised a silver pen to whoever could complete the work. Three mapmakers drew paths where travelers disagreed, but the paths joined so elegantly that the council praised them before anyone walked them.\n\nThe youngest mapmaker, Sen, returned with a blank at the forest’s center. The council frowned. Sen explained that the paths there shifted when the river flooded, and no two travelers had followed the same crossing. The blank did not mean that nothing existed. It meant that Sen did not yet know which lines could be trusted. The council replied that uncertainty was what the silver pen had been offered to erase.\n\nSen took the unfinished map to the forest. At the first fork, a traveler asked why the blank had not been filled. Sen handed over the pen and asked him to draw the route he knew. A second traveler added a different route, and a third marked where water had covered a crossing. Sen wrote dates beside their lines. The map grew crowded at its center, yet its margins remained precise.\n\nWhen Sen brought it back, the council said it was harder to read than the elegant maps. Sen agreed. Then she asked which map they would carry when the water rose. The council sent a messenger with each version. Only the messenger carrying Sen’s map knew where another traveler had reported a flooded crossing.\n\nThe council never declared Sen’s map complete. It hung the silver pen beside the blank spaces and invited each returning traveler to add a dated line. The forest did not become simpler. The map became more honest about what a traveler would have to decide.",
+      "plans": [
+        {
+          "id": "theme",
+          "target": "Theme",
+          "prompt": "Which theme is developed by the council’s changed use of the silver pen?",
+          "choices": [
+            "Acknowledging uncertainty can make knowledge more useful than pretending it is complete.",
+            "A beautiful diagram is always more dependable than observed experience.",
+            "People should refuse to share knowledge unless they know everything.",
+            "A map becomes honest only when all its details are erased."
+          ],
+          "reasons": [
+            "The pen shifts from rewarding false completeness to inviting dated contributions.",
+            "The elegant maps fail to identify a reported flooded crossing.",
+            "Sen invites travelers to share partial knowledge.",
+            "The map keeps precise margins and adds dated details rather than erasing everything."
+          ],
+          "evidence": "The forest did not become simpler. The map became more honest about what a traveler would have to decide.",
+          "why": "The ending values informed decisions based on acknowledged limits rather than an artificially simplified picture.",
+          "method": "Trace how an object’s purpose changes and connect that change to the story’s final contrast.",
+          "trap": "Admitting uncertainty is not the same as rejecting all knowledge."
+        },
+        {
+          "id": "symbol",
+          "target": "Symbolism",
+          "prompt": "What does the blank space most strongly symbolize?",
+          "choices": [
+            "An acknowledged limit in the mapmaker’s knowledge that invites further inquiry.",
+            "A forest area known to contain nothing at all.",
+            "A punishment for travelers who disagree.",
+            "A command that the river stop flooding."
+          ],
+          "reasons": [
+            "Sen explains that the blank marks uncertainty about trustworthy routes and later uses it to gather reports.",
+            "The passage explicitly says it does not mean nothing exists.",
+            "Disagreement is used as information rather than punished.",
+            "The map does not control the river."
+          ],
+          "evidence": "The blank did not mean that nothing existed. It meant that Sen did not yet know which lines could be trusted.",
+          "why": "The space represents the boundary between what is observed and what has not yet been established.",
+          "method": "Use the character’s explanation of the object and its later role to infer its symbolic meaning.",
+          "trap": "An absence on a representation does not necessarily signify an absence in the represented world."
+        },
+        {
+          "id": "irony",
+          "target": "Irony",
+          "prompt": "What is ironic about the council’s initial praise of the elegant maps?",
+          "choices": [
+            "The maps seem complete before testing, but their neatness hides missing knowledge that matters during travel.",
+            "The council knows the elegant maps are accurate and falsely claims they are incomplete.",
+            "The travelers prefer an empty map because they never enter the forest.",
+            "The silver pen cannot make any mark on paper."
+          ],
+          "reasons": [
+            "The apparent strength of clean completeness becomes a weakness compared with dated reports of a flood.",
+            "The council praises them before anyone walks their paths.",
+            "Travelers enter the forest and provide routes.",
+            "The pen is used to add travelers’ lines."
+          ],
+          "evidence": "the council praised them before anyone walked them.",
+          "why": "Approval rests on appearance before verification, so the later test reverses the expected advantage of the elegant maps.",
+          "method": "Compare the grounds for early approval with the result of the later practical test.",
+          "trap": "Irony depends on an expectation that the outcome qualifies or reverses."
+        },
+        {
+          "id": "structure",
+          "target": "Paragraph function",
+          "prompt": "What is the function of the paragraph in which Sen asks travelers to draw their routes?",
+          "choices": [
+            "It turns an admitted gap into a process for gathering and qualifying new information.",
+            "It proves that every traveler’s memory is identical.",
+            "It ends the problem by making the map permanently complete.",
+            "It explains how the council manufactures silver."
+          ],
+          "reasons": [
+            "The travelers contribute differing routes and dated flood observations.",
+            "Their accounts differ and are recorded separately.",
+            "The council never declares the map complete.",
+            "No manufacturing process is described."
+          ],
+          "evidence": "Sen wrote dates beside their lines.",
+          "why": "Dating the different accounts preserves when each observation applied, making the map a developing record rather than a false final answer.",
+          "method": "Identify how the paragraph changes the meaning and use of the original problem.",
+          "trap": "Gathering more information does not automatically settle every uncertainty."
+        },
+        {
+          "id": "connotation",
+          "target": "Connotation",
+          "prompt": "Why does “elegantly” have a more doubtful connotation after the story’s practical test?",
+          "choices": [
+            "The attractive appearance of the lines contrasts with the untested knowledge behind them.",
+            "The word comes to mean that the copper sheets are very heavy.",
+            "The word proves that all artistic skill is harmful.",
+            "The word reveals that the mapmakers intentionally caused the flood."
+          ],
+          "reasons": [
+            "The story separates pleasing design from verified usefulness.",
+            "The physical weight of copper is not relevant to the change in meaning.",
+            "The criticism concerns untested claims, not all artistry.",
+            "No person causes the river’s flooding."
+          ],
+          "evidence": "the paths joined so elegantly that the council praised them before anyone walked them.",
+          "why": "The initial positive association of elegance becomes qualified when readers see that neatly joined paths can conceal unsupported choices.",
+          "method": "Reconsider the descriptive word in light of what the later events reveal about the praised object.",
+          "trap": "A changed connotation can qualify praise without reversing the word’s literal meaning."
+        },
+        {
+          "id": "target-main-idea",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the passage’s central idea?",
+          "choices": [
+            "A developing map that acknowledges uncertain knowledge can become more useful than a neat map pretending to be complete.",
+            "Sen discovers that gathering travelers’ reports makes every forest route permanently unchanging.",
+            "The council learns that a pleasing appearance guarantees a route’s safety.",
+            "Sen abandons every reliable line because some crossings are uncertain."
+          ],
+          "reasons": [
+            "Dated contributions preserve differing observations, and the practical test exposes an omission in the elegant maps.",
+            "Floods change crossings, and the council never declares the map complete.",
+            "The praised elegant maps omit a reported flooded crossing.",
+            "The margins remain precise, so known information is retained alongside acknowledged uncertainty."
+          ],
+          "evidence": "The forest did not become simpler. The map became more honest about what a traveler would have to decide.",
+          "why": "The final contrast shows usefulness arising from qualified knowledge rather than a simplified appearance that conceals decisions travelers still face.",
+          "method": "Trace what the passage develops from the opening through its outcome or concluding interpretation.",
+          "trap": "A main idea accounts for the passage’s development and preserves its limits; one striking detail is not enough."
+        },
+        {
+          "id": "target-inference",
+          "target": "Inference",
+          "prompt": "What can be inferred about the council’s changed decision to hang the silver pen beside the blank spaces?",
+          "choices": [
+            "It now treats incomplete knowledge as an invitation to continuing contributions rather than merely a defect to erase.",
+            "It now forbids travelers from changing any mark on the map.",
+            "It has proved that all travelers followed identical crossings.",
+            "It has decided that no part of the forest can ever be mapped."
+          ],
+          "reasons": [
+            "The pen once rewarded completion but now invites dated additions from returning travelers.",
+            "The council explicitly invites each traveler to add a line.",
+            "The earlier accounts differed and the river’s crossings changed.",
+            "The map retains precise margins and gains additional route information."
+          ],
+          "evidence": "It hung the silver pen beside the blank spaces and invited each returning traveler to add a dated line.",
+          "why": "The new use of the same reward object supports a changed view of uncertainty as a continuing task, not something to hide behind invented lines.",
+          "method": "Connect the exact clue to its surrounding actions or argument; distinguish what is stated from the conclusion it supports.",
+          "trap": "A defensible inference follows from the text without adding an unsupported motive, guarantee, or universal claim."
+        }
+      ]
+    },
+    {
+      "id": "a-different-ending",
+      "title": "A Different Ending",
+      "genre": "Realistic fiction",
+      "difficulty": 1,
+      "scenario": "school-play-listening-and-timing",
+      "structure": "repeated-rehearsal-and-new-understanding",
+      "content": "Aya had learned every word of her part before the first rehearsal. At home, she had stood beside the kitchen table and spoken each line loudly enough for her brother to hear from the hall. She imagined the audience leaning forward whenever she began to speak. On the school stage, however, her loudest line made her partner lose his place.\n\n“You started before I finished,” Luis said. He pointed to a line in his script. “My character is still asking the question.”\n\nAya looked at her own page. The words she had memorized were all there. She had not practiced the silence before them. The director asked the pair to try the scene again, this time letting Luis finish. Aya waited, but the pause felt so long that she rushed her answer. Luis smiled at a moment when his character was supposed to be worried. The scene sounded like a disagreement about homework instead of an invitation to an adventure.\n\nThey took their scripts to the empty cafeteria during the break. Luis read his line quietly. Aya listened for the question rather than for her own turn. When he stopped, she looked at him for a moment before answering. He set his script down. “That sounded as if you really had to decide,” he said.\n\nAt the next rehearsal, Aya marked a small pause in the margin of her page. She still spoke clearly, but she no longer tried to make every line the loudest in the room. The director asked them to repeat the ending once more and invited the rest of the cast to watch. Aya noticed that several students leaned forward before she spoke. For the first time, she understood that the silence could be part of her work too.",
+      "plans": [
+        {
+          "id": "main",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the main idea of the passage?",
+          "choices": [
+            "Aya learns that listening and timing can make her acting more effective.",
+            "Aya decides that a performer should never speak loudly.",
+            "Luis persuades Aya to give up her part in the play.",
+            "Aya learns the words of her part for the first time at school."
+          ],
+          "reasons": [
+            "The rehearsal improves when she listens to Luis and uses the pause intentionally.",
+            "She continues to speak clearly; the problem is making every line the loudest.",
+            "She keeps her role and improves the scene with Luis.",
+            "The first sentence says she learned every word before rehearsal."
+          ],
+          "evidence": "For the first time, she understood that the silence could be part of her work too.",
+          "why": "The final realization connects her earlier timing problem with a broader understanding of acting.",
+          "method": "Connect the difficulty at the first rehearsal to the change Aya makes by the ending.",
+          "trap": "A main idea should explain the change, rather than repeat one isolated detail."
+        },
+        {
+          "id": "inference",
+          "target": "Inference",
+          "prompt": "What can the reader infer from Aya’s decision to mark a pause in her script?",
+          "choices": [
+            "She wants to remember a useful timing choice instead of focusing only on her spoken words.",
+            "She has forgotten all the words she previously memorized.",
+            "She wants Luis to stop asking his character’s question.",
+            "She plans to keep the cast from watching her scene."
+          ],
+          "reasons": [
+            "The cafeteria practice teaches her the effect of waiting, and the margin mark preserves that choice.",
+            "She still knows her words; her new concern is their timing.",
+            "She has learned to let Luis finish, rather than prevent his question.",
+            "The cast watches at the director’s invitation, with no effort by Aya to stop it."
+          ],
+          "evidence": "At the next rehearsal, Aya marked a small pause in the margin of her page.",
+          "why": "The mark is direct evidence of her action; its purpose is inferred from the successful pause during the preceding practice.",
+          "method": "Connect the new action to the result of the practice that immediately precedes it.",
+          "trap": "An inference should connect stated events without inventing a new motive."
+        },
+        {
+          "id": "detail",
+          "target": "Explicit information",
+          "prompt": "Where do Aya and Luis practice during the break?",
+          "choices": [
+            "In the empty cafeteria.",
+            "Beside Aya’s kitchen table.",
+            "In the crowded school hallway.",
+            "In the director’s office."
+          ],
+          "reasons": [
+            "The passage directly names the empty cafeteria as their practice location.",
+            "Aya practices alone beside the kitchen table before the first rehearsal.",
+            "No hallway practice is described in the passage.",
+            "No director’s office is mentioned as a practice location."
+          ],
+          "evidence": "They took their scripts to the empty cafeteria during the break.",
+          "why": "This sentence explicitly answers the location question; the kitchen belongs to an earlier event.",
+          "method": "Locate the event and time named in the question before selecting its setting.",
+          "trap": "The passage may name several places; match the place to the correct event."
+        },
+        {
+          "id": "context",
+          "target": "Vocabulary in context",
+          "prompt": "As used in the final paragraph, what does “margin” mean?",
+          "choices": [
+            "The blank area beside the written lines on a page.",
+            "The time remaining before a rehearsal ends.",
+            "A stage curtain separating the cast from the audience.",
+            "A different part of the play assigned to another actor."
+          ],
+          "reasons": [
+            "Aya writes a mark beside the text of her script, so the page-border meaning fits.",
+            "The word names a place on the page, rather than an amount of time.",
+            "No curtain is used for the written reminder.",
+            "Aya keeps her existing part and marks its page."
+          ],
+          "evidence": "Aya marked a small pause in the margin of her page.",
+          "why": "The words “marked” and “page” identify a writable blank border as the context-specific meaning.",
+          "method": "Use the action and the object in the sentence to choose the relevant meaning of the word.",
+          "trap": "A word’s meaning must fit the sentence in which it appears."
+        }
+      ]
+    },
+    {
+      "id": "tickets-and-time",
+      "title": "Tickets and Time",
+      "genre": "Journalism",
+      "difficulty": 4,
+      "scenario": "fictional-school-concert-ticket-policy",
+      "structure": "competing-access-principles-and-bounded-resolution",
+      "content": "The following is an original fictional news feature.\n\nThe spring concert had more interested families than the auditorium had seats. In previous years, the school had distributed its free tickets from the office at seven in the morning. The line was easy to count, and the rule was easy to explain: the first people to arrive received the first tickets. To some members of the concert committee, that simplicity was the strongest reason to keep the system.\n\nViolinist Mara Ortiz agreed that the rule was simple. She disagreed that simplicity settled the question of access. Her father began work before the office opened, and her grandmother could not stand in a line for an hour. “They wanted to be there,” she said. “They just couldn’t be here at seven.” She was not asking the school to count her family’s interest more highly than another family’s. She wanted interest to be distinguishable from the ability to wait at a particular time.\n\nThe committee considered an online drawing in which each family could request up to two seats during a week-long application period. A random drawing would determine which requests were filled if demand exceeded supply. Several members welcomed the change. Others pointed out that moving a line from the hallway to a website could introduce a different barrier: not every family had reliable internet access, and a form could be confusing even to someone who could reach it.\n\nThe revised proposal retained the drawing but added paper applications and help from office staff during several time periods. No family would gain an extra entry by using both methods. The committee also proposed a separate recording of the concert for those who did not receive seats. The recording would not replace the experience of attending, but it would let more families hear the performance.\n\nWhen the committee approved the proposal for one concert, it did not announce that a fair system had been perfected. It promised to ask whether families could complete applications, whether the entry limit was enforced consistently, and which difficulties remained. Every method still allocated a limited number of seats. The change was in what a family had to do to be considered for one.",
+      "plans": [
+        {
+          "id": "main",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the central point of this feature?",
+          "choices": [
+            "Changing a ticket process can reduce one access barrier while requiring attention to others.",
+            "An equal drawing is sufficient by itself to make a ticket process accessible.",
+            "Recorded performances should replace in-person concerts to broaden participation.",
+            "A family’s ability to arrive early is the best measure of its interest in the concert."
+          ],
+          "reasons": [
+            "The proposal addresses early waiting, internet access, and consistent entry limits while acknowledging limited seats.",
+            "The online drawing still raises internet-access and form-completion barriers, prompting paper routes and assistance.",
+            "The recording is an additional option; the author explicitly distinguishes it from attending.",
+            "Mara’s family example challenges equating interest with the ability to wait at seven in the morning."
+          ],
+          "evidence": "The change was in what a family had to do to be considered for one.",
+          "why": "The ending distinguishes changes in access to consideration from an impossible guarantee that everyone receives a seat.",
+          "method": "Trace the original barrier, the new barrier raised in response, and the final qualified proposal.",
+          "trap": "Do not confuse a fairer application process with a guarantee of the desired outcome."
+        },
+        {
+          "id": "inference",
+          "target": "Inference",
+          "prompt": "What can reasonably be inferred about why the revised proposal forbids extra entries through both application methods?",
+          "choices": [
+            "It aims to provide different routes to the same opportunity rather than an advantage for using both routes.",
+            "The paper form is intended to give a second chance after an unsuccessful online entry.",
+            "The committee mainly wants to make online applications faster to process.",
+            "The proposal gives paper applicants priority to compensate for the difficulty of waiting in line."
+          ],
+          "reasons": [
+            "Multiple access routes are retained, but equal entry limits prevent a double application from creating an extra chance.",
+            "The entry restriction prevents two applications from producing two chances; paper is an alternative route, not an extra chance.",
+            "The surrounding discussion concerns access and consistent limits, not processing speed.",
+            "Paper applicants enter the same drawing; no priority for that route is described."
+          ],
+          "evidence": "No family would gain an extra entry by using both methods.",
+          "why": "The stated limit, read with the purpose of providing alternative access, supports equal treatment across the two routes.",
+          "method": "Connect the operational rule to the access problem the proposal is trying to address.",
+          "trap": "Infer a rule’s purpose from its role in the proposal; do not invent universal misconduct."
+        },
+        {
+          "id": "purpose",
+          "target": "Author's purpose",
+          "prompt": "Why does the author include the objections to an online drawing?",
+          "choices": [
+            "To show that replacing the old system could create an access problem that the committee still needed to address.",
+            "To explain why the committee should return to the early-morning line unchanged.",
+            "To argue that the auditorium’s limited capacity prevents any improvement to the application process.",
+            "To show that free tickets make families less interested in attending the concert."
+          ],
+          "reasons": [
+            "The objections explain the paper option and staff assistance in the revised proposal.",
+            "The revised proposal retains the drawing and addresses the objections; it does not restore the old line.",
+            "The number of seats stays limited, but the proposal still changes access to consideration for a seat.",
+            "The concern is reliable internet and usable forms, not whether free admission reduces interest."
+          ],
+          "evidence": "moving a line from the hallway to a website could introduce a different barrier",
+          "why": "The objection advances the explanation by identifying a problem that leads to a concrete change in the proposal.",
+          "method": "Ask how the included objection changes the development of the policy discussion.",
+          "trap": "An objection may improve a proposal rather than cancel it."
+        },
+        {
+          "id": "vocabulary",
+          "target": "Vocabulary in context",
+          "prompt": "In the last paragraph, what does “allocated” mean?",
+          "choices": [
+            "Distributed according to a process.",
+            "Reserved specifically for performers’ relatives.",
+            "Counted to estimate how much demand exists.",
+            "Kept unavailable until a later concert."
+          ],
+          "reasons": [
+            "Each ticket method assigns the existing limited seats to some requests.",
+            "Allocated names the distribution process; no exclusive family reservation appears in the paragraph.",
+            "Counting demand helps plan a distribution, but allocating the seats means assigning them rather than merely counting requests.",
+            "The seats are assigned for the current concert; the word does not mean postponing their use."
+          ],
+          "evidence": "Every method still allocated a limited number of seats.",
+          "why": "The context concerns how existing places are assigned, not how more places are created.",
+          "method": "Use the object of the verb and the contrast with the changed application process.",
+          "trap": "Choose the meaning that fits what is being acted on."
+        },
+        {
+          "id": "reasons",
+          "target": "Reasons",
+          "prompt": "Which reason most directly supports offering both paper and online applications?",
+          "choices": [
+            "Some families could face an internet-access or form-completion barrier even if a drawing eliminates early waiting.",
+            "Office staff could easily count the people in the old early-morning line.",
+            "A separate recording allows families without seats to hear the performance.",
+            "The auditorium has fewer seats than the number of interested families."
+          ],
+          "reasons": [
+            "Alternative routes and assistance address the specific access concerns raised about moving the process online.",
+            "This explains an advantage of the old line but not why the revised system needs alternative application routes.",
+            "The recording addresses participation after seat distribution, not barriers to submitting a request.",
+            "Scarcity explains the need for an allocation method, but not the separate internet-access issue that paper forms address."
+          ],
+          "evidence": "not every family had reliable internet access, and a form could be confusing even to someone who could reach it.",
+          "why": "This concern explains why another route and help completing applications are relevant to the proposal.",
+          "method": "Match the proposed feature to the specific problem it is designed to address.",
+          "trap": "A reason for widening access is different from a promise to satisfy every request."
+        }
+      ]
+    },
+    {
+      "id": "fold-in-the-curtain",
+      "title": "A Fold in the Curtain",
+      "genre": "Realistic fiction",
+      "difficulty": 5,
+      "scenario": "retiring-stage-manager-and-transfer-of-craft",
+      "structure": "anticipated-ceremony-displaced-by-quiet-continuity",
+      "content": "For twenty-eight years, Mr. Vale had opened the small theater by lifting its curtain cord three inches and listening. The first pull was not meant to raise the curtain; it told him whether the cord had settled into the groove or caught against the wooden guide. He could have explained the sound, but the explanation would have taken longer than the movement. On his final afternoon as stage manager, he made the familiar pull and waited for a familiar question that did not arrive.\n\nThe new stage manager, Tessa, stood beside the control board with a notebook closed under her arm. Mr. Vale had prepared three pages of instructions and, beneath them, a few sentences he thought he might say if someone asked what the theater had meant to him. Nobody had asked. The actors were changing costumes, the director was discussing a light cue, and a delivery driver wanted to know which door opened onto the street. It seemed, for a moment, an extraordinarily ordinary day on which to stop doing something he had done for most of his adult life.\n\nTessa crossed the stage and studied the curtain cord. “That little catch,” she said. “Is it the guide?” Mr. Vale nodded. She eased the cord sideways before pulling, then watched the heavy fabric rise without a scrape. He began to explain why the wood could not simply be sanded farther back, but she pointed toward the painted scene behind it. “Because the frame would show from the front row?” He looked toward the empty seats. He had once learned that by sitting in each of them.\n\nAt rehearsal, a young actor missed an entrance. Mr. Vale turned toward the passage behind the stage, already reaching for the flashlight that usually hung from his belt. Tessa was there before him, lighting the narrow step without speaking into the scene. The actor entered only a moment late. From the seats, the mistake would scarcely have been visible. Mr. Vale let his hand fall.\n\nAfterward, Tessa asked him to sit in the front row while she checked the curtain. She did not ask for a final lecture or offer to frame his instructions. She asked whether the corner of the painted scene still showed when the fabric was lifted. He moved one seat to the left, then another, and raised a finger when he saw it. She adjusted the cord. On the second check, he shook his head.\n\nHis pages remained in his bag. Before leaving, he wrote one additional line at the bottom: “Check it from the seats.” It was less complete than the explanation he had planned, and more useful to the next afternoon. Tessa was still working when he reached the door. She called after him, not to bring him back but to ask whether he could attend opening night. He said he would like a seat near the front.",
+      "plans": [
+        {
+          "id": "main",
+          "target": "Main idea",
+          "prompt": "Which statement best expresses the passage’s central idea?",
+          "choices": [
+            "Mr. Vale comes to recognize that the theater can carry his practical knowledge forward without making his departure a grand ceremony.",
+            "Mr. Vale becomes disappointed because Tessa ignores the technical knowledge he offers to share.",
+            "An experienced worker gains lasting recognition mainly by leaving exhaustive written instructions.",
+            "A personal departure matters only when coworkers formally acknowledge it with a ceremony."
+          ],
+          "reasons": [
+            "His disappointment at the ordinary day gives way to collaboration, a practical note, and an invitation to return as an audience member.",
+            "Tessa notices the cord’s catch, understands the visible frame, and asks Mr. Vale to help check the view.",
+            "The ending values one practical addition over the complete explanation he had prepared.",
+            "Mr. Vale comes to value useful continuity and accepts an invitation without receiving the expected ceremony."
+          ],
+          "evidence": "It was less complete than the explanation he had planned, and more useful to the next afternoon.",
+          "why": "The practical addition replaces the anticipated ceremonial explanation and points toward the next person’s continuing work.",
+          "method": "Connect the opening expectation of acknowledgment to the ending’s emphasis on useful continuity.",
+          "trap": "A central idea should account for the change in the character’s understanding, not invent others’ motives."
+        },
+        {
+          "id": "inference",
+          "target": "Inference",
+          "prompt": "What does Mr. Vale’s decision to let his hand fall during the missed entrance most strongly suggest?",
+          "choices": [
+            "He recognizes that Tessa has already handled a task he habitually took responsibility for.",
+            "He is embarrassed because the rehearsal reveals that he has forgotten the entrance routine.",
+            "He decides to leave the actor unaided so that the actor will learn through a mistake.",
+            "He concludes that assisting entrances had never been part of his responsibility."
+          ],
+          "reasons": [
+            "His reaching motion begins an old routine, but Tessa is already lighting the step, so he stops.",
+            "He instinctively reaches toward his usual flashlight, showing that the routine is familiar; no embarrassment about forgetting is stated.",
+            "The actor is already being assisted by Tessa; the stopped movement follows her intervention.",
+            "His habitual response shows that this was a task he used to perform, not an unfamiliar duty."
+          ],
+          "evidence": "Tessa was there before him, lighting the narrow step without speaking into the scene.",
+          "why": "The stated action directly establishes that the task is being performed; his recognition of this is the supported inference behind the stopped movement.",
+          "method": "Read the physical action with the event immediately preceding it, distinguishing a habitual response from an unsupported emotional motive.",
+          "trap": "Infer only what the visible action and its immediate context support."
+        },
+        {
+          "id": "development",
+          "target": "Character development",
+          "prompt": "How does Mr. Vale’s attitude change over the course of the passage?",
+          "choices": [
+            "He shifts from waiting for a special acknowledgment to accepting a practical role in the theater’s continuing work.",
+            "He becomes dependent on Tessa because he no longer understands how the theater works.",
+            "He grows more insistent on receiving a formal tribute after Tessa helps the actor.",
+            "He resolves his disappointment by refusing to return to the theater after retirement."
+          ],
+          "reasons": [
+            "He begins with prepared remarks and an expected question, then helps check the sightline and leaves a useful instruction.",
+            "His seat-by-seat check remains useful and reflects detailed understanding of the theater’s sightlines.",
+            "He leaves a short practical note instead of insisting on his prepared remarks or a ceremony.",
+            "He agrees to attend opening night and asks for a seat near the front."
+          ],
+          "evidence": "Before leaving, he wrote one additional line at the bottom: “Check it from the seats.”",
+          "why": "The new brief instruction shows a turn from explaining his own importance toward helping the next person perform the work.",
+          "method": "Compare what the character expects at the beginning with what he chooses to contribute at the end.",
+          "trap": "A quiet change in action may reveal development more reliably than an explicit declaration."
+        },
+        {
+          "id": "symbol",
+          "target": "Symbolism",
+          "prompt": "What does the curtain cord most strongly represent within the passage?",
+          "choices": [
+            "Practical knowledge that becomes useful through attentive action and can be passed to another person.",
+            "A ceremonial link requiring the next manager to keep every older method unchanged.",
+            "Mr. Vale’s desire to control performances after leaving the theater.",
+            "An obstacle that only Mr. Vale understands and must remove before he can leave."
+          ],
+          "reasons": [
+            "Both stage managers use the cord attentively, and its effect must be checked from the seats.",
+            "Tessa adjusts the cord, showing responsive craft rather than a rigid requirement to preserve every method.",
+            "Mr. Vale lets Tessa act and contributes an inspection principle, rather than asserting continuing control.",
+            "Tessa recognizes the guide’s catch and understands its visual consequence, so the knowledge is not exclusive to him."
+          ],
+          "evidence": "She eased the cord sideways before pulling, then watched the heavy fabric rise without a scrape.",
+          "why": "Tessa’s use of the familiar tool shows that the craft depends on observation and adjustment, rather than possession by one person.",
+          "method": "Trace how both characters use the object and what its repeated role reveals about their relationship.",
+          "trap": "A symbol’s meaning must come from its actions and context, not an arbitrary association."
+        },
+        {
+          "id": "tone",
+          "target": "Tone",
+          "prompt": "Which description best captures the narration’s tone toward Mr. Vale’s departure?",
+          "choices": [
+            "Restrained and sympathetic, with attention to small actions that carry emotional significance.",
+            "Nostalgic and indignant about Tessa replacing traditions without respect.",
+            "Detached and technical, concerned only with correct operating procedures.",
+            "Dramatic and accusatory toward the workers who do not arrange a ceremony."
+          ],
+          "reasons": [
+            "The narration notices his prepared remarks, habitual reaching motion, and revised note without forcing a dramatic speech.",
+            "The narrative is sensitive to the departure, but Tessa respects and continues practical knowledge rather than rejecting it.",
+            "Technical actions carry emotional meaning through Mr. Vale’s expectations and changing response.",
+            "The narration gives ordinary details and quiet shifts without accusing the workers or staging a dramatic confrontation."
+          ],
+          "evidence": "It seemed, for a moment, an extraordinarily ordinary day on which to stop doing something he had done for most of his adult life.",
+          "why": "The contrast conveys the emotional scale of the departure gently, without ridicule or melodramatic alarm.",
+          "method": "Connect the narrator’s access to the character’s expectations with the restrained way the details are presented.",
+          "trap": "Tone emerges from how details are framed, not only from whether the subject is sad or happy."
+        }
+      ]
+    }
+  ]
+}

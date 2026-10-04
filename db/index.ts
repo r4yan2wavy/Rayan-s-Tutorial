@@ -17,7 +17,8 @@ function connection(){
   return pool;
 }
 export function withDatabaseUser<T>(userId:string|null,operation:()=>Promise<T>){return context.run({userId},operation)}
-// Offline setup/import only. No HTTP route exposes this context.
+// Offline setup/import and the secret-authenticated content worker only.
+// Ordinary user routes must always use withDatabaseUser and rayan_app RLS.
 export function withDatabaseSetup<T>(operation:()=>Promise<T>){return context.run({userId:null,setup:true},operation)}
 export function database(){
   const transaction:Transaction=async operation=>{
