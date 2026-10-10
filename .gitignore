@@ -30,8 +30,6 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
-!.env.example
-.dev.vars
 
 # vercel
 .vercel
@@ -46,6 +44,8 @@ next-env.d.ts
 /.codex/
 /outputs/
 /work/
-*.tsbuildinfo
-# Private legacy data and user-ID mappings.
-/migration-input/
+.dev.vars*
+/tests/.state/
+
+/backups/
+/.qst-local-backup-*.json

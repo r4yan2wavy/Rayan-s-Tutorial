@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-10-09T16:47:38.149Z",
+  "blueprints": [
+    {
+      "blueprint": "order",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 919,
+      "uniqueModelsInSample": 919
+    },
+    {
+      "blueprint": "gcf",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 168,
+      "uniqueModelsInSample": 168
+    },
+    {
+      "blueprint": "fractions",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 951,
+      "uniqueModelsInSample": 836
+    },
+    {
+      "blueprint": "remainder",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 515,
+      "uniqueModelsInSample": 341
+    },
+    {
+      "blueprint": "signed",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 870,
+      "uniqueModelsInSample": 870
+    },
+    {
+      "blueprint": "absolute",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 665,
+      "uniqueModelsInSample": 665
+    },
+    {
+      "blueprint": "ratio",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 790,
+      "uniqueModelsInSample": 790
+    },
+    {
+      "blueprint": "rate",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 555,
+      "uniqueModelsInSample": 555
+    },
+    {
+      "blueprint": "speed",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 422,
+      "uniqueModelsInSample": 422
+    },
+    {
+      "blueprint": "scale",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 438,
+      "uniqueModelsInSample": 438
+    },
+    {
+      "blueprint": "percent",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 797,
+      "uniqueModelsInSample": 585
+    },
+    {
+      "blueprint": "original",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 542,
+      "uniqueModelsInSample": 542
+    },
+    {
+      "blueprint": "interest",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 907,
+      "uniqueModelsInSample": 907
+    },
+    {
+      "blueprint": "equation",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 954,
+      "uniqueModelsInSample": 954
+    },
+    {
+      "blueprint": "distribute",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 836,
+      "uniqueModelsInSample": 299
+    },
+    {
+      "blueprint": "inequality",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 799,
+      "uniqueModelsInSample": 799
+    },
+    {
+      "blueprint": "angles",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 874,
+      "uniqueModelsInSample": 874
+    },
+    {
+      "blueprint": "area",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 960,
+      "uniqueModelsInSample": 960
+    },
+    {
+      "blueprint": "volume",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 874,
+      "uniqueModelsInSample": 874
+    },
+    {
+      "blueprint": "surface",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 872,
+      "uniqueModelsInSample": 872
+    },
+    {
+      "blueprint": "average",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 1000,
+      "uniqueModelsInSample": 1000
+    },
+    {
+      "blueprint": "probability",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 196,
+      "uniqueModelsInSample": 196
+    },
+    {
+      "blueprint": "counting",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 49,
+      "uniqueModelsInSample": 49
+    },
+    {
+      "blueprint": "powers",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 36,
+      "uniqueModelsInSample": 35
+    },
+    {
+      "blueprint": "pythagoras",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 20,
+      "uniqueModelsInSample": 20
+    },
+    {
+      "blueprint": "linear",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 982,
+      "uniqueModelsInSample": 869
+    },
+    {
+      "blueprint": "slope",
+      "testedSeeds": 1000,
+      "uniqueStemsInSample": 991,
+      "uniqueModelsInSample": 224
+    }
+  ],
+  "seedTests": 27000,
+  "failures": [],
+  "authoredELA": 50,
+  "passages": 8,
+  "editorialStatus": "ELA drafts; independent staff review required",
+  "countsNote": "Unique parameter variants in a sample are not authored question types or an exhaustively validated capacity."
+}

@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-10-09",
+  "status": "passed",
+  "environment": "New isolated local persistence folders; no existing center records changed",
+  "checks": [
+    "Private first-admin setup token generated with no shared default password",
+    "All five migrations initialize an empty local database",
+    "Repeating local migration initialization applies nothing twice",
+    "Public browser inquiry persists in the isolated shared database",
+    "Pinned Wrangler export uses the intended root persistence directory",
+    "Every table is defined before inserts to preserve foreign-key import order",
+    "Restore into a fresh persistence folder preserves the inquiry, synthetic class, membership, attempt snapshot, and migration ledger",
+    "Quoted apostrophe and semicolon text survives export/reordering/restore",
+    "Read-only SQLite foreign_key_check returns no violations and integrity_check returns ok"
+  ],
+  "limits": "This rehearsal uses disposable fixtures. Large databases, production recovery, and concurrent/live-data backup consistency still require operational review. D1 denied the combined integrity-PRAGMA query, so the final integrity checks read the restored SQLite file directly."
+}

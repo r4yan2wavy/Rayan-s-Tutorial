@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-10-09",
+  "status": "partial",
+  "environment": "Chromium desktop; supervised isolated local copy; disposable data only",
+  "passed": [
+    "Public Home and Contact render with the exact center name and call/text contact",
+    "Browser enrollment form saves a shared inquiry and renders a confirmation",
+    "Repeated inquiry produces a confirmation without creating a duplicate; confirmed by D1 count",
+    "Copy number works on local HTTP using its user-triggered clipboard fallback",
+    "Single-choice selection, elimination and restoration operate through the released component in a disposable UI fixture",
+    "Keyboard drawing, undo, redo and clear change the released component state",
+    "Authored glossary word opens its exact definition in a dismissible dialog",
+    "Paragraph focus can be changed using keyboard navigation",
+    "Contact page has no horizontal overflow at the observed 1363px viewport"
+  ],
+  "unverified": [
+    "Full authenticated dashboards and end-to-end protected browser flows",
+    "Mobile viewport and touch device testing",
+    "Comprehensive accessibility audit",
+    "Load, connectivity interruptions and production/deployed operations"
+  ],
+  "notes": "The disposable QA route is not part of the delivered source. API permission/role flows are verified separately. Observed console errors belonged to the browser extension, not application code."
+}

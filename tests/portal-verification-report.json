@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-10-09T16:55:52.533Z",
+  "status": "passed",
+  "checks": [
+    "One-time administrator setup and real password login",
+    "Shared enrollment inquiry persists and suppresses duplicates without creating a login",
+    "Forced initial password changes and role/class/student permission boundaries",
+    "Assignment → autosave → revision conflict → locked submission → withheld feedback → staff release → mistake review/export",
+    "Grade 7 students can prepare on the Grade 8 track",
+    "Persisted study plans isolate each owner and preference imports cannot change roles or other accounts",
+    "Concurrent starts recover one database-enforced active attempt",
+    "Validated staff question import, author scope, exact duplicate rejection, admin publication, and numeric grading",
+    "Server deadlines expire attempts and reject late answers",
+    "100-question/50+50 rehearsals, both starting subjects, opaque choices, hidden difficulty, passage-set locking, distinct adaptive math and depleted-ELA gating",
+    "Custom homework/classwork titles, draft-selected recipients, preview, and individual retries/extensions",
+    "Teacher/admin My Learning, custom personal sets, mistakes, follow-ups, track choice, personal export, and class-report separation",
+    "Full teacher/admin personal diagnostics with delayed feedback and persisted uncalibrated score snapshots",
+    "Validated calibration import, numeric estimate fixture, section/interval reporting, preserved historic versions, and assigned full diagnostics",
+    "Immediate global revocation across sessions/classes, preserved responses, constrained restoration, fresh login, and teacher revocation without disabling students",
+    "Teacher password reset revokes sessions and restores the forced-change gate",
+    "Archived classes remove teacher export scope and student enrollment access",
+    "Cross-origin mutations are denied"
+  ],
+  "environment": "Production API code against isolated Miniflare D1; binding adapter only; no production records or accounts created",
+  "limits": "API and mathematical checks only; these checks do not establish browser layout/accessibility, editorial review, or official score accuracy."
+}

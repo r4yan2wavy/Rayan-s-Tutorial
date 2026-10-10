@@ -1,2 +1,2 @@
-import AuthLanding from './auth-landing';
-export default function Page(){return <AuthLanding/>}
+import Portal from './portal';
+export default function Page(){return <Portal/>}

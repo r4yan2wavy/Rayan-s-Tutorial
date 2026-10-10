@@ -1,0 +1,224 @@
+[
+  {
+    "name": "@base-ui/react",
+    "version": "1.7.0",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/mui/base-ui.git",
+      "directory": "packages/react"
+    }
+  },
+  {
+    "name": "@hookform/resolvers",
+    "version": "5.7.1",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/react-hook-form/resolvers.git"
+    }
+  },
+  {
+    "name": "@noble/hashes",
+    "version": "2.4.0",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/paulmillr/noble-hashes.git"
+    }
+  },
+  {
+    "name": "@shadcn/react",
+    "version": "0.3.0",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/shadcn-ui/ui.git",
+      "directory": "packages/react"
+    }
+  },
+  {
+    "name": "class-variance-authority",
+    "version": "0.7.1",
+    "license": "Apache-2.0",
+    "source": "https://github.com/joe-bell/cva.git"
+  },
+  {
+    "name": "clsx",
+    "version": "2.1.1",
+    "license": "MIT",
+    "source": "lukeed/clsx"
+  },
+  {
+    "name": "cmdk",
+    "version": "1.1.1",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/pacocoursey/cmdk.git",
+      "directory": "cmdk"
+    }
+  },
+  {
+    "name": "date-fns",
+    "version": "4.4.0",
+    "license": "MIT",
+    "source": "https://github.com/date-fns/date-fns"
+  },
+  {
+    "name": "drizzle-orm",
+    "version": "0.45.2",
+    "license": "Apache-2.0",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/drizzle-team/drizzle-orm.git"
+    }
+  },
+  {
+    "name": "embla-carousel-react",
+    "version": "8.6.0",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/davidjerleke/embla-carousel"
+    }
+  },
+  {
+    "name": "input-otp",
+    "version": "1.4.2",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/guilhermerodz/input-otp.git",
+      "directory": "packages/input-otp"
+    }
+  },
+  {
+    "name": "lucide-react",
+    "version": "1.31.0",
+    "license": "ISC",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/lucide-icons/lucide.git",
+      "directory": "packages/lucide-react"
+    }
+  },
+  {
+    "name": "next",
+    "version": "16.3.4",
+    "license": "MIT",
+    "source": "vercel/next.js"
+  },
+  {
+    "name": "next-themes",
+    "version": "0.4.6",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/pacocoursey/next-themes.git"
+    }
+  },
+  {
+    "name": "radix-ui",
+    "version": "1.6.7",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/radix-ui/primitives.git",
+      "directory": "packages/react/radix-ui"
+    }
+  },
+  {
+    "name": "react",
+    "version": "19.2.6",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/facebook/react.git",
+      "directory": "packages/react"
+    }
+  },
+  {
+    "name": "react-day-picker",
+    "version": "10.0.1",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/gpbl/react-day-picker.git",
+      "directory": "packages/react-day-picker"
+    }
+  },
+  {
+    "name": "react-dom",
+    "version": "19.2.6",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/facebook/react.git",
+      "directory": "packages/react-dom"
+    }
+  },
+  {
+    "name": "react-hook-form",
+    "version": "7.85.0",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/react-hook-form/react-hook-form"
+    }
+  },
+  {
+    "name": "react-resizable-panels",
+    "version": "4.12.2",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/bvaughn/react-resizable-panels.git"
+    }
+  },
+  {
+    "name": "recharts",
+    "version": "3.8.0",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/recharts/recharts.git"
+    }
+  },
+  {
+    "name": "sonner",
+    "version": "2.0.8",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/emilkowalski/sonner.git"
+    }
+  },
+  {
+    "name": "tailwind-merge",
+    "version": "3.6.0",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/dcastil/tailwind-merge.git"
+    }
+  },
+  {
+    "name": "vaul",
+    "version": "1.1.2",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/emilkowalski/vaul.git"
+    }
+  },
+  {
+    "name": "zod",
+    "version": "3.25.76",
+    "license": "MIT",
+    "source": {
+      "type": "git",
+      "url": "git+https://github.com/colinhacks/zod.git"
+    }
+  }
+]

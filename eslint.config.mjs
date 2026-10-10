@@ -11,17 +11,8 @@ const eslintConfig = defineConfig([
     ".next/**",
     "out/**",
     "build/**",
-    "dist/**",
     "next-env.d.ts",
   ]),
-  {
-    files: ["app/landing.tsx", "app/platform.tsx", "app/studio.tsx", "lib/service.ts", "lib/library.ts"],
-    rules: {
-      // Preserve the existing heterogeneous assessment/session JSON while
-      // enforcing strict TypeScript and linting the new auth helpers normally.
-      "@typescript-eslint/no-explicit-any": "off",
-    },
-  },
   {
     files: ["components/ui/**/*.{ts,tsx}", "hooks/use-mobile.ts"],
     rules: {

@@ -1,0 +1,12 @@
+"use client";
+import {Select,SelectContent,SelectItem,SelectTrigger,SelectValue} from '@/components/ui/select';
+import {Empty,EmptyHeader,EmptyTitle,EmptyDescription,EmptyMedia} from '@/components/ui/empty';
+import {BookOpen,LoaderCircle} from 'lucide-react';
+export async function api(path:string,body?:any):Promise<any>{const res=await fetch('/api/'+path,{method:body===undefined?'GET':'POST',credentials:'same-origin',cache:'no-store',headers:body===undefined?{}:{'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body)});let data:any;try{data=await res.json()}catch{throw Error('The portal could not respond. Please try again.')}if(!res.ok){const e=Object.assign(Error(data.error||'Unable to complete this action.'),{status:res.status});if((res.status===401&&!['login','setup','session'].includes(path))||(res.status===403&&String(data.error).includes('enrollment is inactive')))window.dispatchEvent(new Event('qst-access-lost'));throw e;}return data}
+export function Choice({label,value,onChange,options}:any){return <label>{label}<Select value={String(value)} onValueChange={onChange}><SelectTrigger className="field-select"><SelectValue placeholder="Choose an option"/></SelectTrigger><SelectContent>{options.map((o:any)=><SelectItem key={String(o.value??o)} value={String(o.value??o)}>{o.label??o}</SelectItem>)}</SelectContent></Select></label>}
+export function Field({label,...props}:any){return <label>{label}<input {...props}/></label>}
+export function Blank({title,description,children}:any){return <Empty className="empty-state"><EmptyHeader><EmptyMedia><BookOpen/></EmptyMedia><EmptyTitle>{title}</EmptyTitle><EmptyDescription>{description}</EmptyDescription></EmptyHeader>{children}</Empty>}
+export function Busy(){return <div className="loading" role="status"><LoaderCircle className="spinner" style={{display:'inline',marginRight:10}} size={20}/>Loading your portal…</div>}
+export function Badge({children,tone=''}:any){return <span className={'badge '+tone}>{children}</span>}
+export function date(ts:any){return ts?new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}).format(new Date(ts)):'No due date'}
+export function download(data:any,name:string){let url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));let a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}

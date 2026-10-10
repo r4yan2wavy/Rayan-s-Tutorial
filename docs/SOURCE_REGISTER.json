@@ -1,0 +1,114 @@
+{
+  "verified_on": "2026-10-09",
+  "exam_configuration": {
+    "administration_year": 2026,
+    "admission_year": 2027,
+    "questions_per_subject": 50,
+    "standard_minutes": 180
+  },
+  "sources": [
+    {
+      "title": "NYCPS Specialized High Schools Admissions Test",
+      "url": "https://www.schools.nyc.gov/learning/testing/specialized-high-school-admissions-test",
+      "access_date": "2026-10-09",
+      "sections": [
+        "What should students expect on the exam?",
+        "Functionality",
+        "Adaptive Item Selection"
+      ],
+      "supports": [
+        "50 questions per subject, 180 minutes, choice of starting subject",
+        "ELA current-set editing and irreversible committed navigation",
+        "Fall 2026 computer-adaptive transition"
+      ],
+      "status": "verified"
+    },
+    {
+      "title": "NYCPS How to Prepare for the SHSAT",
+      "url": "https://www.schools.nyc.gov/learning/testing/how-to-prepare-for-the-specialized-high-schools-admissions-test1",
+      "access_date": "2026-10-09",
+      "section": "Revising/Editing Part B overview; Math preparation guidance",
+      "supports": [
+        "Grade 7 language scope and earlier language skills",
+        "Need for basic and challenging multistep practice"
+      ],
+      "status": "inspected; not a completed leaf-by-leaf standards audit"
+    },
+    {
+      "title": "NYC Guide to the SHSAT for 2027 Admissions",
+      "url": "https://pwsblobprd.schools.nyc/prd-pws/docs/default-source/default-document-library/nyc-guide-to-the-shsat-for-2027-admissions.pdf?sfvrsn=1eb0225c_8",
+      "access_date": "2026-10-09",
+      "pages": [
+        5,
+        6,
+        7
+      ],
+      "supports": [
+        "2026 test for 2027 admission; 50 questions per subject; three hours",
+        "Committed navigation and ELA notepad retention",
+        "Passage genres and preparation scope"
+      ],
+      "status": "PDF retrieved and listed format/tool sections inspected; not a completed leaf-by-leaf audit"
+    },
+    {
+      "title": "Official digital practice tests",
+      "url": "https://nycshsat.myassessmentsupport.com/practice-tests/",
+      "access_date": "2026-10-09",
+      "supports": [
+        "External official practice resource"
+      ],
+      "status": "resource page retrieved; individual practice forms not fully inspected"
+    },
+    {
+      "title": "Cloudflare D1 local development",
+      "url": "https://developers.cloudflare.com/d1/best-practices/local-development/",
+      "access_date": "2026-10-09",
+      "supports": [
+        "Local SQLite/D1 persistence without hosted provisioning"
+      ],
+      "status": "verified"
+    },
+    {
+      "title": "Cloudflare D1 Wrangler commands",
+      "url": "https://developers.cloudflare.com/d1/wrangler-commands/",
+      "access_date": "2026-10-09",
+      "supports": [
+        "Local d1 export/execute and persistence flags"
+      ],
+      "status": "Documentation inspected; export persistence flag differs in pinned Wrangler 4.92.0, so the helper uses a temporary root config verified locally"
+    },
+    {
+      "title": "Cloudflare D1 import/export and foreign keys",
+      "url": "https://developers.cloudflare.com/d1/best-practices/import-export-data/",
+      "access_date": "2026-10-09",
+      "supports": [
+        "Restore ordering: all referenced tables must exist before data insertion"
+      ],
+      "status": "verified documentation and local rehearsal"
+    },
+    {
+      "title": "Cloudflare D1 deferred foreign keys",
+      "url": "https://developers.cloudflare.com/d1/sql-api/foreign-keys/",
+      "access_date": "2026-10-09",
+      "supports": [
+        "Defer row checks during import; constraints remain enforced at completion"
+      ],
+      "status": "verified"
+    }
+  ],
+  "references_for_remaining_audit": [
+    "https://pwsblobprd.schools.nyc/prd-pws/docs/default-source/default-document-library/nyc-guide-to-the-shsat-for-2027-admissions.pdf?sfvrsn=1eb0225c_8",
+    "https://srt.testnav.com/ny-shsat/ny-shsat-srt.html",
+    "https://pwsblobprd.schools.nyc/prd-pws/docs/default-source/default-document-library/tei-screenshots-for-doe-final-w-logo-01-31-25.pdf",
+    "https://www.nysed.gov/standards-instruction/mathematics",
+    "https://www.nysed.gov/standards-instruction/english-language-arts",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html"
+  ],
+  "practice_choices": [
+    "Independent difficulty-band model, not NYCPS operational parameters",
+    "Limited initial item formats and original draft passages",
+    "No official raw-to-scaled curve fabricated",
+    "Partial-credit and other unsupported official mechanics remain outside this release"
+  ]
+}

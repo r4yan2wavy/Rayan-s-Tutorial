@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "./studio.css";
 
 export const metadata: Metadata = {
-  title: "Rayan's Tutorial — Your practice studio",
-  description: "100-question SHSAT diagnostics with 50 ELA and 50 Math, original practice, simulations, and breakthrough explanations.",
+  title: "Queens Scholars Tutorial | SHSAT Preparation",
+  description: "SHSAT tutoring, teacher-guided practice, and clear study plans. Call or text 718-913-7706.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
